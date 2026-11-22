@@ -126,10 +126,18 @@ gemini:gemini-3.5-flash → gemini:gemini-3.5-flash-lite → gemini:gemini-3.8-f
 → openai:gpt-5-mini → anthropic:claude-haiku-5-5
 ```
 
+Chuỗi nhanh (viết lại câu hỏi): Gemini 3.5-flash-lite → 3.5-flash → `groq:qwen/qwen3.8-27b` → `groq:openai/gpt-oss-20b` → …
+
 - Nhà cung cấp nào chưa có key trong `.env` thì bỏ qua. Hỗ trợ: Gemini, Groq, OpenRouter, DeepSeek, OpenAI, Anthropic.
 - Gặp bất kỳ lỗi nào (503 quá tải, 429 hết lượt, hết credit, sai key, timeout 45 giây) thì chuyển ngay sang bước sau. Bước lỗi bị đẩy xuống cuối hàng: 5 phút nếu quá tải, 1 giờ nếu lỗi tài khoản (401/402/403, quota, credit, billing).
 - `LLM_FAST_CHAIN` là chuỗi riêng cho việc viết lại câu hỏi, ưu tiên model rẻ và nhanh.
 - Kết quả có trường `model`, cho biết nhà cung cấp nào đã trả lời.
+- Lỗi giới hạn theo phút (gói miễn phí của Groq) chỉ tạm bỏ 60 giây.
+
+Ghi chú khi thử Groq (gói miễn phí):
+- `gpt-oss-120b` trả lời tiếng Việt tốt, 2–15 giây. Giới hạn token mỗi phút thấp, nên hỏi liên tục 3 câu là bị 429; Groq hợp làm dự phòng, không hợp làm model chính.
+- `gpt-oss-20b` đôi khi dùng hết `max_tokens` cho phần suy nghĩ và trả về rỗng → đặt `reasoning_effort=low`. Không đặt cho 120b: với mức thấp, câu trả lời tiếng Việt kém hẳn (sai chính tả, sai nội dung, trả lời tiếng Anh cho câu hỏi tiếng Việt).
+- `qwen3.8-27b` viết lại câu hỏi tốt hơn `gpt-oss-20b` (ví dụ câu bố mẹ: ra "visitor visa subclass 600" thay vì "Parent visa 103"), nhưng không dùng để trả lời: prompt ~4.000 token + 2.048 token trả lời vượt giới hạn mỗi phút của model này ("request too large").
 
 Kết quả trả về: `answer`, `found` (false khi không có trích dẫn = câu "không biết"), `sources` (chỉ những nguồn được trích), `contexts` (cả 5 chunk, dùng cho RAGAS ở giai đoạn 4), `queries`, `model`. API: `POST /ask {"question": "...", "top_k": 5, "rewrite": true}`.
 

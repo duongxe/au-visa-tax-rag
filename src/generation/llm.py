@@ -41,6 +41,7 @@ DEFAULT_CHAIN = (
 DEFAULT_FAST_CHAIN = (
     "gemini:gemini-3.5-flash-lite,"
     "gemini:gemini-3.5-flash,"
+    "groq:qwen/qwen3.8-27b,"
     "groq:openai/gpt-oss-20b,"
     "openrouter:openai/gpt-oss-20b,"
     "deepseek:deepseek-chat,"
@@ -61,7 +62,8 @@ PROVIDERS: dict[str, tuple[tuple[str, ...], str | None]] = {
 TEMPERATURE = 0.1
 MAX_OUTPUT_TOKENS = 2048
 TIMEOUT_S = 45
-COOLDOWN_BUSY_S = 300      # overloaded / rate limited / timeout
+COOLDOWN_BUSY_S = 300      # overloaded / timeout
+COOLDOWN_MINUTE_S = 60     # per-minute rate limit (e.g. Groq free tier tokens per minute)
 COOLDOWN_ACCOUNT_S = 3600  # out of credit, billing, invalid key
 
 _cooldown_until: dict[str, float] = {}
@@ -128,8 +130,17 @@ def _call(provider: str, model: str, system: str, prompt: str) -> str:
                                       messages=[{"role": "user", "content": prompt}])
         return "".join(b.text for b in resp.content if b.type == "text")
     kwargs = {}
-    if provider != "openai":  # OpenAI reasoning models only accept the default temperature
+    if provider != "openai":
+        # OpenAI reasoning models only accept the default temperature and use
+        # max_completion_tokens; the OpenAI-compatible providers take these.
+        # Groq counts max_tokens against the per-minute output quota, so keep it bounded.
         kwargs["temperature"] = TEMPERATURE
+        kwargs["max_tokens"] = MAX_OUTPUT_TOKENS
+    if provider == "groq" and model == "openai/gpt-oss-20b":
+        # Used for short tasks (query rewriting). With the default effort it sometimes
+        # spends all max_tokens on reasoning and returns empty content. Not applied to
+        # gpt-oss-120b: low effort made its Vietnamese answers noticeably worse.
+        kwargs["reasoning_effort"] = "low"
     resp = client.chat.completions.create(
         model=model,
         messages=[{"role": "system", "content": system}, {"role": "user", "content": prompt}],
@@ -147,6 +158,8 @@ def _cooldown_for(err: Exception) -> int:
     msg = str(err).lower()
     if code in (401, 402, 403) or any(h in msg for h in ACCOUNT_HINTS):
         return COOLDOWN_ACCOUNT_S
+    if "per min" in msg or "per minute" in msg:
+        return COOLDOWN_MINUTE_S
     return COOLDOWN_BUSY_S
 
 
