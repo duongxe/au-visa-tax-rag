@@ -1,0 +1,70 @@
+{
+  "doc_id": "ato-medicare-and-private-health-insurance-private-health-insurance-rebate-your-private-health-insurance-statement",
+  "title": "Your private health insurance statement",
+  "url": "https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/private-health-insurance-rebate/your-private-health-insurance-statement",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "How you receive your statement",
+      "page": null,
+      "text": "It's optional for health insurers to provide you with a private health insurance statement. A statement may only be provided if you request one from your registered health insurer.\n\nIf you lodge your tax return through myTax or use a registered tax agent, your health insurance details should be pre-filled, for more information see Pre-filling your online tax return. If your health insurance details are not pre-filled or you lodge a paper tax return, contact your health insurer to get a private health insurance statement so that you can complete your tax return.\n\nThe statement will also help you complete the Medicare levy surcharge (MLS) related items on your tax return.\n\nIf you share your policy with another adult, you can each ask for your own statement showing equal shares of the premium."
+    },
+    {
+      "heading": "Understanding the details on your statement",
+      "page": null,
+      "text": "The following information explains what each label on your private health insurance statement means:"
+    },
+    {
+      "heading": "Understanding the details on your statement > Health insurer ID",
+      "page": null,
+      "text": "This unique code helps us to identify your private health insurer."
+    },
+    {
+      "heading": "Understanding the details on your statement > Membership number",
+      "page": null,
+      "text": "This is the number that your fund gave you for your policy."
+    },
+    {
+      "heading": "Understanding the details on your statement > Your premiums eligible for Australian Government rebate",
+      "page": null,
+      "text": "This is your share (in dollars) of the premiums that have been paid for your policy. Note that:\n\n- it doesn't include any lifetime health cover loading\n- it doesn’t matter if you didn’t pay for the policy. If you are an adult covered by the policy when the payments were made, you are entitled to receive a share of the rebate based on your share in the policy\n- your share will be the amount paid for the policy divided by the number of adults on the policy; for example, if the total payments for a premium are $2,000 and 2 adults are covered by the policy, then your share of premiums eligible for the rebate will be $1,000."
+    },
+    {
+      "heading": "Understanding the details on your statement > Your Australian Government rebate received",
+      "page": null,
+      "text": "This is your share (in dollars) of the private health insurance rebate that you have received by reduced premiums from your insurer. Your share will be the amount of reduced premiums received on your policy divided by the number of adults on the policy."
+    },
+    {
+      "heading": "Understanding the details on your statement > Benefit code",
+      "page": null,
+      "text": "Your level of rebate is calculated on the age of the oldest person covered by the policy. We use the benefit code to apply the right level of rebate.\n\nThe valid benefit codes are 30, 31, 35, 36, 40 and 41.\n\nIf the oldest person's age is:\n\n- under 65, the code for the period\n\n- 1 July to 31 March is **30**\n- 1 April to 30 June is **31**\n- 65 to 69, the code for the period\n\n- 1 July to 31 March is **35**\n- 1 April to 30 June is **36**\n- 70 or over, the code for the period\n\n- 1 July to 31 March is **40**\n- 1 April to 30 June is **41**.\n\nThe benefit code is different to the tax claim code (A, B, C, D, E or F). The tax claim code is based on your circumstances on 30 June. If you're unsure of your tax claim code, see myTax tax return instructions."
+    },
+    {
+      "heading": "Understanding the details on your statement > Other adult beneficiaries for the policy",
+      "page": null,
+      "text": "If your policy covered more than one adult at the time the payments were made, then the other beneficiaries will be listed here.\n\nNote that:\n\n- if you and your spouse were on the policy for the same period of time and payments, your spouse's name would be listed to indicate they shared the overall costs of the private health insurance policy\n- if you were on a single policy for the whole year, there will be no other adult beneficiaries on the policy."
+    },
+    {
+      "heading": "Understanding the details on your statement > Number of days this policy provides an appropriate level of private patient hospital cover",
+      "page": null,
+      "text": "This is the number of days your policy provided you with an appropriate level of private hospital insurance cover. The Medicare levy surcharge may apply if you and your dependants did not have an appropriate level of this cover for the full year."
+    },
+    {
+      "heading": "Why there are 2 lines of information on your statement",
+      "page": null,
+      "text": "There are 2 lines of information on your private health insurance statement because, on 1 April each year, generally your rebate percentage is adjusted by a rebate adjustment factor.\n\nOne line of information on your statement will be for the premiums paid and rebate received before 1 April. The other line will be for premiums paid and rebate received from 1 April. Each line will have a different Benefit code.\n\nThere may also be 2 or more lines because the oldest person covered by the policy turned 65 or 70 years old during the year. If this occurs, all adults covered by the policy are entitled to a higher rebate percentage (provided their income for surcharge purposes has not reached the Tier 3 threshold). As with the annual adjustment of the rebate percentage on 1 April, each row will have a different benefit code.\n\n**Note:** Make sure you enter all lines of information into your income tax return separately, without performing any calculations."
+    },
+    {
+      "heading": "Example statement",
+      "page": null,
+      "text": "Below is a sample private health insurance statement for 2025–26. You should receive something similar, by mail, email, or online link, from your private health insurer if you requested a copy."
+    },
+    {
+      "heading": "Example statement > Example: Private health insurance statement",
+      "page": null,
+      "text": "| Private health insurance statement, 1 July 2025 to 30 June 2026 – Stephen Smith | | | | | |\n|---|---|---|---|---|---|\n| Health insurer ID | Membership number | Your premiums eligible for Australian Government rebate | Your Australian Government rebate received | Benefit code | Other adult beneficiaries for the policy |\n|---|---|---|---|---|---|\n| **B** ABC | **C** 123456 | **J** 1,125 | **K** 375 | **L** 30 | Mary Smith |\n| **B** ABC | **C** 123456 | **J** 377 | **K** 123 | **L** 31 | Mary Smith |\n\nIf you have more than one line of information in the table above, make sure each line is input separately into your income tax return. Do not add up amounts reported in any column or row to input its total.\n\n| **M2** | Medicare Levy Surcharge |\n\nIf you and all your dependants (including your spouse) did not have an appropriate level of private patient hospital cover for the full financial year (365 days), you may be liable for Medicare Levy Surcharge.\n\n| Number of days this policy provides an appropriate level of private patient hospital cover | **A** | 365 |\n\nEnd of example"
+    }
+  ]
+}

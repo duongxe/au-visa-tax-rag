@@ -36,13 +36,17 @@ sources.csv        # danh sách nguồn: url, tiêu đề, ngày tải
 
 ## Dữ liệu
 
-40 tài liệu (~770k ký tự) từ 3 trang chính phủ:
+1.466 tài liệu (~10,7 triệu ký tự, 18.852 mục) từ 3 trang chính phủ:
 
-| Nguồn | Số tài liệu | Nội dung |
+| Nguồn | Số tài liệu | Phạm vi |
 |---|---|---|
-| immi.homeaffairs.gov.au | 17 | Visa 500, 485, 417, 462, 189, 190, 491, 482, 600, 820, bảng điểm skilled |
-| ato.gov.au | 12 | TFN, cư trú thuế, working holiday maker, khai thuế, Medicare levy, thuế suất, super, DASP |
+| immi.homeaffairs.gov.au | 270 | Toàn bộ `/visas/getting-a-visa/visa-listing/`: mọi loại visa và các diện (stream) con |
+| ato.gov.au | 1.185 | Toàn bộ `/individuals-and-families/` (bỏ trang theo năm cũ như hướng dẫn myTax 2016–2024) + thuế suất, ngưỡng super |
 | fairwork.gov.au | 11 | Lương tối thiểu, quyền của người có visa, PALM & chương trình lao động Việt Nam, casual, payslip, nghỉ phép (gồm 4 PDF) |
+
+ATO theo chủ đề: khấu trừ & hồ sơ (398), khai thuế (202), super (193), đầu tư & tài sản (165), khó khăn tài chính (42), việc làm (39), thanh toán ATO (37), đến/rời Úc (31), Medicare (23), TFN (19), thuế suất (13), khác (23).
+
+`sources.csv` có 1.609 URL. 143 URL không có trong dữ liệu: 51 trang lỗi 401/404 (ghi `not found` ở cột `notes`), 11 trang có bố cục chưa hỗ trợ (đăng ký ballot, gia hạn TPV/SHEV), còn lại là trang mục lục chỉ có link (< 300 ký tự).
 
 Mỗi tài liệu được lưu thành `data/processed/<doc_id>.json`:
 
@@ -63,7 +67,8 @@ Mỗi tài liệu được lưu thành `data/processed/<doc_id>.json`:
 Tải và làm sạch lại dữ liệu:
 
 ```bash
-python -m src.ingest.fetch           # tải file còn thiếu vào data/raw/ (--force để tải lại hết)
+python -m src.ingest.discover        # dựng lại sources.csv từ menu visa + sitemap ATO
+python -m src.ingest.fetch           # tải file còn thiếu vào data/raw/ (--force để tải lại hết, ~45 phút)
 python -m src.ingest.clean           # làm sạch -> data/processed/, in thống kê từng tài liệu
 ```
 
@@ -95,6 +100,6 @@ _(Sẽ điền ở giai đoạn 4–5: vector-only vs hybrid vs hybrid + rerank.
 
 ## Hạn chế đã biết
 
-- Các trang visa lặp lại nhiều đoạn chung (nộp giấy tờ, dịch thuật, người đại diện…). Cần lọc trùng ở bước chunking để không làm loãng kết quả tìm kiếm.
+- Các trang visa lặp lại nhiều đoạn chung (nộp giấy tờ, dịch thuật, người đại diện…): 43% số mục của Home Affairs trùng y hệt mục ở trang khác (ATO: 5%). Cần lọc trùng ở bước chunking để không làm loãng kết quả tìm kiếm.
 - Bảng trong PDF (ví dụ bảng tóm tắt quyền lợi casual) bị tách thành nhiều mục nhỏ.
 - Phí visa trên trang Home Affairs được tính bằng JavaScript nên không có trong dữ liệu.

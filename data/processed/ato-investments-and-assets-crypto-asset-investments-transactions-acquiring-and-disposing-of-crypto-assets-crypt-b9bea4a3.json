@@ -1,0 +1,30 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-transactions-acquiring-and-disposing-of-crypto-assets-crypt-b9bea4a3",
+  "title": "Crypto to crypto exchange or swap",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-to-crypto-exchange-or-swap",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Market value of new crypto asset at exchange or swap",
+      "page": null,
+      "text": "When you exchange or swap one crypto asset for another crypto asset, you dispose of one CGT asset and acquire another. Therefore, a CGT event happens to your original crypto asset.\n\nBecause you receive property instead of money, you need to work out the market value of the crypto asset in Australian dollars."
+    },
+    {
+      "heading": "Market value of new crypto asset at exchange or swap > Example: market value of new asset determines old asset's disposal proceeds",
+      "page": null,
+      "text": "Katrina acquires 100 Coin A for $15,000 on 5 July 2025.\n\nKatrina decides to exchange 20 Coin A for 100 Coin B through a reputable digital asset exchange on 15 November 2025.\n\nUsing the exchange rates shown on the digital asset exchange at the time of the transaction, the market value of 100 Coin B was $6,000.\n\nTherefore, Katrina's capital proceeds are $6,000 for the disposal of 20 Coin A. Katrina uses this amount to work out her capital gain for the CGT event.\n\nEnd of example"
+    },
+    {
+      "heading": "Market value of existing crypto asset at exchange or swap",
+      "page": null,
+      "text": "If you can't determine the value of a crypto asset you receive in a crypto asset exchange or swap, use the market value of the crypto asset you're disposing of to work out the capital proceeds."
+    },
+    {
+      "heading": "Market value of existing crypto asset at exchange or swap > Example: market value of old crypto asset determines its disposal proceeds",
+      "page": null,
+      "text": "Katrina acquires 100 Coin A for $15,000 on 5 July 2025.\n\nKatrina decides to exchange 20 Coin A for a new coin, Coin D, before it is listed on a digital exchange. Katrina acquires 100 Coin D in the exchange on 15 November 2025.\n\nAt the time of the transaction, Coin D doesn't have a market value. Katrina uses the market value of Coin A on the digital asset exchange at the time of the transaction.\n\nThe market value of 20 Coin A at the time of exchange was $5,000.\n\nTherefore, Katrina's capital proceeds are $5,000 for the disposal of Coin A. Katrina uses this amount to work out her capital gain for the CGT event.\n\nEnd of example"
+    }
+  ]
+}

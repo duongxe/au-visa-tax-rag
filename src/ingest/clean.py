@@ -24,7 +24,8 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 from .common import PROCESSED_DIR, raw_path, read_sources
 
 MIN_SECTION_CHARS = 40
-MIN_DOC_CHARS = 1000
+MIN_DOC_CHARS = 1000   # warn below this
+MIN_KEEP_CHARS = 300   # drop below this (landing pages that only link elsewhere)
 
 # Lines that are UI chrome rather than content.
 JUNK_LINE_PATTERNS = [
@@ -176,6 +177,11 @@ def parse_homeaffairs(raw: bytes) -> tuple[str | None, list[dict]]:
 
     if data.get("applicant") or data.get("sponsor"):
         title = _parse_ha_visa(data, add)
+    elif data.get("subClass"):
+        # Stream-chooser page: short summary + eligibility; details live on stream pages.
+        title = f"{(data.get('title') or '').strip()} ({data['subClass']})"
+        add(section("Overview", html_fragment_to_text(data.get("description", ""))))
+        add(section("Overview > Eligibility", html_fragment_to_text(data.get("eligibility", ""))))
     for item in data.get("content") or []:
         add(section(item.get("text", ""), html_fragment_to_text(item.get("block", ""))))
     for div in soup.find_all("div", id=re.compile(r"RichHtmlField$")):
@@ -344,34 +350,63 @@ def clean_one(row: dict) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*", help="doc_ids to clean")
+    ap.add_argument("-v", "--verbose", action="store_true", help="print a line per document")
     args = ap.parse_args()
 
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
-    total_chars = 0
-    problems = 0
-    print(f"{'doc_id':40s} {'sections':>8s} {'chars':>8s}")
-    for row in read_sources():
+    rows = read_sources()
+
+    if not args.only:  # remove output of documents no longer in sources.csv
+        wanted = {r["doc_id"] for r in rows}
+        for f in PROCESSED_DIR.glob("*.json"):
+            if f.stem not in wanted:
+                f.unlink()
+
+    stats: dict[str, dict] = {}
+    issues: list[str] = []
+    for row in rows:
         if args.only and row["doc_id"] not in args.only:
             continue
+        st = stats.setdefault(row["site"], {"docs": 0, "sections": 0, "chars": 0, "skipped": 0})
+        out = PROCESSED_DIR / f"{row['doc_id']}.json"
         if not raw_path(row).exists():
-            print(f"{row['doc_id']:40s} MISSING raw file - run fetch first")
-            problems += 1
+            if row["notes"] != "not found":
+                issues.append(f"MISSING  {row['doc_id']} (run fetch)")
+            st["skipped"] += 1
             continue
         try:
             doc = clean_one(row)
         except Exception as e:  # keep going, report at the end
-            print(f"{row['doc_id']:40s} ERROR {e}")
-            problems += 1
+            issues.append(f"ERROR    {row['doc_id']}: {e}")
+            st["skipped"] += 1
+            out.unlink(missing_ok=True)
             continue
         chars = sum(len(s["text"]) for s in doc["sections"])
-        total_chars += chars
-        flag = "  <-- too short?" if chars < MIN_DOC_CHARS else ""
-        problems += bool(flag)
-        print(f"{row['doc_id']:40s} {len(doc['sections']):8d} {chars:8d}{flag}")
-        out = PROCESSED_DIR / f"{row['doc_id']}.json"
+        if chars < MIN_KEEP_CHARS:
+            # Index/landing pages that only link elsewhere: nothing worth retrieving.
+            st["skipped"] += 1
+            out.unlink(missing_ok=True)
+            if args.verbose:
+                print(f"skip  {row['doc_id']} ({chars} chars)")
+            continue
+        if chars < MIN_DOC_CHARS:
+            issues.append(f"SHORT    {row['doc_id']} ({chars} chars)")
+        st["docs"] += 1
+        st["sections"] += len(doc["sections"])
+        st["chars"] += chars
+        if args.verbose:
+            print(f"{row['doc_id']:60s} {len(doc['sections']):5d} {chars:8d}")
         out.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\ntotal chars={total_chars:,}  problems={problems}")
+    print(f"\n{'site':28s} {'docs':>6s} {'skipped':>8s} {'sections':>9s} {'chars':>11s}")
+    for site, st in stats.items():
+        print(f"{site:28s} {st['docs']:6d} {st['skipped']:8d} {st['sections']:9d} {st['chars']:11,d}")
+    tot = {k: sum(s[k] for s in stats.values()) for k in ("docs", "skipped", "sections", "chars")}
+    print(f"{'TOTAL':28s} {tot['docs']:6d} {tot['skipped']:8d} {tot['sections']:9d} {tot['chars']:11,d}")
+    errors = [i for i in issues if not i.startswith("SHORT")]
+    print(f"\n{len(errors)} errors/missing, {len(issues) - len(errors)} short docs (kept)")
+    for line in errors[:30]:
+        print("  " + line)
 
 
 if __name__ == "__main__":

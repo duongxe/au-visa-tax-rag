@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-self-managed-super-funds-smsf-smsf-contributions-and-rollovers-returning-a770659a",
+  "title": "Returning contributions",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-contributions-and-rollovers/returning-contributions",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Contributions that must be returned",
+      "page": null,
+      "text": "Under superannuation law, a self-managed super fund (SMSF) trustee can only return a super contribution if:\n\n- it can't be accepted due to contribution restrictions\n- the contribution was made in error and the return is authorised by the legislation."
+    },
+    {
+      "heading": "Contributions that must be returned > Contribution restrictions",
+      "page": null,
+      "text": "Super law requires a fund trustee to only accept allowable contributions. Whether you can accept a contribution is dependent on:\n\n- the age of the member for whom the contribution is made\n- whether you have a valid tax file number (TFN) for the member\n\nIf your fund returns an amount it couldn't accept, it doesn't need to be reported in the SMSF annual return if it was returned within the 30-day grace period."
+    },
+    {
+      "heading": "Contributions that must be returned > Contribution made in error",
+      "page": null,
+      "text": "Contributions can only be returned in specific circumstances defined by legislation.\n\nA contribution is only considered an error if the cash or assets were not intended to go to the SMSF and were deposited by mistake.\n\nIt is not considered an error if the transfer was intentional but the contributor later changed their mind.\n\nContributions generally can be returned if the:\n\n- payment was meant for someone else\n- contributor thought they were legally required to contribute when they didn't have to.\n\nContributions generally can't be returned if the contributor:\n\n- regrets making the contribution\n- their agents made an error in their decision to contribute.\n\nContributions returned in accordance with the law of restitution don’t count towards the member's contributions cap. The fund may need to amend its reporting to account for returned contributions.\n\nIn circumstances where the law doesn't allow the contribution to be returned, the fund must continue to report the contributions that were received in the SMSF annual return, even if they were returned.\n\nFor more details about what is classed as a mistake and the law of restitution, see ATO Interpretative Decision ATO ID 2010/104 *Superannuation – Excess contributions tax: restitution of a 'mistaken' contribution*."
+    },
+    {
+      "heading": "Timeframe to return contribution",
+      "page": null,
+      "text": "You have 30 days from when you become aware that you can't accept the amount, or from when it was contributed in error, to return it to the contributor. For an SMSF, we consider you're aware that a contribution is in breach of the law when you become aware of the contribution itself. This would be on the day you receive the contribution.\n\nUnder the Superannuation Industry (Supervision) Regulations (SISR) subregulation 7.04(4), you must return the amount, even if more than 30 days have passed since you became aware of the obligation.\n\nIf you don't return contributions within the 30-day grace period, your fund can:\n\n- be made non-complying\n- stop receiving concessional tax treatment."
+    },
+    {
+      "heading": "Timeframe to return contribution > Example: contribution not returned within 30-day timeframe",
+      "page": null,
+      "text": "Beatrice is 77 years old, retired and both a trustee and member of an SMSF. She makes a $100,000 personal member contribution to the fund on 31 January 2023.\n\nDuring the audit of her fund in August, the SMSF auditor points out that the fund has not complied with super laws because the:\n\n- fund didn't consider the restrictions on the contributions due to Beatrice's age\n- amount was not returned within 30 days of it being made.\n\nAlthough Beatrice made the contribution, she claims that the fund wasn't aware that it had breached contribution restrictions. This is because her bank only issues paper statements every 6 months and she received the statement covering her contribution in early July 2023.\n\nAs Beatrice is both a member and trustee of the SMSF, the fund is considered to have been aware of contribution restrictions.\n\nIt is not reasonable that a trustee, acting with the level of care, skill and diligence required of a trustee, did not check the requirements of the fund within the required timeframe.\n\nIn addition to an administrative penalty of 20 units, the trustee must return the excess amount. If this does not occur, we may also give Beatrice's SMSF a rectification direction requiring the excess amount of the contribution to be returned within a specified timeframe.\n\nEnd of example"
+    }
+  ]
+}

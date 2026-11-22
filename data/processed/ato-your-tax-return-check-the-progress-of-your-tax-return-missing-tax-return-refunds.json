@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-your-tax-return-check-the-progress-of-your-tax-return-missing-tax-return-refunds",
+  "title": "Missing tax return refunds",
+  "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/check-the-progress-of-your-tax-return/missing-tax-return-refunds",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Types of missing refunds",
+      "page": null,
+      "text": "There are different types of missing refunds, these include:\n\n- a refund was paid to an account that has officially been closed with the bank\n- a refund has been paid to a known bank account, this could be\n\n- an old bank account you have as your current nominated account that is still active but unused\n- the bank account of a related party which you have currently nominated (for example a spouse or business)\n- the trust account of your registered tax agent which you or they have currently nominated\n- the refund has been paid to an incorrect bank account or a bank account belonging to an unrelated third party. This could be because of an error with the details we hold. For example, you provide an incorrect BSB or account number when you lodge your tax return.\n\nIf you're expecting a refund via electronic funds transfer (EFT), check the bank account your refund was sent to by signing in to ATO online services through myGov.\n\nEnsure your bank account details are up to date so we can send you your refund quickly and securely."
+    },
+    {
+      "heading": "Locating your refund",
+      "page": null,
+      "text": "Depending on the bank account details you've supplied to us, there are ways to locate your refund if you're expecting one for:"
+    },
+    {
+      "heading": "Locating your refund > Closed bank accounts",
+      "page": null,
+      "text": "If your refund was paid to a closed bank account, your refund will be returned to us by the Reserve Bank of Australia. This can take up to 10 days.\n\nYou should update your bank details so we can re-issue the refund to your current account. If you don't, we may contact you to request you update them, so we can pay your refund quickly and securely.\n\nIf there are no updated bank account details, we'll re-issue your refund by cheque. From January 2025 we have started holding some cheque refunds for up to 90 days while we ask for bank details. We encourage you to provide bank details to avoid delays."
+    },
+    {
+      "heading": "Locating your refund > Known bank accounts",
+      "page": null,
+      "text": "In most circumstances where the refund is paid to a known bank account, we can't retrieve the funds for you.\n\nSince we have paid the refund into the bank account as nominated by you, recovery of this money is a civil matter between you and the account holder. You need to approach the owner of the account to obtain the funds."
+    },
+    {
+      "heading": "Locating your refund > Incorrect bank accounts",
+      "page": null,
+      "text": "If your refund was paid to an incorrect bank account, or to an unrelated third-party bank account, contact us and we'll attempt to recover the refund on your behalf.\n\nAttempting to identify, contact and retrieve funds from third parties can take over 28 days.\n\nContact us if you believe that your account has been misused."
+    }
+  ]
+}

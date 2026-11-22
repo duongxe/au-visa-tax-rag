@@ -1,0 +1,75 @@
+{
+  "doc_id": "ato-paying-the-ato-how-to-pay-other-payment-details",
+  "title": "Other payment details",
+  "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/how-to-pay/other-payment-details",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Payment reference number",
+      "page": null,
+      "text": "Your unique payment reference number (PRN) ensures your payment is credited to the correct account. A PRN may also be called an EFT code (electronic funds transfer code).\n\nYou'll have different PRNs for different types of tax, for example, one PRN for income tax and one PRN for activity statements. Make sure you use the correct PRN for the type of tax you're paying.\n\nFor global and domestic top-up tax liability, each group entity will be issued with their own PRN. The same PRN will apply to all 3 top-up tax liabilities.\n\nUsing an incorrect PRN could result in delays to payments being credited to your account and unnecessary debt collection activity.\n\nOnce you have the correct PRN, you'll be able to make your payment."
+    },
+    {
+      "heading": "Payment reference number > How to find your PRN",
+      "page": null,
+      "text": "You can use our online services to find your PRN."
+    },
+    {
+      "heading": "Payment reference number > How to find your PRN > Individuals and sole traders",
+      "page": null,
+      "text": "Log in to your myGov account linked to the ATO and select **Tax** > **Accounts** > **Summary**."
+    },
+    {
+      "heading": "Payment reference number > How to find your PRN > Businesses",
+      "page": null,
+      "text": "Log in to Online services for business and select:\n\n- **Accounts and payments** from the menu\n- **Payments**\n- **BPAY** or **Other payment methods**.\n\nBusinesses – payment reference number"
+    },
+    {
+      "heading": "Payment reference number > How to find your PRN > Registered agents",
+      "page": null,
+      "text": "Log in to Online services for agents and select:\n\n- **Client summary** page\n- **Accounts summary**\n- **Payment options**.\n\nRegistered agents – payment reference number\n\nAlternatively, you can:\n\n- obtain your PRN from ATO notices or payment slips\n- ask your tax agent\n- phone **1800 815 886** between 8:00 am to 6:00 pm, Monday to Friday."
+    },
+    {
+      "heading": "Payment slips",
+      "page": null,
+      "text": "You'll need a payment slip to pay in person at an Australia Post office or by mail.\n\nMake sure you have the correct payment slip for the account you want to pay.\n\nFind out about:\n\n- Printing a payment slip using online services\n- Ordering a payment slip to be posted\n- If you don't have a payment slip."
+    },
+    {
+      "heading": "Payment slips > Printing a payment slip using online services",
+      "page": null,
+      "text": "If you are:\n\n- an **individual** taxpayer, payment slips are generally available on your notice of assessment or statement of account\n- a **business** taxpayer, you can print a payment slip using Online services for business\n- select **Accounts and payments** from the menu, then **Accounts summary**\n- choose the account required, then click **Payment options**\n- select **BPAY** or **Other payment methods**\n- select **Print-friendly version** to print the payment slip\n- a **registered agent**, you can use Online services for agents to print a payment slip for your client\n- go to the **Client summary** page\n- select **Accounts summary**\n- select **Payment options**."
+    },
+    {
+      "heading": "Payment slips > Ordering a payment slip to be posted",
+      "page": null,
+      "text": "You can order a payment slip to be posted out to you. If you are:\n\n- an **individual** taxpayer, phone **13 28 61** to order an ATO notice with an income tax payment slip. You'll need your tax file number (TFN) to use this service.\n- a **business** taxpayer, phone **13 28 66** to order an activity statement with payment slip. You'll need to have your Australian business number (ABN) and be an authorised representative of the business to use this service.\n\nBefore we can access your account, we must establish your identity."
+    },
+    {
+      "heading": "Payment slips > If you don't have a payment slip",
+      "page": null,
+      "text": "If you are paying by mail and don’t have a payment slip, you must include the following details with your payment to avoid unnecessary delays to payments being credited to your account:\n\n- full name\n- address and phone number\n- account identifier, for example\n\n- tax file number (TFN)\n- Australian business number (ABN)\n- payment type, for example\n\n- activity statement payment\n- income tax payment."
+    },
+    {
+      "heading": "Card terms and conditions > Card payment fee",
+      "page": null,
+      "text": "Card payment fees do not apply to payments."
+    },
+    {
+      "heading": "Card terms and conditions > Card payment receipts",
+      "page": null,
+      "text": "When you pay using any of our card payment services, we'll give you a receipt number.\n\nThe payment details will be displayed on your card statement as 'ATO payment'."
+    },
+    {
+      "heading": "Card terms and conditions > Card payment refunds and reversals",
+      "page": null,
+      "text": "If you need a refund of an incorrect payment or overpayment made from a debit or credit card, it can only be returned to the same card it was made from."
+    },
+    {
+      "heading": "Card terms and conditions > Card payment details",
+      "page": null,
+      "text": "When you pay by card using ATO online services or Government EasyPay, you need to provide details, such as your:\n\n- card verification code (CVC or CVV)\n- billing address, and phone number or email that is registered with your financial institution.\n\nThe financial institution that issued your card may also request additional information. This could include:\n\n- answering security questions\n- entering a one-time pin\n- using fingerprint or facial recognition verification.\n\nThis information will be matched with details your card issuer holds but it will not be stored by us."
+    }
+  ]
+}

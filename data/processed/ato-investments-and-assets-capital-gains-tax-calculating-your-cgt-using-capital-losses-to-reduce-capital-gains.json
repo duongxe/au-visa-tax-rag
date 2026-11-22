@@ -1,0 +1,45 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-calculating-your-cgt-using-capital-losses-to-reduce-capital-gains",
+  "title": "Using capital losses to reduce capital gains",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/using-capital-losses-to-reduce-capital-gains",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "When to use capital losses",
+      "page": null,
+      "text": "You use your current year capital losses to offset your current year capital gains. You can choose which capital gains to subtract your capital losses from. If you have any capital gains that are not eligible for the CGT discount, subtract your capital losses from these gains first. This will result in the lowest payable CGT.\n\nIf you have capital losses from prior years, also known as net capital losses carried forward, you can use them to offset your current year capital gains. If your prior year capital losses extinguished your current year capital gain, you don't have a current year capital gain.\n\nAs net capital losses can be carried forward indefinitely, there is an order of using your capital losses to offset capital gains. You apply your net capital losses in the order that you make them.\n\nThere are capital losses you can't use to offset capital gains, they are listed at non-allowable capital losses."
+    },
+    {
+      "heading": "Carrying forward a net capital loss",
+      "page": null,
+      "text": "If your allowable capital losses are greater than your capital gains, you have a net capital loss. You can carry it forward to later income years to be deducted from future capital gains. You can’t deduct capital losses or a net capital loss from your other assessable income.\n\nThere is no time limit on how long you can carry forward a net capital loss."
+    },
+    {
+      "heading": "Non-allowable capital losses",
+      "page": null,
+      "text": "You can't deduct capital losses you make from:\n\n- personal use assets, for example boats or furniture\n- assets that are exempt from CGT, for example cars and motorcycles\n- collectables below a certain value\n- a lease (whether the result of expiry, forfeiture, surrender or assignment) – except if its main purpose is producing income, for example a commercial rental property or a car\n- paying personal services income to yourself through an entity you have set up*.*"
+    },
+    {
+      "heading": "Capital losses from collectables",
+      "page": null,
+      "text": "Capital losses from collectables can only be deducted from capital gains made from collectables. They can't be deducted from gains made from other assets.\n\nIf you don't have a capital gain from another collectable, you can carry forward the capital loss to deduct it against a gain from a collectable in a future year.\n\nA collectable isn't subject to CGT if you acquired it for $500 or less (or acquired an interest in it when it had a market value of $500 or less). This means you ignore a capital gain or loss from the collectable."
+    },
+    {
+      "heading": "Company capital losses",
+      "page": null,
+      "text": "A company can deduct previous net capital losses from capital gains in the current year as long as it is either:\n\n- substantially under the same ownership and control\n- still in the same line of business."
+    },
+    {
+      "heading": "Trust capital losses",
+      "page": null,
+      "text": "Capital losses made by a trust can't be distributed to the trust’s beneficiaries. The trust can carry forward its net capital losses and deduct them from capital gains in future years."
+    },
+    {
+      "heading": "Exempt entity losses",
+      "page": null,
+      "text": "Losses made by an entity that is exempt from income tax are disregarded.\n\nFor more information and help on how to calculate your CGT, see Calculating your CGT."
+    }
+  ]
+}

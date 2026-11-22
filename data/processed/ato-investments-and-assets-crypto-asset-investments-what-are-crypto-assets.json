@@ -1,0 +1,25 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-what-are-crypto-assets",
+  "title": "What are crypto assets?",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/what-are-crypto-assets",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "How crypto assets work",
+      "page": null,
+      "text": "Crypto assets are a digital representation of value that you can transfer, store, or trade electronically. This also includes non-fungible tokens (NFTs).\n\nCrypto assets are a subset of digital assets that use cryptography to protect digital data and distributed ledger technology to record transactions. They may run on their own blockchain or use an existing platform such as Ethereum. A blockchain is a form of secure digital ledger used to store a record of crypto transactions.\n\nCrypto generally operates independently of a central bank, authority, or government. However, transactions involving crypto assets are subject to the same tax rules as assets generally. There are no special tax rules for crypto assets. The tax treatment will depend on how you acquire, hold, and dispose of the asset.\n\nFor tax purposes, crypto assets are not a form of money.\n\nFor more information on the nature of crypto assets and the risks in investing in them, see ASIC’s Moneysmart website."
+    },
+    {
+      "heading": "Tax outcomes of using and transacting with crypto assets",
+      "page": null,
+      "text": "You can acquire or dispose of a crypto asset on a crypto trading platform, or directly from a digital or hardware wallet. You can exchange or swap crypto assets for other crypto assets, fiat currency or goods and services.\n\nThe way you use or transact with crypto assets will determine how you treat them for tax purposes. The most common use of crypto assets is as an investment (investors acquire and hold crypto assets to make a financial profit from holding or disposing of them).\n\nAs a general rule, for investors:\n\n- crypto assets are taxed as CGT assets, including for self-managed super funds (SMSFs)\n- rewards for staking crypto are ordinary income for tax purposes.\n\nBusinesses transacting in crypto assets may need to account for them as trading stock or ordinary income (that is, on the revenue account rather than as investment capital gains or losses). In these circumstances, the cost of acquiring crypto assets and the proceeds from disposing of them is ordinary income or a deductible expense depending on the nature of the transaction. The market value of crypto assets received through airdrops are ordinary income for tax purposes if you are carrying on a business of crypto asset trading.\n\nIn some circumstances, crypto assets are not kept mainly for investment but for personal use. Where specific conditions are met, crypto assets are not subject to CGT because they are considered to be personal use assets.\n\n**Media:** A series of crypto myth busting videos with Tim Loh\n\nhttps://ato.vudoo.io/embed/16063894950"
+    },
+    {
+      "heading": "Common crypto assets",
+      "page": null,
+      "text": "There are many types of crypto assets, with their form and function continuing to evolve.\n\nCommon crypto assets include coins and tokens such as:\n\n- Bitcoin, a cryptocurrency\n- USDC, a stablecoin\n- DAI, an investment token\n- GALA, a game token\n- BAYC, a non-fungible token.\n\nYou can control different types of crypto asset in the same digital or hardware wallet. However, for tax purposes you need to treat each crypto asset you hold as a separate asset.\n\nFor our view of how the income tax law treats bitcoin transactions, see these tax determinations:\n\n- TD 2014/25 *Income tax: is bitcoin a ‘foreign currency’ for the purposes of Division 775 of the Income Tax Assessment Act 1997?*\n- TD 2014/26 *Income tax: is bitcoin a 'CGT asset' for the purposes of subsection 108-5(1) of the Income Tax Assessment Act 1997?*\n- TD 2014/27 *Income tax: is bitcoin trading stock for the purposes of subsection 70-10(1) of the Income Tax Assessment Act 1997?*"
+    }
+  ]
+}

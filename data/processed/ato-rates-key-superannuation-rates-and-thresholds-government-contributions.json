@@ -1,0 +1,30 @@
+{
+  "doc_id": "ato-rates-key-superannuation-rates-and-thresholds-government-contributions",
+  "title": "Government contributions",
+  "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/government-contributions",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "About government contributions",
+      "page": null,
+      "text": "The government may add to your super if you are eligible for the super co-contribution or the low income superannuation tax offset (LISTO).\n\nYou don't need to apply for government contributions. If you're eligible and your fund has your tax file number (TFN), we will pay it to your fund account automatically."
+    },
+    {
+      "heading": "Super co-contributions",
+      "page": null,
+      "text": "The super co-contribution is designed to assist eligible individuals to save for their retirement. If you are eligible and make personal super contributions during a financial year, the government will pay a super co-contribution up to certain limits."
+    },
+    {
+      "heading": "Super co-contributions > Co-contribution income thresholds",
+      "page": null,
+      "text": "| Table 25: Co-contribution income thresholds | | | |\n|---|---|---|---|\n| Year | Maximum entitlement | Lower income threshold | Higher income threshold |\n|---|---|---|---|\n| 2026–27 | $500 | $49,293 | $64,293 |\n| 2025–26 | $500 | $47,488 | $62,488 |\n| 2024–25 | $500 | $45,400 | $60,400 |\n| 2023–24 | $500 | $43,445 | $58,445 |\n| 2022–23 | $500 | $42,016 | $57,016 |\n| 2021–22 | $500 | $41,112 | $56,112 |\n| 2020–21 | $500 | $39,837 | $54,837 |\n| 2019–20 | $500 | $38,564 | $53,564 |\n| 2018–19 | $500 | $37,697 | $52,697 |\n| 2017–18 | $500 | $36,813 | $51,813 |\n| 2016–17 | $500 | $36,021 | $51,021 |\n| 2015–16 | $500 | $35,454 | $50,454 |\n| 2014–15 | $500 | $34,488 | $49,488 |\n| 2013–14 | $500 | $33,516 | $48,516 |\n| 2012–13 | $500 | $31,920 | $46,920 |\n| 2011–12 | $1,000 | $31,920 | $61,920 |\n| 2010–11 | $1,000 | $31,920 | $61,920 |\n| 2009–10 | $1,000 | $31,920 | $61,920 |\n| 2008–09 | $1,500 | $30,342 | $60,342 |\n| 2007–08 | $1,500 | $28,980 | $58,980 |\n| 2006–07 | $1,500 | $28,000 | $58,000 |\n| 2005–06 | $1,500 | $28,000 | $58,000 |\n| 2004–05 | $1,500 | $28,000 | $58,000 |\n| 2003–04 | $1,000 | $27,500 | $40,000 |\n\nThe lower income threshold is indexed in line with average weekly ordinary time earnings (AWOTE) each income year. The new indexed amount is generally available each February. However, note that the thresholds were frozen between the 2010–11 and 2012–13 years.\n\nThe following changes were also made for all contributions made from 1 July 2012:\n\n- the maximum co-contribution entitlement was set at $500\n- the matching rate was set at 50%\n- the higher income threshold was set at $15,000 above the lower income threshold.\n\nAdditional eligibility requirements were added from 1 July 2017 which includes:\n\n- having a total superannuation balance less than the general transfer balance cap on 30 June of the year before the year the contributions are being made\n- having not exceeded your non-concessional contributions cap in the relevant financial year."
+    },
+    {
+      "heading": "Low income super tax offset",
+      "page": null,
+      "text": "From 1 July 2017, the government introduced the low income super tax offset (LISTO) to assist low income earners to save for their retirement.\n\nIf you earn an adjusted taxable income up to $37,000 you may be eligible to receive a refund into your superannuation account of the tax paid on your eligible concessional superannuation contributions, up to a cap of $500.\n\nYou don't need to apply for LISTO. If you're eligible and your fund has your tax file number (TFN), we will pay it to your fund account automatically."
+    }
+  ]
+}

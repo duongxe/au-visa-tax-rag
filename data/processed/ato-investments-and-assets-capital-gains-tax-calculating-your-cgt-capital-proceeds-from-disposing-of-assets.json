@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-calculating-your-cgt-capital-proceeds-from-disposing-of-assets",
+  "title": "Capital proceeds from disposing of assets",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/capital-proceeds-from-disposing-of-assets",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Types of capital proceeds",
+      "page": null,
+      "text": "Capital proceeds are what you receive, or are entitled to receive, from a capital gains tax (CGT) event, such as selling an asset.\n\nFor most CGT events your capital proceeds will be money. They can also be the value of any property you receive or are entitled to receive.\n\nIf you receive:\n\n- foreign currency – work out the capital proceeds by converting it to Australian currency at the time of the CGT event\n- property (including shares) subject to a deed of escrow – your capital proceeds include the market value of the property at the time of the CGT event (a deed of escrow imposes a restriction on dealing in that property).\n\nIf you give away or sell an asset for less than it's worth, your capital proceeds equal the market value of the asset."
+    },
+    {
+      "heading": "Market value substitution",
+      "page": null,
+      "text": "If you receive nothing in exchange for a CGT asset, you are taken to have received the market value of the asset at the time of the CGT event.\n\nThis is the market value substitution rule for capital proceeds.\n\nYou may also be taken to have received the market value if both of the following apply:\n\n- what you received was more or less than the market value of the CGT asset\n- you and the new owner were not dealing with each other at arm's length.\n\nYou are dealing at ‘arm's length’ with someone when each party acts independently. This occurs when neither party exercises influence or control over the other in connection with the transaction.\n\nThe law looks at the relationship between the parties and the quality of the bargaining between them.\n\nThe market value substitution rule may apply when transferring property to family or friends."
+    },
+    {
+      "heading": "Market value substitution > Example: gifting an asset",
+      "page": null,
+      "text": "Martha and Stephen bought a block of land in 2010.\n\nLater, after many years, they complete a transfer form to gift the block to their son, Paul.\n\nAs Martha and Stephen received nothing for it, they are taken to have received the market value of the land at the time it was transferred to Paul.\n\nEnd of example"
+    },
+    {
+      "heading": "Reducing your capital proceeds",
+      "page": null,
+      "text": "You reduce your capital proceeds from a CGT event if:\n\n- you're not likely to receive some or all of the proceeds\n- it's not due to anything you have done or failed to do\n- you took all reasonable steps to get payment.\n\nIf you repay part of the proceeds and you aren't entitled to a tax deduction for the repayment, your capital proceeds are reduced by the amount you repaid. The same applies to compensation you pay that can reasonably be regarded as a repayment of the proceeds.\n\nIf you are registered for GST, any GST payable on the amount you receive is not part of the capital proceeds."
+    },
+    {
+      "heading": "Proceeds from a depreciating asset",
+      "page": null,
+      "text": "CGT doesn't apply to depreciating assets you use solely for taxable purposes. This includes assets such as business equipment or items in a rental property. If you have used a depreciating asset for private purposes, CGT may apply.\n\nThere are special rules for calculating the proceeds from a depreciating asset.\n\nIf you sold assets during the year, such as property or shares, work out your capital gain or loss for each asset. See, How to calculate your CGT."
+    }
+  ]
+}

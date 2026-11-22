@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-paying-the-ato-interest-and-penalties-interest-we-charge-shortfall-interest-charge",
+  "title": "Shortfall interest charge",
+  "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/interest-we-charge/shortfall-interest-charge",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Why we apply SIC",
+      "page": null,
+      "text": "If your tax return is amended and there is a tax shortfall, we apply shortfall interest charge (SIC) rather than general interest charge (GIC). This is because taxpayers are usually unaware of a shortfall amount until they receive an amended assessment."
+    },
+    {
+      "heading": "How the SIC is applied",
+      "page": null,
+      "text": "We apply SIC to the tax shortfall amount for the period between when it would have been due and when the assessment is corrected. SIC is incurred in the year you are served a notice of amended assessment.\n\nWe update the SIC rate quarterly using a formula set by law.\n\nSIC applies to amended assessments for:\n\n- income tax for the 2004–05 and later income years\n- petroleum resource rent tax for the 2006–07 and later income years.\n\nSIC is applied on a daily compounding basis to the shortfall amount."
+    },
+    {
+      "heading": "Payment of the SIC",
+      "page": null,
+      "text": "The due date for payment of the extra tax and SIC is 21 days after the day we issue the notice of the amended assessment. Once the due date has passed, GIC will apply automatically to any unpaid tax and SIC."
+    },
+    {
+      "heading": "Effect of the SIC on income tax",
+      "page": null,
+      "text": "SIC incurred on or after 1 July 2025 can't be claimed as a deduction. This also means any SIC that is later remitted doesn't need to be included as interest income in your tax return.\n\nHowever, SIC amounts incurred before 1 July 2025 can only be claimed as a deduction in the income year that you received the notice of amended assessment that included the SIC amount. If you claimed a deduction and:\n\n- we remitted the SIC, you must include the remitted SIC amount as interest income in your tax return in the income year that we granted the remission\n- you make an amendment that reduces an earlier amendment, you must also include a reduction in the SIC deduction amount in line with the SIC amount that was reduced."
+    },
+    {
+      "heading": "Remission of interest for shortfall periods",
+      "page": null,
+      "text": "You can ask us to remit a SIC amount (and any related GIC) in full or part if there are extenuating circumstances – for example, if we contribute to an error that leads to a shortfall, or if the shortfall amount is paid before the notice of amended assessment issues.\n\nFor more information, see PS LA 2006/8 *Remission of shortfall interest charge and general interest charge for shortfall periods*."
+    }
+  ]
+}

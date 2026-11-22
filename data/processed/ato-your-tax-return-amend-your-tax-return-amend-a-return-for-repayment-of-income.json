@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-your-tax-return-amend-your-tax-return-amend-a-return-for-repayment-of-income",
+  "title": "Amend a return for repayment of income",
+  "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/amend-a-return-for-repayment-of-income",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "When you repay income and can't amend",
+      "page": null,
+      "text": "You can't amend your tax return to exclude the repaid amount if you both:\n\n- receive the income as a benefit or regular compensation payment\n- have to repay that income because you receive either\n\n- a lump sum compensation payment\n- a lump sum payment for damages for a wrong or injury you suffer in your occupation."
+    },
+    {
+      "heading": "When you repay income and can amend",
+      "page": null,
+      "text": "If you have to repay an amount that was part of your assessable income in an earlier income year, you can apply to amend your tax return for that year. If you're outside the time limit to amend your tax return, you may need to lodge an objection instead.\n\nThe process to amend your return depends on whether or not you were entitled to the payment when you received it."
+    },
+    {
+      "heading": "When you repay income and can amend > Entitled to the income",
+      "page": null,
+      "text": "You are entitled to income if you're correctly paid an amount that is due to you. You may have to amend your tax return if you later have to repay that amount.\n\nFor example, you receive a payment on the condition that you will remain with an employer for a specified period but you don't meet the condition and you have to repay the employer.\n\nYou need to meet all of the following conditions before you can request an amendment to your tax return:\n\n- you must have repaid the amount\n- you can't claim any deduction for the repayment in any year\n- the payment is not from a lump sum settlement."
+    },
+    {
+      "heading": "When you repay income and can amend > Entitled to the income > Example: entitled to income",
+      "page": null,
+      "text": "Charlotte is a member of the Australian Defence Force (ADF). She is offered $50,000 (a retention bonus) to sign on for another 5 years of service. Under the terms of the contract, she must repay the bonus on a pro rata basis if she fails to serve for 5 years. She signs up for the retention bonus and includes the $50,000 as part of her assessable income in that year's tax return.\n\n2 years into her contract, Charlotte resigns from the ADF. She must repay three-fifths of the retention bonus.\n\nOnce Charlotte repays the $30,000 she can amend her tax return for the income year she declared the $50,000. In her amendment she requests that her income be decreased by $30,000 for that year.\n\nEnd of example"
+    },
+    {
+      "heading": "When you repay income and can amend > Not entitled to the income",
+      "page": null,
+      "text": "You are not entitled to income if you're paid an amount due to an error or mistake.\n\nExamples of errors or mistakes include where:\n\n- the government mistakenly overpays your taxable pension, allowance or payment\n- your employer mistakenly overpays salary.\n\nIn this case the amount does not have to be repaid before amending your tax return.\n\nYour employer or payer should give you either an amended payment summary or income statement or a letter correcting the one previously issued. You should provide a copy of this with any amendment or objection request."
+    },
+    {
+      "heading": "When you repay income and can amend > Not entitled to the income > Example: not entitled to income",
+      "page": null,
+      "text": "Hannah receives a regular social security payment. When she makes an incorrect income declaration she is mistakenly overpaid $825.\n\nHannah must repay this amount as she's not entitled to the $825. Her tax return can be amended to reduce her assessable income.\n\nEnd of example\nIf your employer reports to us through Single Touch Payroll, they are no longer required to give you a payment summary. Instead, an income statement replaces your payment summary. You can access this in ATO online services through myGov."
+    }
+  ]
+}

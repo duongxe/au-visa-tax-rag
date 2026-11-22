@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-jobs-and-employment-types-working-as-an-employee-leaving-your-job-how-etp-components-are-taxed-the-whole-of-0b67dc7f",
+  "title": "The whole-of-income cap and your tax",
+  "url": "https://www.ato.gov.au/individuals-and-families/jobs-and-employment-types/working-as-an-employee/leaving-your-job/how-etp-components-are-taxed/the-whole-of-income-cap-and-your-tax",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "When the whole-of-income cap applies",
+      "page": null,
+      "text": "Your employer can tell you whether the whole-of-income cap applies to your ETP. Alternatively, if you've received an income statement or *PAYG payment summary – employment termination payment* from your employer, check the ETP code. If the code is **O** or **P,** the whole-of-income cap applies to your ETP.\n\nIf the whole-of-income cap applies to your ETP and you earn more income in the same income year you may need to pay more tax when you lodge your tax return. For example, if you get another job or earn investment income."
+    },
+    {
+      "heading": "How the whole-of-income cap works",
+      "page": null,
+      "text": "The whole-of-income cap is $180,000 minus other taxable income you earn throughout the income year. This amount is not indexed.\n\nThe taxable component of your ETP is taxed at either 17% or 32% up to your whole-of-income cap.\n\nAny amounts over the whole-of-income cap are taxed at the top marginal tax rate of 45% plus Medicare levy of 2%."
+    },
+    {
+      "heading": "How the whole-of-income cap works > Example: whole-of-income cap",
+      "page": null,
+      "text": "Percival is a 51-year-old crane operator who earns $100,000 in wages. He decides to retire from his job in December 2025. Percival's employer pays him an ETP of $8,000 for unused rostered days off.\n\nWhen working out the tax on Percival's ETP, his employer does the following:\n\n**Step 1:** Calculates his whole-of-income cap as $80,000 (that is, $180,000 minus other taxable income of $100,000 wages).\n\n**Step 2:** Calculates tax. As Percival's $8,000 ETP is less than his whole-of-income cap of $80,000, his employer taxes the whole $8,000 at 32%, which is $2,560.\n\nPercival's income statement or *PAYG payment summary – employment termination payment* will show:\n\n- the date of payment\n- taxable component of $8,000\n- tax-free component of $0\n- total tax withheld of $2,560\n- ETP code **O** indicating it is an ETP subject to the whole-of-income cap.\n\nEnd of example"
+    },
+    {
+      "heading": "How earning more income could affect your tax",
+      "page": null,
+      "text": "Your employer withholds tax from your ETP based on the taxable income they paid you before you left work. If you earn other taxable income in the same income year – for example, if you get another job – you may pay more tax on your ETP when you lodge your tax return.\n\nThis is because the other taxable income you earn will reduce your whole-of-income cap further."
+    },
+    {
+      "heading": "How earning more income could affect your tax > Example: earning more income",
+      "page": null,
+      "text": "Percival finds a new job as a crane operator in February 2026. He earns $75,000 in wages before the end of the income year.\n\nHe lodges his 2026 tax return and includes the details of his ETP using the information on his income statement or *PAYG payment summary – employment termination payment*.\n\nWe calculate Percival's whole-of-income cap using the taxable income he earned throughout the income year:\n\n- $180,000\n- minus $100,000 wages from his first job\n- minus $75,000 wages from his second job\n- equals $5,000 whole-of-income cap.\n\nThis means only $5,000 of Percival's $8,000 ETP is taxed at 32%. The remaining $3,000, which is over his whole-of-income cap, is taxed at the top tax rate. The additional tax owing on his ETP is:\n\n- $5,000 at 32% = $1,600\n- plus $3,000 at 47% = $1,410\n- minus $2,560 tax withheld by his first employer\n- equals $450.\n\nPercival will receive a notice of assessment with an additional amount of $450 tax owing.\n\nEnd of example\nYou can avoid the situation shown in this example. Before you earn other income and before the end of the income year, you can:\n\n- seek professional advice from your tax agent or financial planner (visit the Tax Practitioners Board to find a registered tax agent)\n- consider having additional tax withheld from wages from your second job to cover any increase of tax due to your ETP."
+    }
+  ]
+}

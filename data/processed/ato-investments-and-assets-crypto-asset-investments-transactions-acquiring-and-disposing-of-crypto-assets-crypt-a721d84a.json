@@ -1,0 +1,20 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-transactions-acquiring-and-disposing-of-crypto-assets-crypt-a721d84a",
+  "title": "Crypto asset transactions",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-asset-transactions",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Transactions amounting to a CGT event",
+      "page": null,
+      "text": "A CGT event happens when you dispose of your crypto asset.\n\nIf there is a CGT event, you may make either a capital gain or capital loss on the disposal of the crypto asset. If you make a capital gain, you may pay tax on it.\n\nA transaction involving a disposal takes place when you do any of the following:\n\n- sell a crypto asset\n- gift a crypto asset\n- trade, exchange or swap a crypto asset for another crypto asset\n- convert a crypto asset to Australian or foreign currency (otherwise known as 'fiat currency')\n- buy goods or services with a crypto asset.\n\nOther rules may apply depending on how you're using crypto assets for business transactions.\n\nOur crypto asset data-matching program matches what you report in your tax return with data on crypto asset transactions and accounts from designated service providers. This helps us identify the buyers and sellers of crypto assets and quantify transactions.\n\nFor a summary fact sheet about crypto assets, go to the ATO Publication Ordering Service to download Tax and crypto asset investments (NAT 75362, PDF 280KB)This link will download a file."
+    },
+    {
+      "heading": "Valuing crypto assets in Australian dollars",
+      "page": null,
+      "text": "You need to know the value of your crypto asset to determine if you make a capital gain or capital loss on the CGT event happening.\n\nTo work out the value of your crypto assets when you acquire or dispose of them you will need to convert their value to Australian dollars. From 1 January 2020, the ATO has used the exchange rates from the Reserve Bank of Australia. If you need daily foreign exchange rates, refer to Reserve Bank of Australia – Exchange rates. If you use a foreign exchange rate for currency not listed, you may use any reasonable externally sourced exchange rate for that currency. For more information go to Foreign exchange rates.\n\nYou will need to keep crypto asset transaction records. You can then work out your CGT using our online calculator and record keeping tool."
+    }
+  ]
+}

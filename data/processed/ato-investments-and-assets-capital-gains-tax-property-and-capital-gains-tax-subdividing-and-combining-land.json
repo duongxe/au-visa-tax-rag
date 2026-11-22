@@ -1,0 +1,55 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-property-and-capital-gains-tax-subdividing-and-combining-land",
+  "title": "Subdividing and combining land",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/property-and-capital-gains-tax/subdividing-and-combining-land",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Subdividing land",
+      "page": null,
+      "text": "If you subdivide a block of land, it becomes 2 or more separate assets for capital gains tax (CGT) purposes.\n\nYou make a capital gain or loss when you sell the subdivided blocks.\n\nFor CGT purposes, the date you acquired the subdivided blocks is the same as the date you acquired the original land.\n\nThe cost base of the original land is divided between the subdivided blocks on a reasonable basis. Taxation determination TD 97/3 explains what is considered 'a reasonable basis'."
+    },
+    {
+      "heading": "Subdividing land > Example: land purchased before 20 September 1985 and later subdivided",
+      "page": null,
+      "text": "In 1983, Mike bought a block of land.\n\n- In May 2025, he subdivided the land into 2 blocks and began building a house on the rear block.\n- The house cost $270,000 to build.\n- He sold the rear block, including the house, in October 2025 for $500,000.\n- Mike got a valuation from a qualified valuer, who valued the rear block at $200,000 and the house at $300,000.\n\nMike acquired the rear block before 20 September 1985 so it isn't subject to CGT.\n\nAs the new house was built after 20 September 1985 on land purchased before that date, the house is treated as a separate asset from the land.\n\nMike made a capital gain of $30,000 ($300,000 − $270,000) when he sold the house.\n\nEnd of example"
+    },
+    {
+      "heading": "Subdividing land > Subdividing your main residence",
+      "page": null,
+      "text": "If you subdivide your main residence and sell the vacant land (that doesn't contain the dwelling), you are not eligible for the main residence exemption (MRE) for the vacant land sold. You may be eligible for the MRE when you sell the block containing the dwelling, if it was used as your main residence for the whole time you owned it."
+    },
+    {
+      "heading": "Subdividing land > Subdividing your main residence > Example: property purchased after 20 September 1985 and land later subdivided",
+      "page": null,
+      "text": "Kym bought a house on a 0.2 hectare block of land in June 2025 for $700,000.\n\n- The house was valued at $240,000 and the land at $460,000.\n- She incurred $24,000 in stamp duty and legal fees purchasing the property.\n- Kym lived in the house as her main residence.\n\nIn January 2026, Kym subdivided the land into 2 blocks of equal size.\n\n- She incurred costs of $20,000 in survey, legal and subdivision application fees, and $2,000 to connect water and drainage to the rear block.\n- In March 2026, she sold the rear block for $260,000 and incurred $6,000 legal fees on the sale.\n\nAs Kym sold the rear block of land separately, the main residence exemption doesn't apply to that land.\n\n- She contacted several local real estate agents who advised her that the value of the front block was $30,000 higher than the rear block.\n- Kym apportioned the $460,000 original cost base into $215,000 for the rear block (46.7%) and $245,000 for the front block (53.3%).\n\nKym works out the cost base of the rear block as follows:\n\n1. cost of land is $215,000\n2. stamp duty and legal fees on the purchase is 46.7% × $24,000 = $11,208\n3. survey, legal and application fees is 46.7% × $20,000 = $9,340\n4. cost of connecting water and drainage is $2,000\n5. legal fees on sale is $6,000\n6. total is $243,548.\n\nThe capital gain on the sale of the rear block was $16,452 (sale price of $260,000 subtract the cost base of $243,548).\n\nKym will get a full exemption for her house and the front block if she uses them as her main residence for the whole time she owns them.\n\nEnd of example"
+    },
+    {
+      "heading": "Subdividing land > If you buy and subdivide for profit",
+      "page": null,
+      "text": "If you buy and subdivide land with the intention of making a profit, it may be considered a business-like or commercial activity.\n\nIn this case, the profit is ordinary income and is included in your assessable income. You reduce any capital gain from the land by the amount otherwise included in your assessable income.\n\nTaxation Ruling TR 92/3 explains the situations where profits on isolated transactions are treated as income."
+    },
+    {
+      "heading": "Subdividing land > If you subdivided and sell the new subdivision as vacant land",
+      "page": null,
+      "text": "You are not eligible for the MRE if you subdivide a block and sell as vacant land."
+    },
+    {
+      "heading": "Subdividing land > Subdividing and GST",
+      "page": null,
+      "text": "When you subdivide land that could be used to build new residential property (potential residential land), you need to consider if you have goods and services tax (GST) obligations. You need to determine if:\n\n- you are running an enterprise – even a one-off property sale could mean you have a GST obligation depending on your turnover\n- GST at settlement applies to the land sale.\n\nFor more information, see Property and registering for GST."
+    },
+    {
+      "heading": "Combining land titles",
+      "page": null,
+      "text": "Amalgamating the titles of 2 or more blocks of land that you own is not a CGT event so there is no capital gain or loss.\n\nIf you acquired land before 20 September 1985, it retains its pre-CGT status even if you merge it with land that you acquired on or after that date."
+    },
+    {
+      "heading": "Combining land titles > Example: combining land titles",
+      "page": null,
+      "text": "Wang Cheng bought a block of land on 1 April 1984. On 1 June 2008, he bought another block adjacent to the first one.\n\nWang Cheng merged the titles to the 2 blocks into one title.\n\nThe 2 blocks are treated as separate assets. The first block continues to be exempt from CGT.\n\nEnd of example"
+    }
+  ]
+}

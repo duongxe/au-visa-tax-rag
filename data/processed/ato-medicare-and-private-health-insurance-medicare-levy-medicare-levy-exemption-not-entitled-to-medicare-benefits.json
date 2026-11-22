@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-medicare-and-private-health-insurance-medicare-levy-medicare-levy-exemption-not-entitled-to-medicare-benefits",
+  "title": "Not entitled to Medicare benefits",
+  "url": "https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy/medicare-levy-exemption/not-entitled-to-medicare-benefits",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Claiming an exemption",
+      "page": null,
+      "text": "You can claim a full exemption for any period that you:\n\n- have a Medicare Entitlement Statement (MES) showing you weren't entitled to Medicare benefits because you were a temporary resident for Medicare purposes, and either\n\n- you didn't have any dependants for that period\n- all your dependants (including your spouse) were also in a Medicare levy exemption category for that period\n- are a member of a diplomatic mission or consular post in Australia and meet other conditions.\n\nIf you qualify for an exemption, you claim the exemption through your tax return. This exemption is known as exemption category 3 on your tax return when you complete the Medicare levy section."
+    },
+    {
+      "heading": "Medicare Entitlement Statement",
+      "page": null,
+      "text": "A Medicare Entitlement Statement (MES) from Services Australia shows the period in an income year that you were not entitled to Medicare benefits. If you have an MES, it doesn't automatically mean you are exempt from the Medicare levy. All your dependants, including your spouse, must also be exempt from Medicare benefits to receive a Medicare levy exemption."
+    },
+    {
+      "heading": "Medicare Entitlement Statement > Applying for an MES and lodging your tax return",
+      "page": null,
+      "text": "1. **Apply**: There are 2 ways to apply for a MES online using your myGov account. MES applications open on 1 July. Remember to apply as soon as possible so you can lodge your tax return correctly and on time.\n2. **Wait**: It can take up to 8 weeks for your MES application to be processed by Services Australia. You must wait until you receive your MES before lodging your tax return.\n3. **Lodge**: When completing your tax return, you need to complete the exemption category for Medicare benefit (see example below). We'll work out if you are exempt from paying the Medicare levy when we assess your tax return."
+    },
+    {
+      "heading": "Medicare Entitlement Statement > Applying for an MES and lodging your tax return > Example: don't have to pay the Medicare levy",
+      "page": null,
+      "text": "In 2025–26, Priya was on a Temporary Skill Shortage visa (subclass 482) and had no dependants. Priya wasn't entitled to Medicare benefits and wants to claim an exemption from paying the Medicare levy.\n\nPriya needs a Medicare Entitlement Statement (MES) to show she wasn't entitled to Medicare benefits in 2025–26 before completing her 2025–26 tax return.\n\nPriya applies to Services Australia for a MES. It takes up to 8 weeks to receive the MES from Services Australia.\n\nPriya receives the MES stating she was not entitled to Medicare benefits for the full year, from 1 July 2025 to 30 June 2026. Priya keeps a copy of the MES for her records.\n\nPriya can claim a full Medicare levy exemption for the full year as she has a MES for the period 1 July 2025 to 30 June 2026 and she doesn't have any dependants.\n\nIf Priya completes her tax return using myTax, she enters '365' as the number of days she qualified for the Full 2% levy exemption and answers 'Yes' to the question 'Were you a temporary resident for Medicare purposes and have a Medicare entitlement statement from Services Australia?'"
+    },
+    {
+      "heading": "Medicare Entitlement Statement > Applying for an MES and lodging your tax return > Example: have to pay the Medicare levy",
+      "page": null,
+      "text": "In 2025–26, Jed was on a Temporary Skill Shortage visa (subclass 482) and had a spouse for the full year. Jed wasn't entitled to Medicare benefits and wants to claim an exemption from paying the Medicare levy. Jed's spouse was entitled to Medicare benefits in 2025–26.\n\nJed applied and received a Medicare Entitlement Statement (MES) showing he wasn't entitled to Medicare benefits for the full year, from 1 July 2025 to 30 June 2026.\n\nEven though Jed has a MES and wasn't entitled to Medicare benefits, Jed can't claim the exemption. This is because his spouse was entitled to Medicare benefits and therefore is not in a Medicare levy exemption category.\n\nEnd of example"
+    },
+    {
+      "heading": "Member of a diplomatic mission or consular post in Australia",
+      "page": null,
+      "text": "You don't have to pay the Medicare levy if you're a member of a diplomatic mission or consular post in Australia (or a member of such a person's family and you were living with them) and:\n\n- were not an Australian citizen, and\n- do not ordinarily live in Australia, and either\n\n- you didn't have any dependants for that period\n- all your dependants (including your spouse) were in a Medicare levy exemption category for that period."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-medicare-and-private-health-insurance-private-health-insurance-rebate-overseas-visitors-private-health-insu-de61d96f",
+  "title": "Overseas visitors – private health insurance on your tax return",
+  "url": "https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/private-health-insurance-rebate/overseas-visitors-private-health-insurance-on-your-tax-return",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Completing private health insurance details on your tax return",
+      "page": null,
+      "text": "Use this information to help you complete the Private health insurance policy details section and the Medicare levy surcharge section in your tax return.\n\nFor help on how to complete the Private health insurance policy details section and the Medicare levy surcharge section in your tax return in **myTax**, see Overseas visitors.\n\nIf you have a health insurance policy, see the table below. Depending on the type of policy you have, and your eligibility for Medicare, it shows if you:\n\n- are eligible for the private health insurance rebate\n- need to complete the private health insurance details on your tax return.\n\n| Guide for overseas visitors by health insurance policy type | | |\n|---|---|---|\n| Policy type | Eligible for private health insurance rebate | Complete private health insurance details |\n|---|---|---|\n| Policy from overseas health insurer | No | No |\n| Complying health insurance policy from Australian-registered health insurer (If you are eligible for Medicare) | Yes | Yes |\n| Complying health insurance policy from Australian-registered health insurer (If you are not eligible for Medicare) | No | No |\n| OSHC or OVHC from Australian-registered health insurer | No | No |\n\nFor further instructions to help complete a paper tax return, see Individual tax return instructions – M2 Medicare levy surcharge."
+    },
+    {
+      "heading": "If you have an overseas health insurer",
+      "page": null,
+      "text": "If your private health insurance provider is an overseas provider that is not registered in Australia, you:\n\n- will not be eligible for any rebate on your policy\n- you may need to pay the Medicare levy surcharge if you don't meet the conditions for a Medicare levy exemption.\n\nIn this case, when completing your tax return (paper tax return), you should:\n\n- answer **No** at label **E** question **M2** Medicare levy surcharge\n- work out the number of days you do not have to pay the Medicare levy surcharge (if you qualify for a Medicare levy exemption you will also be exempt from paying the Medicare levy surcharge) and complete label **A** question **M2** Medicare levy surcharge as per the Individual tax return instructions\n- **not** complete the private health insurance policy details section.\n\nFor myTax instructions, see myTax 2026 Private health insurance – Overseas visitors."
+    },
+    {
+      "heading": "If you have a complying health insurance policy",
+      "page": null,
+      "text": "You will need to determine if you are eligible for Medicare, if you are **not** eligible see – If you are not eligible for Medicare.\n\nYour health insurance policy is complying if it:\n\n- is provided by a registered health insurer,\n- provides hospital cover, or general cover (also known as ‘extras’), or combined hospital and general cover\n- meets other complying private health insurance policy requirements.\n\nIf you **are** eligible for Medicare, you can ask for a private health insurance statement from your insurance provider if:\n\n- you have an Australian-registered complying health insurance policy\n- you are a private health insurance incentive beneficiary (PHIIB).\n\nWhen completing your tax return (paper tax return), if you and all of your dependents were covered under a complying health insurance policy for the full year with the appropriate level of private patient hospital cover, you should:\n\n- answer **Yes** at label **E** question **M2** Medicare levy surcharge (see the *Individual tax return instructions* when completing the other parts of question **M2**)\n- complete the private health insurance policy details section."
+    },
+    {
+      "heading": "If you are not eligible for Medicare",
+      "page": null,
+      "text": "If you are an overseas visitor who is **not** eligible for Medicare, you are **not** entitled to any private health insurance rebate.\n\nHowever, you can still purchase a complying health insurance policy with an Australian-registered health insurer. If you purchase a complying health insurance policy your private health insurance information may be pre-filled in myTax.\n\nThe pre-filled private health insurance details need to be deleted before you lodge your return.\n\nWhen completing your **tax return online**, you must:\n\nAt **Medicare levy surcharge**\n\n1. Answer **No** to the question **Were you and all your dependants covered by an appropriate level of patient hospital cover?**\n2. Indicate the **Number of days you don’t have to pay the surcharge** (this will usually be 365).\n\nAt **Private health insurance**\n\n1. Delete all **Private health insurance policies** by clicking delete in the bottom left-hand side of the screen. Your private health insurance should be blank.\n\nWhen completing a **paper tax return**, you must:\n\n- answer ‘**N**’ for No at label **E** question **M2** Medicare levy surcharge\n- write the number of days you do not have to pay the surcharge – at label ‘**A**’ (this is usually 365)\n- **do not** complete the private health insurance policy details section."
+    },
+    {
+      "heading": "Overseas student or overseas visitors health cover",
+      "page": null,
+      "text": "If you are an overseas visitor, you can purchase Overseas student health cover (OSHC) or Overseas visitors health cover (OVHC) from an Australian-registered health insurer. These are not complying health insurance policies, and you will not be eligible for the private health insurance rebate.\n\nWhen completing your tax return (paper tax return) as an overseas visitor with OSHC or OVHC:\n\n- answer **No** at label **E** question **M2** Medicare levy surcharge\n- work out the number of days you are eligible for exemption from the Medicare levy surcharge and complete label **A** question **M2** Medicare levy surcharge as per the Individual tax return instructions\n- do **not** complete the private health insurance policy details section."
+    }
+  ]
+}

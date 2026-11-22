@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-self-managed-super-funds-smsf-paying-smsf-benefits-payg-withholding-obli-f071c855",
+  "title": "PAYG withholding obligations when paying super benefits",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/paying-smsf-benefits/payg-withholding-obligations-when-paying-super-benefits",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "When you have PAYG withholding obligations",
+      "page": null,
+      "text": "As trustee of a self-managed super fund (SMSF), you have pay as you go (PAYG) withholding obligations for superannuation benefit payments to members who are:\n\n- under 60 years old and the benefit is an income stream (pension) or a lump sum\n- under 60 years old and the benefit is both\n\n- a death benefit for a person who was 60 years or older when they died\n- a capped defined benefit income stream\n- 60 years old or over and the benefit is a pension which is a capped defined benefit income stream.\n\nYou also have obligations to withhold tax from super benefits you pay to a non-dependant in the event of another person's death."
+    },
+    {
+      "heading": "When tax is not withheld",
+      "page": null,
+      "text": "Tax is not withheld if the member:\n\n- is 60 years old or over and the benefit is from an income stream (pension) that is **not** a capped defined benefit income stream\n- has died and the benefit is paid to a dependent beneficiary as a lump sum\n- has died and the benefit is paid to a dependent beneficiary as an income stream that is **not** a capped defined benefit income stream and either the dependant or member were 60 years old or over\n- has a terminal medical condition."
+    },
+    {
+      "heading": "What you need to do to meet withholding tax obligations",
+      "page": null,
+      "text": "If you have obligations to withhold tax, you need to:\n\n1. Register for PAYG withholding.\n2. Obtain a tax file number (TFN) declaration from the member.\n3. If a TFN has not been provided before payment has been made, withhold tax at the top marginal tax rate from the taxable component. This rate will be different for residents and non-residents.\n4. If a TFN has been provided, calculate the rate of withholding that applies using Schedule 13 – Tax table for superannuation income streams.\n5. Pay withheld amounts to us.\n6. Issue one of the following PAYG payment summaries to the recipient of the benefit, even if the amount you needed to withhold from the income stream was zero\n7. Provide the payee with their copy of the PAYG payment summary\n\n- within 14 days of making a lump sum payment\n- by 14 July following the end of the financial year you made income stream payments to them\n- within 14 days of receiving the member request, if the payee requests a payment summary from you in writing before 9 June.\n8. Lodge a PAYG withholding payment summary statement with us\n\n- by 14 August following the end of the financial year in which the payment was made\n- even if the amount you withheld from the income stream was zero.\n9. Lodge a PAYG withholding payment summary annual report at the end of each financial year, which is made up of the\n\n- PAYG withholding payment summary statement\n- ATO copy of the payment summaries you have issued.\n\nTo make it easier for members to have their tax information pre-filled by us, lodge the PAYG summary statement and the PAYG withholding payment summary annual report promptly."
+    },
+    {
+      "heading": "Provide information to the recipient of the benefit",
+      "page": null,
+      "text": "Provide the recipient of the super benefit with a PAYG payment summary detailing each income stream or lump sum payment.\n\nThe recipients are those where the:\n\n- super lump sum is paid to either\n\n- a member who was under 60 years old\n- a non-dependant in the event of another person's death\n- the trustee of a deceased estate\n- super income stream is either\n\n- paid to the member up until they turn 60 years old\n- a capped defined benefit income stream you pay a member after they turn 60 years old\n- a death benefit capped defined benefit income stream where the recipient is under 60 years and the deceased was aged 60 years old or over at the time of death. The payment summary will need to show that this is a death benefit (reversionary income stream).\n\nEach pension payment summary must include details of the payment, including the:\n\n- tax-free component\n- taxable component\n- tax offset (if applicable)\n- tax withheld (if applicable).\n\nPayment summaries should be issued in the situations listed above even if no tax has been withheld. You must provide separate payment summaries for lump sums and income streams, even if they are paid to the same person."
+    },
+    {
+      "heading": "Capped defined benefit income streams",
+      "page": null,
+      "text": "If the member is receiving a capped defined benefit income stream, the member's defined benefit income cap may need to be taken into consideration when working out the member's withholding.\n\nCapped defined benefit income streams include life expectancy and market-linked pensions that were payable before 1 July 2017 and reversionary income streams paid to beneficiaries.\n\nYou can use the defined benefit income cap tool to work out:\n\n- if the defined benefit income cap applies to your member\n- the assessable amount, which is what you calculate the member's withholding on\n- any tax offset they may be eligible for.\n\nFor more information on calculating the withholding steps (including examples), see Part B of Schedule 13- Tax table for superannuation income streams."
+    }
+  ]
+}

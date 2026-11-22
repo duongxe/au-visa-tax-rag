@@ -1,0 +1,15 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-self-managed-super-funds-smsf-smsf-newsroom-what-you-need-to-know-about--223df949",
+  "title": "What you need to know about the member verification request",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-newsroom/what-you-need-to-know-about-the-member-verification-request",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "page": null,
+      "text": "The MVR is a key part of the SuperStream upgrades to support faster payments, clearer error messaging and higher contribution volumes.\n\nThe MVR allows an employer, through their payroll or clearing house, to check whether a fund can accept a contribution before the first payment is made. The MVR confirms employee and fund details match to an active account and that the fund can receive a contribution.\n\nThis change is particularly important for your self-managed super fund (SMSF) if you receive contributions from unrelated employers.\n\nFrom 1 July, your SMSF must be able to respond to an MVR within 24 hours.\n\nMake sure:\n\n- your electronic service address (ESA) is active and correctly maintained\n- fund and member details are up to date\n- your messaging provider or administrator is ready for SuperStream changes.\n\nIf your SMSF cannot be verified through an MVR, the employer will receive an error and may be unable to make the contribution. This can delay payments and may expose employers to compliance issues. In some cases, employers may choose to pay super to a default fund to avoid potential penalties.\n\nWith Payday Super, issues need to be resolved earlier and quicker. Checking that your SMSF is ready to respond to MVRs now will help ensure contributions can be received smoothly.\n\nVisit SuperStream changes for more information.\n\n**Stay up to date** by visiting our SMSF newsroom and subscribing to our monthly newsletter."
+    }
+  ]
+}

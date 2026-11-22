@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-self-managed-super-funds-smsf-smsf-newsroom-superstream-contributions-v3-212fbddd",
+  "title": "SuperStream Contributions v3.0: is your SMSF ready?",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-newsroom/superstream-contributions-v3-is-your-smsf-ready",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "page": null,
+      "text": "Our data and payment system, SuperStream Contributions v3.0 upgrades are central to supporting Payday Super. While the upgrades are technical in nature, they go beyond a system upgrade and will change how your self-managed super fund (SMSF) receives and processes contributions from unrelated employers."
+    },
+    {
+      "heading": "Key changes > Clearer, validated error messaging",
+      "page": null,
+      "text": "Error handling is a key focus area of the upgrade. Systems will need to generate structured, consistent and actionable error messages, and validate them before sending.\n\nThis means:\n\n- errors should be picked up earlier\n- incorrect or incomplete information is more likely to be rejected straight away\n- employers and administrators can fix issues faster.\n\nGateway providers require correctly formed messages, increasing the reliance on accurate error messages from your SMSF to resolve issues quickly."
+    },
+    {
+      "heading": "Key changes > Member verification request (MVR)",
+      "page": null,
+      "text": "MVR is a new service that allows employers to check whether a fund, including your SMSF, can accept a contribution before the first payment is made.\n\nFrom 1 July 2026 you need to respond to MVRs within 24 hours. Your administrator or software provider will usually manage this on your behalf."
+    },
+    {
+      "heading": "Key changes > Near real-time payments through the New Payments Platform (NPP)",
+      "page": null,
+      "text": "The NPP allows near real-time payments between participating financial institutions 24 hours a day. Payments can carry more information than traditional transfers, making it easier to identify and reconcile transactions.\n\nYour SMSF must be capable of receiving employer contributions through the NPP from 1 July 2026. You can engage with your bank, administrator and gateway to test NPP payments."
+    },
+    {
+      "heading": "Key changes > Fund validation service changes",
+      "page": null,
+      "text": "Updates to the Fund Validation Service also support faster processing and fewer errors. A new version will replace the current service from 1 July 2026.\n\nFunds that don’t adopt the updated service will increase the risk of errors."
+    },
+    {
+      "heading": "Key changes > Act now",
+      "page": null,
+      "text": "Implementing SuperStream v3.0 is a core part of Payday Super, and preparation matters. Act now to help your SMSF make a smooth transition.\n\nVisit SuperStream changes for more information.\n\n**Stay up to date** by visiting our SMSF newsroom and subscribing to our monthly newsletter."
+    }
+  ]
+}

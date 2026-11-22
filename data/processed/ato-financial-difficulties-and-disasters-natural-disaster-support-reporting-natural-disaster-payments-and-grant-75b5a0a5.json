@@ -1,0 +1,75 @@
+{
+  "doc_id": "ato-financial-difficulties-and-disasters-natural-disaster-support-reporting-natural-disaster-payments-and-grant-75b5a0a5",
+  "title": "Reporting natural disaster payments and grants in your tax return",
+  "url": "https://www.ato.gov.au/individuals-and-families/financial-difficulties-and-disasters/natural-disaster-support/reporting-natural-disaster-payments-and-grants-in-your-tax-return",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Disaster relief payments",
+      "page": null,
+      "text": "If you've been affected by a natural disaster, you may receive a relief payment from:\n\n- a local, state or federal government agency\n- a charity or community group\n- your employer\n- family or friends.\n\nOne-off assistance payments are generally taxable, however some may be tax-free. You may still need to report the tax-free payments in your tax return.\n\nSome payments are **non-assessable non-exempt (NANE) income**, which means you don't need to include it in your tax return.\n\nIf you use an assistance payment to purchase items for your business, you may be able to claim a tax deduction.\n\nFor more information, see Disaster support grants and deductions for business."
+    },
+    {
+      "heading": "Government disaster recovery payments",
+      "page": null,
+      "text": "You may need to report and pay tax on government grants, payments and stimulus that you receive from federal, state or territory, or local governments, including:\n\n- Australian Government Disaster Recovery Payment\n- Disaster Recovery Allowance and Natural Disaster Relief and Recovery Arrangements\n- New Zealand Ex-gratia recovery payments."
+    },
+    {
+      "heading": "Government disaster recovery payments > Australian Government Disaster Recovery Payment",
+      "page": null,
+      "text": "If you receive an Australian Government Disaster Recovery Payment (DRP), it will be treated as exempt income. This means you don't have to report it in your tax return.\n\nHowever, if you have carried forward losses from an earlier income year, you will need to reduce your carried-forward loss by the amount of the DRP you received."
+    },
+    {
+      "heading": "Government disaster recovery payments > Disaster Recovery Allowance and Natural Disaster Relief and Recovery Arrangements",
+      "page": null,
+      "text": "Service Australia may provide you with one of the following short-term allowances to support you if you lose income as a direct result of a natural disaster:\n\n- Disaster Recovery Allowance (DRA) and DRA top-up\n- Natural Disaster Relief and Recovery Arrangements (NDRRA)\n- New Zealand Disaster Recovery Allowance (NZDRA) and NZDRA Top-up – payments to support eligible New Zealand citizens residing in Australia who've lost income as a direct result of a natural disaster.\n\nThese payments are taxable and you need to report these in your tax return.\n\nThe government may declare that, for some natural disasters, DRA and NDRRA payments are exempt income. This means you don't have to report it in your tax return.\n\nHowever, if you have carried forward losses from an earlier income year, you will need to reduce your carried-forward loss by the amount of exempt income you received.\n\nServices Australia has more information about help for people affected by a natural disaster event."
+    },
+    {
+      "heading": "Government disaster recovery payments > Disaster Recovery Allowance and Natural Disaster Relief and Recovery Arrangements > Reporting disaster recovery allowances in your tax return",
+      "page": null,
+      "text": "Services Australia will report payments from the DRA and NDRRA on your annual payment summary. When completing your tax return, enter the payment amounts you received at:\n\n- **Australian Government allowances and payments** if you lodge online using myTax\n- **Question 5 – Australian Government allowances and payments** if you lodge by paper\n- **Question 5A – Australian Government allowances and payments** if you're a registered tax professional.\n\nThe DRA Top-up, NZDRA and NZDRA Top-up **will not** show on your annual payment summary or be pre-filled in your tax return. You need to **manually include** these payments in your tax return. When completing your income tax return, enter the payment amounts you received at:\n\n- **Australian Government special payments** if you lodge online using myTax\n- **Question 24 – Other income** if you lodge by paper\n- **Question 24V** if you’re a registered tax professional. Alternatively, add the **Income Details schedule** at field **Australian government benefit taxable amount** (INCDTLS128), with field **Australian government benefit type** (INCDTLS126) set to **Special**.\n\nFor more information on how to check the amount of payments you received, go to the Services Australia's page regarding payments that don't show on your Centrelink payment summary.\n\nIf you received the Disaster Recovery Allowance, you may be eligible to receive the beneficiary tax offset. This may reduce the amount of tax you pay."
+    },
+    {
+      "heading": "Government disaster recovery payments > New Zealand Ex-gratia recovery payments",
+      "page": null,
+      "text": "The New Zealand ex-gratia Disaster Recovery Payment (PDF, 243KB) provides a one-off financial assistance payment to eligible New Zealand citizens residing in Australia who hold a 'non-protected' Special Category (subclass 444) visa who have been adversely affected by a major disaster.\n\nThe tax treatment of ex-gratia recovery payments (ex-gratia payments are made by favour and not because of legal obligation) depends on the specific circumstances of the payments. In some recent cases, the government has decided to exempt such payments from tax. The government decides on the tax status of each particular type of payment.\n\nServices Australia will send you a letter confirming the amount of New Zealand ex-gratia Disaster Recovery Payment you received."
+    },
+    {
+      "heading": "Bushfire relief recovery payments",
+      "page": null,
+      "text": "Any bushfire relief recovery or benefits are NANE income if they are provided by any level of government, including:\n\n- Australian Government\n- state\n- territory\n- municipal corporation\n- local governing body."
+    },
+    {
+      "heading": "Payments to volunteer firefighters",
+      "page": null,
+      "text": "You are not required to pay tax on government support payments you received as a volunteer firefighter.\n\nYou don't need to include these payments in your tax return."
+    },
+    {
+      "heading": "Centrelink payments",
+      "page": null,
+      "text": "Regular Centrelink payments remain taxable, unless exempted by the government."
+    },
+    {
+      "heading": "State and territory government assistance grants",
+      "page": null,
+      "text": "State and territory grants may be activated for certain localised events. To find out more information, refer to your state or territory government websites."
+    },
+    {
+      "heading": "Assistance from charities and community groups",
+      "page": null,
+      "text": "If you receive assistance from a charitable organisation, the payment you receive is **not taxable**. These payments have no GST implications.\n\nThese payments are not taxable because:\n\n- the organisations make these payments voluntarily to help you with the basic necessities of life\n- you have no right or entitlement to the payment\n- the payment is a gift to you from the organisation."
+    },
+    {
+      "heading": "Assistance from your employer",
+      "page": null,
+      "text": "Emergency assistance from your employer − for example, one-off emergency relief payments where nothing is expected in return − is not taxable. These payments don't have to be included in your tax return.\n\nAn employer:\n\n- is not required to withhold tax from a payment that is not taxable\n- that gives emergency assistance to an employee can claim it as a tax deduction as a business expense."
+    },
+    {
+      "heading": "Gifts from family or friends",
+      "page": null,
+      "text": "If you receive emergency help in the form of gifts from family and friends, you don't need to report it in your tax return."
+    }
+  ]
+}

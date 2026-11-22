@@ -1,0 +1,30 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-calculating-your-cgt-indexing-the-cost-base",
+  "title": "Indexing the cost base",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/indexing-the-cost-base",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "How indexation works",
+      "page": null,
+      "text": "The indexation method adjusts the amount of an asset's costs by the rate of inflation. The adjustment is based on the consumer price index (CPI).\n\nThe increased cost amounts will reduce your capital gain on the asset.\n\nHowever, you:\n\n- must have incurred the costs by 21 September 1999\n- can index for inflation only up to 30 September 1999\n- can't index the third element of the cost base (costs of owning the asset)."
+    },
+    {
+      "heading": "When to use indexation",
+      "page": null,
+      "text": "If your asset is eligible for indexation, it is probably also eligible for the 50% CGT discount for individuals.\n\nYou can use whichever of these methods gives you the best result (the lowest capital gain), but not both.\n\nIn most cases the discount will give you the best result. Indexation may give you a better result in some situations, for example if you also have capital losses. The Guide to capital gains tax has information on choosing the indexation or discount method.\n\nCompanies can't use the CGT discount. They should use indexation for assets acquired before 21 September 1999.\n\nIf you have had a capital loss on an asset, you can't use indexation."
+    },
+    {
+      "heading": "How to apply indexation",
+      "page": null,
+      "text": "You can use the CGT calculator to work out your capital gain. It will automatically apply the method (indexation or discount) that gives you the best result.\n\nUse the Capital gains tax calculator\nIf you prefer to index your asset cost base yourself, follow these steps.\n\n**Step 1: Identify your eligible capital costs**\n\n- The costs must be incurred no later than 21 September 1999.\n- Costs of owning the asset (the third element of the cost base) can't be indexed.\n\n**Step 2: For each eligible cost, identify the CPI rate for the quarter in which the cost was incurred**\n\n- Use the CPI quarter-ending rates table to find the applicable rate.\n- If there is a call on partly paid shares or units you acquired after 15 August 1989, you index the full cost of buying them from the date you made the later payment.\n\n**Step 3: Calculate the indexation factor for the cost**\n\n- Divide 68.7 (the CPI for 30 September 1999) by the CPI from step 2.\n- Limit the indexation factor to 3 decimal places. If the fourth decimal figure is 5 or higher, round it up (for example, 1.4125 would become 1.413).\n\n**Step 4: Multiply the cost by the indexation factor**\n\n**Step 5: Total your indexed eligible costs and any non-indexed capital costs**\n\n- This is your indexed cost base for the asset.\n\n**Step 6: Subtract the indexed cost base from your capital proceeds for the asset**\n\n- This is your capital gain for the asset.\n- Remember, if you index the cost base you can't apply the CGT discount."
+    },
+    {
+      "heading": "How to apply indexation > Example: indexing the cost base",
+      "page": null,
+      "text": "Val bought an investment property for $150,000 under a contract dated 24 June 1991. She paid:\n\n- a deposit of $15,000 on 24 June 1991\n- the balance of $135,000 on settlement on 5 August 1991\n- stamp duty of $5,000 on 20 July 1991\n- solicitor's fees of $2,000 on 5 August 1991 as part of settlement.\n\nVal sold the property on 15 October 2025 (the day contracts were exchanged) for $600,000. She incurred costs of:\n\n- $1,500 in solicitor’s fees\n- $15,000 in agent’s commission.\n\nUsing the steps above, Val works out her cost base as follows.\n\n1. The costs of buying the property are eligible for indexation. They were incurred prior to 21 September 1999.\n2. The CPI rates for the quarters in which Val incurred her eligible costs are:\n\n- deposit and balance: CPI for June 1991 quarter = 59.0\n- stamp duty and solicitor's fees: CPI for September 1991 quarter = 59.3\n\nAlthough the balance was paid in the September quarter, it is indexed from the date of contract, which was in the June quarter.\n\n1. The indexation factors are:\n\n- for the June 1991 quarter: 68.7 ÷ 59.0 = 1.164\n- for the September 1991 quarter: 68.7 ÷ 59.3 = 1.159\n2. The indexed costs are:\n\nDeposit × indexation factor\n\n$15,000 × 1.164 = $17,460\n\nBalance × indexation factor\n\n$135,000 × 1.164 = $157,140\n\nStamp duty × indexation factor\n\n$5,000 × 1.159 = $5,795\n\nSolicitors’ fees for purchase of property × indexation factor\n\n$2,000 × 1.159 = $2,318\n\n1. Val's total cost base is $199,213, made up of:\n\n- indexed costs $17,460 + $157,140 + $5,795 + $2,318 = $182,713\n- $1,500 solicitor’s fees for sale of property (not eligible for indexation)\n- $15,000 agent’s commission for sale of property (not eligible for indexation)\n2. Using indexation, Val's capital gain for the asset is:\n\nCapital proceeds − cost base (indexed) = capital gain\n\n$600,000 − $199,213 = $400,787\n\nVal is eligible to use the CGT discount instead of indexation. Unless she has significant capital losses to apply, she will get a better result by using the CGT discount to calculate CGT.\n\nEnd of example\nFor more information on how to calculate your CGT, see Calculating your CGT."
+    }
+  ]
+}

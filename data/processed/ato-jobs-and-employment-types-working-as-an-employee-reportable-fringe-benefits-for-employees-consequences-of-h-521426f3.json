@@ -1,0 +1,30 @@
+{
+  "doc_id": "ato-jobs-and-employment-types-working-as-an-employee-reportable-fringe-benefits-for-employees-consequences-of-h-521426f3",
+  "title": "Consequences of having a reportable fringe benefits amount",
+  "url": "https://www.ato.gov.au/individuals-and-families/jobs-and-employment-types/working-as-an-employee/reportable-fringe-benefits-for-employees/consequences-of-having-a-reportable-fringe-benefits-amount",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "How the reportable fringe benefits amount is used",
+      "page": null,
+      "text": "Your reportable fringe benefits amount (RFBA) is the 'grossed up' value of fringe benefits you received from your employer (or employers).\n\nYou aren't taxed on your RFBA. However, it's used to determine:\n\n- your liability for the Medicare levy surcharge\n- your child's adjusted taxable income, which affects whether they are considered a dependant for Medicare levy purposes\n- your entitlement to the private health insurance rebate\n- whether you're liable for Division 293 tax for superannuation contributions\n- your eligibility for the government co-contribution for personal super co-contributions you made\n- your eligibility for the low-income super tax offset for concessional (before tax) super contributions that you or your employer pay into your super fund\n- whether you can offset your business loss against other income (non-commercial losses)\n- if you're entitled to reduce your employee share scheme discount\n- the amount you must repay against your debt for\n\n- Higher Education Loan Program (HELP)\n- VET Student Loans (VSL)\n- Student Financial Supplement Scheme (SFSS)\n- Student Start-up Loan (SSL)\n- ABSTUDY Student Start-up Loan (ABSTUDY SSL)\n- Australian Apprenticeship Support Loans (AASL)\n- your entitlement to a tax offset for\n\n- contributions you made to your spouse's super\n- invalid and invalid carer\n- zone or overseas forces\n- Medicare levy surcharge (lump sum payment in arrears)\n- seniors and pensioners\n- your eligibility for family assistance payments, including\n\n- Family Tax Benefit Part A and Part B\n- Child Care Subsidy (from 2 July 2018)\n- Parental Leave Pay\n- Dad and Partner Pay (prior to 30 June 2024)\n- your child support obligations."
+    },
+    {
+      "heading": "How the reportable fringe benefits amount is used > Example: RFBA used to work out the amount of HELP to repay",
+      "page": null,
+      "text": "Olivia has a Higher Education Loan Program (HELP) debt of $10,000.\n\nOlivia estimates her taxable income will be $70,000 in 2025–26. Based on this taxable income, Olivia would have a compulsory HELP repayment of $450.\n\nHowever, in 2025–26 Olivia also expects to receive fringe benefits from her employer with a reportable fringe benefit amount (RFBA) of $17,000. The RFBA isn't taxable, but it is added to Olivia's taxable income to determine her 'repayment income', which is the amount used to work out how much Olivia will need to repay towards her HELP debt.\n\nIf Olivia receives an RFBA of $17,000, then her HELP compulsory repayment estimate is worked out as:\n\nTaxable income + RFBA\n\n$70,000 + $17,000 = $87,000\n\nThis means Olivia would have a HELP compulsory repayment of $3,000 for 2025–26.\n\nEnd of example"
+    },
+    {
+      "heading": "How the reportable fringe benefits amount is used > Example: RFBA used by Services Australia for Child Care Subsidy",
+      "page": null,
+      "text": "Elijah's taxable income is $100,000 for the 2025–26 income year. Elijah's employer provides him with a car fringe benefit with a taxable value of $3,500. Elijah also receives a housing fringe benefit with a taxable value of $1,000. These fringe benefits are both reportable.\n\nThe taxable value of Elijah's fringe benefits is $3,500 + $1,000 = $4,500. The grossed-up taxable value of these benefits is $8,490 ($4,500 × 1.8868 (the lower gross-up rate for 2026)).\n\nThis means Elijah has a reportable fringe benefits amount (RFBA) of $8,490.\n\nElijah receives the Child Care Subsidy from Services Australia. When Services Australia works out how much Elijah is entitled to, they include both his taxable income and his RFBA:\n\n$100,000 + $8,490 = $108,490\n\nServices Australia will use the income amount of $108,490 to work out Elijah's CCS entitlement.\n\nEnd of example"
+    },
+    {
+      "heading": "Employees of FBT-exempt organisations",
+      "page": null,
+      "text": "If you're an employee of one of the following organisations, 53% of your RFBA is taken into account to determine your eligibility for family assistance and youth income support payments:\n\n- public benevolent institution\n- health promotion charity\n- public or not-for-profit hospital\n- public ambulance service.\n\nThe full amount of your RFBA is used to determine your eligibility for other payments."
+    }
+  ]
+}

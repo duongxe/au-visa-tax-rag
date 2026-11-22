@@ -1,0 +1,45 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-transactions-acquiring-and-disposing-of-crypto-assets-crypt-92bae1b0",
+  "title": "Crypto exchanges and platforms under administration",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-exchanges-and-platforms-under-administration",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Crypto asset exchanges and platforms",
+      "page": null,
+      "text": "A crypto exchange or platform can be used to buy, sell or hold crypto assets.\n\nIf you invest in crypto assets and the exchange or platform that holds your investment goes into external administration, it may trigger a capital gains tax (CGT) event. Generally, the CGT event will occur when the administration is finalised."
+    },
+    {
+      "heading": "Types of external administration",
+      "page": null,
+      "text": "External administration includes:\n\n- voluntary administration\n- restructuring\n- liquidation (winding up)."
+    },
+    {
+      "heading": "When the external administration is finalised",
+      "page": null,
+      "text": "When the external administration is finalised, you may have a total loss or you may receive a distribution. Depending on the situation, you may have either a:"
+    },
+    {
+      "heading": "When the external administration is finalised > Capital loss",
+      "page": null,
+      "text": "You will need to work out if you have a capital loss under the CGT rules. You can't work out your capital loss until the CGT event happens. This usually occurs when the external administration is finalised.\n\nYou can use a capital loss to reduce a capital gain, but not to offset against other income."
+    },
+    {
+      "heading": "When the external administration is finalised > Capital loss > Example: crypto asset exchange enters into administration – capital loss",
+      "page": null,
+      "text": "Omar invests $12,000 of crypto assets and fiat currency into a crypto asset exchange in 2025. Omar receives notice that the exchange has gone into external administration. As a result of the external administration, Omar receives a distribution of 35c per dollar value of crypto asset and fiat currency (at the date of external administration).\n\nAt the date of administration, Omar’s market value of his interest in the crypto asset exchange was $10,000. Omar receives $3,500 ($10,000 × $0.35) from the crypto asset exchange under the external administration.\n\nWhen the administration ends, Omar calculates his capital loss to be $8,500. That is:\n\n- $12,000 (cost of the crypto assets at the time of investment) minus $3,500 (his distribution from the administration).\n\nEnd of example"
+    },
+    {
+      "heading": "When the external administration is finalised > Capital gain",
+      "page": null,
+      "text": "When the administration is finalised, you may receive a distribution. If the distribution exceeds the cost base of your asset, you'll make a capital gain. The distributions you receive from the administration will need to be included in your tax return for the year you receive them."
+    },
+    {
+      "heading": "When the external administration is finalised > Capital gain > Example: crypto exchange goes into administration – capital gain",
+      "page": null,
+      "text": "Melanie invests $5,000 in both crypto assets and fiat currency in a crypto asset exchange. The company that operates the exchange goes into administration. Melanie’s investment was worth $10,000 at the date of administration.\n\nThe company entered an arrangement with its creditors. Under the arrangement, all the company assets at the date of administration were transferred into a creditors’ trust. The creditors of the company became beneficiaries under the trust. There is no CGT event for Melanie when the company restructured, when the assets were devalued downwards or when Melanie became a beneficiary.\n\nMelanie will receive distributions from the trust totalling 70c per dollar of what her investment is worth at the date of administration. She receives payment as follows:\n\n- an initial distribution in the first year of 45c per dollar:\n\n$4,500 ($10,000 × $0.45)\n\n- interim distributions over a period of 5 years of the other 25c per dollar:\n\n$500 ($10,000 × $0.25 ÷ 5)\n\nAfter the initial distribution of $4,500, Melanie’s cost base of the CGT asset is $500 ($5,000 investment − $4,500 initial distribution).\n\nWhen Melanie receives the first interim distribution of $500 her cost base is reduced to zero ($500 remaining cost base - $500 interim distribution).\n\nEach subsequent distribution in years 2 to 5 is a CGT event which results in a capital gain of $500. From this point Melanie will include each capital gain in her tax return in each year she receives the distribution.\n\nEnd of example"
+    }
+  ]
+}

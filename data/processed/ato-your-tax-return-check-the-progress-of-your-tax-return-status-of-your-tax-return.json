@@ -1,0 +1,25 @@
+{
+  "doc_id": "ato-your-tax-return-check-the-progress-of-your-tax-return-status-of-your-tax-return",
+  "title": "Status of your tax return",
+  "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/check-the-progress-of-your-tax-return/status-of-your-tax-return",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Status in ATO online services",
+      "page": null,
+      "text": "When you check the progress of your tax return using our online services, you might see one of these statuses (not all tax returns will display all of these).\n\n| Status and outcome definitions in ATO Online | |\n|---|---|\n| Status – Outcome | Description |\n|---|---|\n| In progress – Processing | You may see this status at 2 stages of processing: We've received your tax return and started processing it. We've nearly finalised your tax return and a notice of assessment will issue soon (you will see an estimated assessment issue date by selecting the down arrow). |\n| In progress – Balancing account | We're balancing the result of your tax return with your accounts with us and other Australian Government agencies. This may involve transferring funds if you have outstanding amounts. We'll contact you if we need more information. |\n| In progress – Information pending | We're collecting information to help us finish processing your tax return. We will contact you if we need more information. |\n| In progress – Under review | We're manually reviewing your tax return to make sure everything is right before we finalise it. We will contact you if we need more information. |\n| Issued – Dollar amount/ Nil | We've completed processing your tax return and your notice of assessment has issued. You can see your refund or amount owing (tax debt). For amounts owing, select the **Notice of assessment** link to view the due date for payment. |\n\nIf you provide valid Australian bank account details to us when you lodge, we will pay your refund directly into the bank account you nominate."
+    },
+    {
+      "heading": "Cancelled transaction on your income tax account",
+      "page": null,
+      "text": "A cancelled transaction on your income tax account does not necessarily mean your tax return has stopped processing, your return may be 'on hold'. We may be reviewing your tax return to ensure you have included all the information that has been reported to us. This may result in your lodgment showing as cancelled for 24 to 48 hours.\n\nDo **not** attempt to lodge your tax return again during this period. Allow up to 10 business days for your electronically lodged return to be finalised."
+    },
+    {
+      "heading": "Why your tax return may be delayed",
+      "page": null,
+      "text": "Although most tax returns lodged online will be processed in 10 business days, some tax returns may take longer to process. Examples are if:\n\n- you attempt to lodge your tax return again after previously lodging\n- you have made an amendment before we finish processing your original tax return or any previous amendments\n- you lodge tax returns for several years at once\n- you are under an insolvency administration – for example bankruptcy or debt arrangement (check to make sure your insolvency practitioner advises us of your situation before you lodge your tax return)\n- the Australian financial institution account details you included in your tax return are not current\n- we need to check information in your tax return – we may need to contact your employer, financial institutions, private health insurers or you, to confirm or crosscheck information in your tax return\n- we need to check information with other Australian Government agencies, for example, Services Australia, including Centrelink or Child Support – we're required to pay part or all of your tax refund to other agencies if there are outstanding amounts (you will be notified if this is the case)\n- you have a tax debt or previously unresolved tax debt with us\n- you have a tax debt that was previously put on hold (also known as a re-raised or non-pursued debt).\n\nWe may contact you or your tax agent if your tax return is delayed and we need more information or there are ongoing delays. Manual processing for online lodgments generally takes up to 30 calendar days and we can't speed this up even, if you phone us. However, if you are experiencing financial difficulties or serious hardship you may be eligible for priority processing of your tax return."
+    }
+  ]
+}

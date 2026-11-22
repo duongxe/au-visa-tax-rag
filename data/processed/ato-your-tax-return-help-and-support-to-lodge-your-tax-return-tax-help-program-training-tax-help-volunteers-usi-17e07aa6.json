@@ -1,0 +1,60 @@
+{
+  "doc_id": "ato-your-tax-return-help-and-support-to-lodge-your-tax-return-tax-help-program-training-tax-help-volunteers-usi-17e07aa6",
+  "title": "Tax Help volunteers – using Alternative Access Process (AAP)",
+  "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/help-and-support-to-lodge-your-tax-return/tax-help-program-training/tax-help-volunteers-using-alternative-access-process-aap",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Individuals using Tax Help",
+      "page": null,
+      "text": "Most people using Tax Help will have the ATO linked to their myGov account. If they need help, volunteers can support people to link the ATO to their myGov account so they can view their tax information and lodge online.\n\nAlternatively, if they don't want to or can't use myGov or link to the ATO, Tax Help volunteers can use the Alternative Access Process (AAP) to complete their tax return."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help",
+      "page": null,
+      "text": "AAP allows Tax Help volunteers to assist people to lodge online without a myGov account.\n\nAs a Tax Help volunteer, you access the AAP through your own myGov account, using a dedicated web address. Access to AAP is available once training is completed and will be removed at the end of tax time.\n\nAAP cannot be used if the taxpayer has enabled Online Access Strength (OAS) for their ATO online services. In these cases, you will need to access and lodge through their myGov account.\n\nYou will need to log in each day as a Tax Help volunteer and on each device you use.\n\nThere are 2 main steps to using AAP:"
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 1: Logging on to AAP as a volunteer",
+      "page": null,
+      "text": "To log on to AAP as a volunteer:\n\n1. Enter the AAP web address (https://auth.ato.gov.au/ThvClient.web/index.html) in your web browser.\n2. Select ‘Tax Help volunteer' (THV), then choose ‘Sign in’.\n3. On the myGov ‘Welcome’ page, use your personal myGov sign in details.\n4. You may be prompted to enter an SMS security code sent to your mobile device. (Make sure you bring your phone to Tax Help appointments.)\n\nThe image below shows the client log in screen that appears after you successfully sign in.\n\n**Note:** Before continuing, close and re-open your browser and re-enter the AAP web address into your web browser.\n\nYou are now signed in to AAP. To assist a Tax Help client, continue to Step 2: Logging the person into ATO online services.\n\nWhen you've finished your Tax Help session, make sure you log out of AAP using **THV sign out** in the top right corner of the screen. Then, close the browser."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 2: Logging the person in to ATO online services",
+      "page": null,
+      "text": "Once you've logged on as a Tax Help volunteer, you can enter the taxpayer's details into the AAP. The steps are:\n\n1. Select **Individual (THV assisted)** from the 'Log in as' drop-down menu.\n2. On the 'Getting started' screen, select from the following 2 options\n\n- I have my tax details – select this when the person can provide enough information to confirm their identity online.\n- I have an access code – select this when the person doesn't have enough information to confirm their identity online, for example if they're a first-time lodger.\n\nThe image below shows the 2 options on the 'Getting started' screen."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 2: Logging the person in to ATO online services > I have my tax details",
+      "page": null,
+      "text": "If you select 'I have my tax details', enter the person's:\n\n- tax file number (TFN)\n- name\n- date of birth.\n\nThey will be asked to confirm their identity by answering questions specific to them. They must answer 2 out of 6 questions from the following categories:\n\n- bank account statement from an account that earned interest or that a tax refund was paid into\n- dividend statement\n- notice of assessment\n- superannuation account statement\n- Centrelink payment summary\n- PAYG payment summary.\n\nQuestions will only appear for categories where the ATO holds information about the person. For example, if they don't own shares, no question about a dividend statement will be shown.\n\nBelow is an example of the 'Confirm it is your record' screen, with questions specific to the taxpayer.\n\nOnce the questions have been answered, the ATO online services account will open in the browser. You can now open the taxpayer's myTax return.\n\nIf the person is unable to answer the questions, follow the steps below to request a THV access code."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 2: Logging the person in to ATO online services > I have an access code",
+      "page": null,
+      "text": "People who are unable to provide sufficient tax details can confirm their identity by entering a THV access code.\n\nThe **THV access code** is used when the person:\n\n- does not have a myGov account\n- is unable to create a myGov account\n- does not have or remember their myGov sign in details\n- is unsuccessful linking the ATO to their myGov account\n- is unable to complete the 'I have my tax details' option in the AAP."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 2: Logging the person in to ATO online services > I have an access code > Getting a THV access code",
+      "page": null,
+      "text": "To request a THV access code:\n\n1. Make sure you have the taxpayer's identity documents ready.\n2. Phone the Tax Help hotline on **1800 644 104**.\n3. Identify yourself as a Tax Help volunteer.\n4. State that you have a taxpayer with you.\n5. Ask for a THV access code.\n\nOnce the taxpayer's identity has been confirmed, a THV access code will be issued. The code will expire after 24 hours."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 2: Logging the person in to ATO online services > I have an access code > If the officer doesn't know about Tax Help or the THV (AAP) access code",
+      "page": null,
+      "text": "Sometimes the officer may not be aware of Tax Help or access codes.\n\nWhen you phone **1800 644 104**, make sure you are requesting a **THV access code**. You may need to direct the officer to the relevant scripting and make sure they are looking for **access codes**.\n\nIf the officer is unfamiliar with THV access codes, ask them to:\n\n1. Search their scripting with the term ‘Tax Help’.\n2. Read the information and follow the links for\n\n1. ‘THV requesting THV access code’, then\n2. ‘myGov Support Tool and THV access'.\n3. Follow the directions on the page to issue a THV access code.\n\nThe officer will complete a proof-of-record ownership (PORO) identity check with the taxpayer. If this is successful, they will issue a THV access code."
+    },
+    {
+      "heading": "Using AAP to assist people using Tax Help > Step 2: Logging the person in to ATO online services > I have an access code > Using the THV access code",
+      "page": null,
+      "text": "Once you have obtained a THV access code:\n\n1. Enter the taxpayer's TFN and access code.\n2. Agree to the terms and conditions.\n3. Select ‘Submit’.\n\nThe taxpayer’s ATO online services account will open in the browser and you can open their myTax return.\n\nBelow is an example of the 'Your access code' screen."
+    },
+    {
+      "heading": "Phoning us on other matters",
+      "page": null,
+      "text": "When phoning the ATO about other matters, it is not always necessary to identify yourself as a Tax Help volunteer.\n\nIf the officer questions having a 3-way conversation with you and the taxpayer, ask them to refer to the Tax Help information in their scripting.\n\nRequest that they search 'Tax Help' and review the information provided.\n\nThe scripting explains your role as a Tax Help volunteer and confirms that you may act as an intermediary in conversations between taxpayers and the ATO."
+    }
+  ]
+}

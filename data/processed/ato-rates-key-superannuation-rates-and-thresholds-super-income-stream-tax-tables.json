@@ -1,0 +1,25 @@
+{
+  "doc_id": "ato-rates-key-superannuation-rates-and-thresholds-super-income-stream-tax-tables",
+  "title": "Super income stream tax tables",
+  "url": "https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-income-stream-tax-tables",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Element taxed in the fund of a super income stream",
+      "page": null,
+      "text": "The following table summarises the taxation of a super income stream paid with an **element taxed in the fund**.\n\nThe tax-free component isn't included. This component is non-assessable non-exempt income in all cases.\n\n| Table 15: Element taxed – super income stream tax rates | |\n|---|---|\n| Age of recipient | Income stream |\n|---|---|\n| Age 60 years or more | Not assessable, not exempt income |\n| At or above preservation age and under 60 years | Taxed at marginal tax rates – Tax offset of 15% is available |\n| Under preservation age | Taxed at marginal tax rates, with no tax offset – Tax offset of 15% is available if a disability super benefit |\n\nMedicare levy will apply if amounts are assessable.\n\n**Note:**\n\n- A temporary 2% levy applies for the 2014–15, 2015–16 and 2016–17 income years to individuals with a taxable income of more than $180,000 per year. The levy is payable at a rate of 2% of each dollar of a taxpayer’s taxable income over $180,000. This will cease to apply from 1 July 2017.\n- The Medicare levy rate is 2% from 1 July 2014 for the 2014–15 income year and later income years, it is applied in addition to the maximum rate of tax for each income component.\n- The Medicare levy rate is 1.5% up to and including 30 June 2014 and is applied in addition to the maximum rate of tax for each income component.\n- In the 2011–12 income year the flood levy may apply where an individual's taxable income exceeds $50,000. We have published information to help you work out if the flood levy applies to you."
+    },
+    {
+      "heading": "Element untaxed in the fund of a super income stream",
+      "page": null,
+      "text": "The following table summarises the taxation of a super member income stream paid with an **element untaxed in the fund**.\n\nThe tax-free component isn't included. This component isn't assessable and not exempt income in all cases.\n\n| Table 16: Element untaxed – super income stream tax rates | |\n|---|---|\n| Age of recipient | Income stream |\n|---|---|\n| 60 years or more | Taxed at marginal rates, with a 10% tax offset |\n| At or above preservation age and under 60 years | Taxed at marginal rates, with no tax offset |\n| Under preservation age | Taxed at marginal rates, with no tax offset |\n\nMedicare levy will apply if amounts are assessable.\n\n**Note:**\n\n- A temporary 2% levy applies for the 2014–15, 2015–16 and 2016–17 income years to individuals with a taxable income of more than $180,000 per year. The levy is payable at a rate of 2% of each dollar of a taxpayer’s taxable income over $180,000. This will cease to apply from 1 July 2017.\n- The Medicare levy rate is 2% from 1 July 2014 for the 2014–15 income year and later income years, it is applied in addition to the maximum rate of tax for each income component.\n- The Medicare levy rate is 1.5% up to and including 30 June 2014 and is applied in addition to the maximum rate of tax for each income component.\n- In the 2011–12 income year the flood levy may apply where an individual's taxable income exceeds $50,000. We have published information to help you work out if the flood levy applies to you."
+    },
+    {
+      "heading": "Annuities and life expectancy factors",
+      "page": null,
+      "text": "The prescribed life tables referred to in section 27H of the *Income Tax Assessment Act 1936* can be obtained from the Australian Government Actuary website."
+    }
+  ]
+}

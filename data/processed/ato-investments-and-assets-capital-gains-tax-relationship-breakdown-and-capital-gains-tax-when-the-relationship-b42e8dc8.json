@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-relationship-breakdown-and-capital-gains-tax-when-the-relationship-b42e8dc8",
+  "title": "When the relationship breakdown rollover applies",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/relationship-breakdown-and-capital-gains-tax/when-the-relationship-breakdown-rollover-applies",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Relationship breakdown rollover",
+      "page": null,
+      "text": "When 2 people separate or divorce, assets transferred between them may qualify for the relationship breakdown rollover if the transfer results from one of the qualifying agreements.\n\nThis means capital gains tax (CGT), which normally applies when ownership of an asset changes, is deferred. CGT will apply to the person who received the asset when they later dispose of it.\n\nThe relationship breakdown rollover of CGT only applies if assets are transferred under a court order or other formal agreement.\n\nIf the rollover applies to an asset, you must use it. Declare the rollover in your tax return at the capital gains tax question:\n\n- select **Yes** at *Have you applied an exemption, rollover or additional discount?*\n- select **S: Same asset roll-overs** at *Capital gains tax exemption, rollover or additional discount type code*.\n\nFor a summary fact sheet with common scenarios, go to the ATO Publication Ordering Service to download Marriage or relationship breakdown and real estate transfers (NAT 75393, PDF, 298KB)This link will download a file."
+    },
+    {
+      "heading": "Qualifying agreements",
+      "page": null,
+      "text": "The rollover applies to the transfer of assets (or other CGT events) that result from one of the following:\n\n- a court order under the *Family Law Act 1975*, or a state, territory or foreign law relating to relationship breakdowns\n- a court order made by consent under the *Family Law Act 1975*, or a similar foreign law\n- an award made in an arbitration under the *Family Law Act 1975* (section 13H), or a similar award under a state, territory or foreign law\n- a financial agreement that\n\n- is binding under the *Family Law Act 1975* (sections 90G and 90UJ) or a corresponding foreign law\n- meets the conditions for binding agreements\n- a written agreement that is binding because of a state, territory or foreign law relating to relationship breakdowns, where the law prevents a court from making an order in relation to the agreement. The agreement must also meet the conditions for binding agreements. These agreements, known as 'binding agreements used by separating couples', are defined in each state and territory\n\n- **New South Wales**: a domestic relationship agreement or termination agreement that complies with subsection 47(1) of the *Property (Relationships) Act 1984* (NSW)\n- **Victoria**: a relationship agreement that complies with subsections 59(1) and (2) of the *Relationships Act 2008* (Vic)\n- **South Australia**: a certified domestic partnership agreement within the meaning of the *Domestic Partners Property Act 1996* (SA)\n- **Queensland**: a recognised agreement within the meaning of the *Property Law Act 1974* (Qld)\n- **Western Australia**: a financial agreement that complies with subsection 205ZS(1) of the *Family Court Act 1997* (WA)\n- **Tasmania**: a personal relationship agreement or separation agreement that complies with subsection 62(1) of the *Relationships Act 2003* (Tas)\n- **Australian Capital Territory**: a domestic relationship agreement or termination agreement that complies with subsection 33(1) of the *Domestic Relationships Act 1994* (ACT)\n- **Northern Territory**: a cohabitation agreement or separation agreement that complies with subsection 45(2) of the *De Facto Relationships Act 1991* (NT)*.*\n\nFrom 1 July 2009, the marriage or relationship breakdown rollover is available to same-sex couples."
+    },
+    {
+      "heading": "Qualifying agreements > Conditions for binding agreements",
+      "page": null,
+      "text": "For transfers that happen because of a binding financial agreement or a binding agreement used by a separating couple, the rollover only applies if, at the time of the transfer:\n\n- the spouses are separated\n- there is no reasonable likelihood of cohabitation resuming\n- the transfer is for reasons directly connected with the breakdown of the marriage or relationship – this condition isn't met if either\n\n- the spouses had a pre-existing agreement that the asset was to be transferred between them for reasons other than the relationship breakdown\n- the agreement provided for the transfer of non-specific property, which didn't occur for a considerable time after the agreement (for example, more than 12 months) and wasn't clearly connected to the relationship breakdown."
+    },
+    {
+      "heading": "Private or informal agreements",
+      "page": null,
+      "text": "The rollover doesn't apply if you and your spouse divide assets under a private or informal agreement.\n\nIn this case:\n\n- if you transfer an asset, you must report any capital gain or loss you make when completing your tax return for that year\n- if an asset is transferred to you, it is treated as if you acquired it at the time of transfer.\n\nThe transaction is treated as if it was made at market value if both the following apply:\n\n- the amount paid for the asset is greater or less than its market value\n- the 2 former spouses are not dealing at arm's length."
+    },
+    {
+      "heading": "CGT events the rollover applies to",
+      "page": null,
+      "text": "The rollover applies to CGT events in which the transferor:\n\n- transfers ownership of an asset to the transferee spouse (CGT event A1)\n- enters into an agreement under which the right to use a CGT asset passes to the transferee spouse, and title in the asset passes to the transferee spouse at the end of the agreement (CGT event B1) (there is no rollover if the title in the asset doesn't pass when the agreement ends)\n- creates a contractual or other right in favour of the transferee spouse (CGT event D1)\n- grants an option to the transferee spouse, or renews or extends an option granted to them (CGT event D2)\n- owns a prospecting or mining entitlement and grants the transferee spouse a right to receive income from operations carried on by the entitlement (CGT event D3)\n- is a lessor and grants, renews or extends a lease to the transferee spouse (CGT event F1).\n\nThere is no rollover for the transfer of trading stock."
+    },
+    {
+      "heading": "Timing of the CGT event",
+      "page": null,
+      "text": "If an asset is transferred under a contract, the CGT event happens when the contract is entered into.\n\nIf there is no contract, the CGT event happens when the change of ownership of the asset occurs.\n\n- A binding financial agreement may be a contract. A separation declaration must be made under section 90DA of the *Family Law Act 1975* before the agreement can take effect.\n- A binding agreement used by a separating couple may be a contract.\n\nTransfers made because of a court order or arbitral award are not made under a contract. Therefore, the CGT event doesn't happen until the asset is transferred.\n\nIf CGT event B1 applies, the event happens when use of the asset passes to the transferee spouse."
+    }
+  ]
+}

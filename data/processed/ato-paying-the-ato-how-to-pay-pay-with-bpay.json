@@ -1,0 +1,50 @@
+{
+  "doc_id": "ato-paying-the-ato-how-to-pay-pay-with-bpay",
+  "title": "Pay with BPAY",
+  "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/how-to-pay/pay-with-bpay",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Find your unique PRN",
+      "page": null,
+      "text": "You must provide your payment reference number (PRN) in the reference field every time you make a payment with BPAY®. This guarantees your money goes to the right ATO account without delay.\n\nYou will have different PRNs for different types of tax, for example, one PRN for income tax and one PRN for activity statements. Make sure you use the right PRN for the type of tax you're paying.\n\nThere are a few ways you can find your PRN."
+    },
+    {
+      "heading": "How to make the payment",
+      "page": null,
+      "text": "When you have your PRN, you are ready to make the payment from your Australian financial institution."
+    },
+    {
+      "heading": "How to make the payment > Step 1: Log in to your online banking",
+      "page": null,
+      "text": "Log in to your online banking. Select the account you would like to pay from and find the BPAY option."
+    },
+    {
+      "heading": "How to make the payment > Step 2: Add our Biller code and your PRN",
+      "page": null,
+      "text": "In the **Biller code** field, add **75556.**\n\nAdd your PRN into the **Reference** field for every payment. This guarantees your money goes to the right account.\n\n**BPAY®**\n\n| | Biller code: | 75556 |\n| | Reference: | Your payment reference number (PRN) |"
+    },
+    {
+      "heading": "How to make the payment > Step 3: Select pay with BPAY",
+      "page": null,
+      "text": "When you have added all the correct details – including payment amount, date, our Biller code and your PRN – select **Pay**.\n\nNot all online banking screens look the same. For example, your Pay button may be called 'Submit' or 'Pay bill'."
+    },
+    {
+      "heading": "Another way to pay with BPAY",
+      "page": null,
+      "text": "You can also contact your financial institution directly. They can help you make a payment with BPAY from your Australian cheque, savings, debit card or credit card (Visa or MasterCard) account."
+    },
+    {
+      "heading": "Payment processing time",
+      "page": null,
+      "text": "Payments made through BPAY can take up to 4 business days from the day you make the payment, to be received by us and appear on your ATO account.\n\nKeep this in mind when considering due dates and paying. If your payment is late, you are responsible for any interest charges that may be applied.\n\nCheck what to do next if you've made a payment on your account and it's a missing payment or you can't see it."
+    },
+    {
+      "heading": "Other payment options",
+      "page": null,
+      "text": "If BPAY isn't right for you, you can pay with our online services or use our other payment options."
+    }
+  ]
+}

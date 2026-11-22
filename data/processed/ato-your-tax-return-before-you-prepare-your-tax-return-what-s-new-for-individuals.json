@@ -1,0 +1,50 @@
+{
+  "doc_id": "ato-your-tax-return-before-you-prepare-your-tax-return-what-s-new-for-individuals",
+  "title": "What's new for individuals",
+  "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/what-s-new-for-individuals",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Removing the $2 threshold for deductions for gifts or contributions",
+      "page": null,
+      "text": "Tax law recently changed to remove the $2 minimum threshold for gifts made to deductible gift recipients. This means you can claim a tax deduction for gifts made to eligible deductible gift recipients, regardless of the amount donated.\n\nHowever, some special rules remain unchanged and continue to apply to:\n\n- political donations\n- some gifts of property\n- donations where you receive a material benefit in return (a contribution).\n\nTo check if a gift is deductible see, Gifts and Donations."
+    },
+    {
+      "heading": "Rental property income and expenses",
+      "page": null,
+      "text": "We have issued a Taxation Ruling and 2 Practical compliance guidelines which cover when amounts you receive will be assessable income and what expenses you can and can't claim for a rental property and for a rental property that is your holiday home.\n\nTaxation Ruling TR 2026/1 *Income tax: rental property income and deductions for individuals who are not in business* provides guidance for individuals that earn income from their rental property. It covers earning income from:\n\n- the short-term rental market (such as using online booking or sharing platforms), including renting out a holiday home or letting a room (or rooms) in a home\n- letting out a property, or part of a property to long-term tenants.\n\nThe Ruling explains:\n\n- when amounts you receive for the use of your rental property will be assessable income\n- when losses or outgoings you incur relating to your rental property can be claimed as deductions\n- how to apportion your deductions when there are both income producing and non-income producing uses of your rental property\n- when certain deductions for your holiday home, that you also use as a rental property, will be denied because it is a ‘leisure facility’ that is not used or held for use mainly to earn assessable rental income.\n\nPractical Compliance Guideline PCG 2026/2 *Apportionment of rental property deductions – ATO compliance approach.*\n\nThis guideline provides guidance on appropriate methods for apportioning rental expenses when you use a property to produce assessable income and hold it for another use (for example, part of a property is rented out, and part of the property is your residence). In these situations, losses and outgoings related to the property will need to be apportioned on a ‘fair and reasonable’ basis to work out the deduction that can be claimed.\n\nPractical Compliance Guideline PCG 2026/3 *Application of section 26-50 to holiday homes that you also rent out – ATO compliance approach.*\n\nThis guideline provides guidance on managing your compliance risks with respect to section 26-50 of the *Income Tax Assessment Act 1997*, which is a tax law integrity provision. Section 26-50 denies deductions for losses or outgoings that relate to the ownership or use of a holiday home unless an exception applies.\n\nThe Ruling and the PCGs apply to years commencing both before and after the date of issue, subject to the transitional approach relating to section 26-50 set out in Appendix 2 of the Ruling and referred to in paragraphs 11 and 12 of PCG 2026/3.\n\nFor more information on holiday homes and the expenses you can and can't claim, see Holiday homes."
+    },
+    {
+      "heading": "Denying deductions for ATO interest charges",
+      "page": null,
+      "text": "If you incur general interest charge (GIC) or shortfall interest charge (SIC) on or after 1 July 2025, you can't claim these amounts as an income tax deduction in your 2025–26 or later tax returns. GIC or SIC incurred before 1 July 2025 can still be claimed in the 2024–25 and earlier income years.\n\nFor more information, see Denying deductions for ATO interest charges."
+    },
+    {
+      "heading": "Modernising trust administration systems",
+      "page": null,
+      "text": "From 1 July 2026, your trustee will provide additional information in your distribution statement that can help you prepare your return and report your income correctly.\n\nWe're also enabling pre-fill services for trust distributions for individual taxpayers from 2026 and expanding to other entities from 2027.\n\nBy being open and providing the information we have about your tax affairs, we're making it easier for you to comply with your tax obligations and get it right the first time."
+    },
+    {
+      "heading": "Modernising trust administration systems > Distribution statement",
+      "page": null,
+      "text": "There will be 3 new labels in your distribution statement:\n\n- B1 Non-primary production managed investment scheme amount\n- U2 Franked distribution related to investments amount\n- H1 Other assessable foreign source income from a financial investment amount.\n\nThis information will help you to accurately complete the income tests question at **Net financial investment loss** (IT5) on their tax return."
+    },
+    {
+      "heading": "Junior Mineral Exploration Incentive",
+      "page": null,
+      "text": "On 5 May 2021, the Australian Government announced it would extend the Junior Minerals Exploration Incentive to 30 June 2025. The Junior Mineral Exploration Incentive has not been extended beyond this date.\n\nFrom the 1 July 2025 exploration credits cannot be received or claimed."
+    },
+    {
+      "heading": "Zone or overseas forces tax offset",
+      "page": null,
+      "text": "From Tax Time 2026, the zone or overseas forces tax offset calculator will be updated to make it easier to use and to help prevent errors.\n\nWhat’s changing:\n\n- Location search\n\n- You can now search for eligible locations directly in the calculator. As you type, it will automatically find the location and show the correct zone. This helps reduce mistakes when choosing a zone.\n- Entering dates and days\n\n- You can enter the dates you were in each location or the number of days spent there. Where dates are used, this makes the calculation faster and means you won’t need to calculate the number of days in a zone.\n- Simpler adjusted taxable income (ATI) inputs\n\n- If you have dependants, the calculator now makes it easier to enter your dependant’s ATI, whether it’s above or below the relevant thresholds."
+    },
+    {
+      "heading": "Changes that don’t apply this tax time",
+      "page": null,
+      "text": "The following proposed changes **do not** apply in the 2025-26 tax return:\n\n- standard deduction for work-related expenses (also called the $1,000 instant tax deduction)\n- Working Australians Tax Offset\n- changes to capital gains tax (CGT)\n- changes to negative gearing arrangements\n- changes to private health insurance rebate for people 65 years and older."
+    }
+  ]
+}

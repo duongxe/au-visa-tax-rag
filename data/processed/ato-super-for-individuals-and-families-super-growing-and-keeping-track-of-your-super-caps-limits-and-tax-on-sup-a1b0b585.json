@@ -1,0 +1,105 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-super-growing-and-keeping-track-of-your-super-caps-limits-and-tax-on-sup-a1b0b585",
+  "title": "Total superannuation balance",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/caps-limits-and-tax-on-super-contributions/total-superannuation-balance",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "About your total super balance",
+      "page": null,
+      "text": "Your total super balance (TSB) determines whether and how the following super entitlements and rules apply to you:\n\n- carry-forward concessional contributions\n- non-concessional contributions cap and the bring-forward of your non-concessional contributions cap\n- work test exemption\n- government co-contribution\n- spouse tax offset\n- segregated asset method for calculating exempt current pension income\n- Division 296 tax.\n\nYour TSB includes all your Australian super interests, including interests that support certain super income streams you receive, but may be different from your super fund account balances. Your TSB may also need to be adjusted when applying certain rules.\n\nA super interest is generally any distinct claim or entitlement you as a member hold in a super fund. For more information on what a super interest is, refer to How many superannuation interests does a member have in their fund?"
+    },
+    {
+      "heading": "How to view your total super balance",
+      "page": null,
+      "text": "You can view your TSB in ATO online services.\n\nIf you don't already have a myGov account, you'll need to create a myGov account and link it to the ATO."
+    },
+    {
+      "heading": "How to view your total super balance > Using online services to view your TSB",
+      "page": null,
+      "text": "1. Log in to ATO online services via myGov\n2. Select **Super** from the menu\n3. Select **Information**\n4. Select **Total superannuation balance**\n- to view your TSB as at 30 June of the latest financial year (if available), select the **Current** tab\n- to view your TSB as at 30 June of each financial year from 2016–17 onwards, select the **History** tab\n\nA breakdown of how your TSB is calculated each year is displayed using data reported to us by your super funds. It may not match the amounts in your annual statements. Current or prior financial year data we have not yet received or processed won't be included in what we display.\n\n**If you believe your TSB is incorrect or incomplete**, check with your super funds and review your own records.\n\n**If your TSB is zero**, it could be because either:\n\n- we have not received and processed the data for that financial year\n- some funds report zero for super interests that are in the accumulation phase.\n\nThe way your TSB is calculated has changed, including the methods some funds use to value your interests. This will impact your TSB from 30 June 2027 onwards. As a result, you may see a difference when compared to how your TSB was calculated for previous years. Contact your fund if you would like to know how the value of your interest in your fund has been calculated."
+    },
+    {
+      "heading": "How your total super balance is calculated from 30 June 2026",
+      "page": null,
+      "text": "From 30 June 2026 onwards how total super balance (TSB) is calculated has changed. You may see a difference in how your TSB is calculated compared to previous years.\n\nWe calculate your TSB as at the end of each financial year (the end of 30 June) using information reported by your super funds. Most super funds are required to report your annual balance to us by 31 October. Self-managed super funds report your annual balance to us on the Self-managed superannuation fund annual return. Due to the way in which super funds report information to us, you will not see your TSB on myGov until we have received all the information we need to calculate it.\n\nFrom 30 June 2026 your TSB will be the total of the:\n\n- total super balance values (TSB values) of your Australian super interests, and interests supporting death benefit super income streams in the retirement phase you are entitled to receive payments from. This includes notional super interests you have in a super plan due to a family law split\n- amount of each rollover super benefit not already included in the TSB values of your Australian super interests\n- outstanding limited recourse borrowing arrangement (LRBA) amounts in an SMSF or an APRA fund with fewer than 7 members you entered into on or after 1 July 2018, if either the LRBA is with an associate of the fund or you have satisfied a condition of release with a nil cashing restriction. Some LRBAs you entered into before 1 July 2018 that are refinanced on or after that date are also included, and we subtract\n- any personal injury or structured settlement contributions that have been paid into your super interests."
+    },
+    {
+      "heading": "How your total super balance is calculated from 30 June 2026 > Total super balance value (TSB value)",
+      "page": null,
+      "text": "In most cases the TSB value of your super interest included in your TSB will be the withdrawal value. The withdrawal value is the amount you would receive if you chose to close your accounts and withdraw your balance. However, regulations have been made in respect of some interests which provide a value, or method for determining the TSB value, of those interests. This primarily applies to defined benefit interests or income streams that are not supported by an account balance.\n\nHow your fund calculates the TSB value of your super interest depends on a number of things, including:\n\n- whether or not the interest is a defined benefit interest\n- the type of benefit that can be paid from it (for example, only lump sums)\n- whether or not your super interests are in retirement phase\n- the type of income stream being supported by your super interest that is in retirement phase.\n\nYour super fund reports your TSB value to us annually through either the:\n\n- member account transaction service (MATS) for APRA-regulated funds\n- SMSF annual return.\n\nSome super funds may report the TSB value of your super interest as zero, if the amount they could pay to you or roll over to another fund at 30 June is zero.\n\nIf you would like to know how the TSB value of your super interest has been calculated, contact your fund.\n\nWe are currently drafting a law companion ruling that will support funds with calculating the TSB value of their members super interests. For more information, refer to the regulations and the following relevant legislation:\n\n- Superannuation (Building a Stronger and Fairer Super System) Imposition Act 2026 – Federal Register of Legislation\n- Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026 – Federal Register of Legislation"
+    },
+    {
+      "heading": "How your total super balance was calculated before 30 June 2026",
+      "page": null,
+      "text": "We calculate your TSB as at the end of each financial year (30 June).\n\nBefore 30 June 2026 your TSB was made up of any super interests of yours, and any super interest you were the retirement phase recipient of.\n\nBefore 30 June 2026:\n\n- we added\n\n- the accumulation phase value of your super interests\n- the retirement phase value of your super interests\n- the amount of each rollover super benefit not already included in the accumulation phase value or the retirement phase value (this is rollovers that are in transit between super funds on 30 June)\n- the outstanding limited recourse borrowing arrangement (LRBA) amount in an SMSF or an APRA fund with fewer than 7 members you entered into on or after 1 July 2018, if either the LRBA is with an associate of the fund or you have satisfied a condition of release with a nil cashing restriction, and\n- we subtracted\n\n- any personal injury or structured settlement contributions that have been paid into your super funds."
+    },
+    {
+      "heading": "How your total super balance was calculated before 30 June 2026 > Accumulation phase value",
+      "page": null,
+      "text": "The accumulation phase value (APV) of your super interests is the total amount of super benefits that would be payable if you chose to cease all your super interests. Generally, this is the withdrawal value for an accumulation fund. It would, for example, be the amount payable if you closed all your accumulation phase super accounts.\n\nThe APV doesn't include super interests that are in the retirement phase.\n\nIf you have a defined benefit interest, the super regulations may have specified a different method for determining the APV, which will generally not be the balance of your defined benefit account.\n\nThe APV also included:\n\n- certain deferred super income streams\n- transition-to-retirement income streams that are not in the retirement phase\n- super income streams that have not complied with the pension or annuity standards or a commutation authority.\n\nYour super fund reported your APV to us annually through either the:\n\n- member account transaction service for APRA-regulated funds\n- SMSF annual return.\n\nSome super funds may report your APV as zero if the amount they could pay to you, or roll over to another fund, at 30 June is zero."
+    },
+    {
+      "heading": "How your total super balance was calculated before 30 June 2026 > Retirement phase value",
+      "page": null,
+      "text": "If you have a transfer balance account, your retirement phase value (RPV) is your transfer balance at 30 June.\n\nYour fund will modify your transfer balance if you either:\n\n- hold one or more of certain account-based super income streams\n- have made structured settlement contributions to your super fund.\n\nWe get your RPV for a super interest from either the:\n\n- balance of your transfer balance account\n- amounts reported to us by each of your super funds annually in either the\n\n- member account transaction service for APRA-regulated funds\n- SMSF annual return."
+    },
+    {
+      "heading": "How your total super balance was calculated before 30 June 2026 > Account-based super income streams",
+      "page": null,
+      "text": "The transfer balance account items for account-based super income streams are modified to be the current value of the super interest that supports the super income stream at the end of the financial year. The current value is the amount that would become payable if you were to choose to close the super interest.\n\nIf you only have account-based income streams, your RPV will equal the current value of these income streams.\n\nFor all other super income streams the transfer balance account items are not modified when calculating your RPV.\n\nCertain other transfer balance account items are not modified, including:\n\n- credits for excess transfer balance earnings\n- debits for non-commutable excess amounts."
+    },
+    {
+      "heading": "How your total super balance was calculated before 30 June 2026 > Structured settlement contributions",
+      "page": null,
+      "text": "If you have made a structured settlement contribution to a super interest, your transfer balance is modified by disregarding the debit in your transfer balance account that is due to the structured settlement contribution. This modification applies to both account-based and non-account-based income streams.\n\nFor more information, see Law Companion Ruling LCR 2016/12 *Superannuation reform: total superannuation balance.*"
+    },
+    {
+      "heading": "How your total super balance was calculated before 30 June 2026 > SMSF outstanding limited recourse borrowing arrangement amount",
+      "page": null,
+      "text": "A member of an SMSF will have an outstanding limited recourse borrowing arrangement (LRBA) amount included in their TSB if the LRBA was entered on or after 1 July 2018 and either the:\n\n- LRBA is between the fund and an associate of the fund (see definition of related party)\n- member has met a condition of release of super with a nil cashing restriction.\n\nThis doesn't include refinancing an existing LRBA that was entered into before 1 July 2018 and refinanced on or after that date, if both of the following apply:\n\n- The LRBA is secured by the same asset or assets as the old LRBA.\n- The refinanced amount is the same or less than the existing LRBA.\n\nThe LRBA amount is equal to the share of the outstanding balance of the LRBA on 30 June. This relates to your share of the total super interests in the SMSF that the LRBA assets support.\n\nIf the fund in which you have a super interest has an affected LRBA, the fund must report the outstanding LRBA amount for you in the relevant section of the SMSF annual return.\n\nFor more information, see super law requirements for Limited recourse borrowing arrangements."
+    },
+    {
+      "heading": "How your total super balance affects you",
+      "page": null,
+      "text": "The change in valuation of your super interests may change the way superannuation entitlements and rules apply to you. We recommend you consider your personal circumstances and engage a tax and super professional if required."
+    },
+    {
+      "heading": "How your total super balance affects you > Carry forward concessional contributions",
+      "page": null,
+      "text": "If your TSB is less than $500,000 at the end of 30 June of the previous financial year, you may be able to increase your concessional contributions cap for the current year if you have unused concessional contributions cap amounts from the previous 5 years (but not before 2018–19)."
+    },
+    {
+      "heading": "How your total super balance affects you > Bring-forward non-concessional contributions cap",
+      "page": null,
+      "text": "If your TSB is below the general transfer balance cap on 30 June of the previous financial year, you may be eligible to increase your non-concessional contributions cap by bringing forward caps from the next 1 or 2 years."
+    },
+    {
+      "heading": "How your total super balance affects you > Work test exemption",
+      "page": null,
+      "text": "From 1 July 2022, if you are 67 to 74 years old, the work test and the work test exemption no longer apply for the purpose of making salary sacrifice or non-concessional contributions. It still applies if you want to claim a personal super contribution deduction.\n\nFrom 1 July 2020 to 30 June 2022, if you were 67 to 74 years old and your TSB was below $300,000 at the end of the previous year, you can make voluntary super contributions for 12 months from the end of the financial year in which you last met the work test.\n\nThis work test exemption can only be used once and doesn't apply to defined benefit funds.\n\nFor 2019–20 and earlier years, the age requirement for this exemption was 65 to 74 years.\n\nFor more information, see Restrictions on voluntary contributions."
+    },
+    {
+      "heading": "How your total super balance affects you > Government co-contribution",
+      "page": null,
+      "text": "In addition to the other eligibility conditions, you are eligible for the government super co-contribution if you meet both of the following conditions:\n\n- Your non-concessional contributions don't exceed your non-concessional contributions cap for the relevant financial year.\n- On 30 June of the previous financial year, your TSB is less than the general transfer balance cap."
+    },
+    {
+      "heading": "How your total super balance affects you > Spouse tax offset",
+      "page": null,
+      "text": "In addition to the other eligibility conditions, to be eligible for the spouse tax offset:\n\n- the spouse who is receiving the contribution cannot contribute more than their annual non-concessional contributions cap for the relevant year\n- on 30 June of the previous financial year, your spouse must have a TSB less than the general transfer balance cap."
+    },
+    {
+      "heading": "How your total super balance affects you > Segregated asset method for calculating exempt current pension income",
+      "page": null,
+      "text": "SMSFs and APRA funds with fewer than 7 members are not allowed to use the segregated asset method to calculate exempt current pension income (ECPI) if, at any time in the year, the fund has a retirement phase interest and all of the following apply:\n\n- A member has a TSB exceeding $1.6 million just before the start of that year.\n- The same member has a super interest in the fund at any time during the year.\n- The same member is receiving a retirement phase income stream just before the start of the year (from the super fund or another provider).\n\nFor more information, see Methods for calculating ECPI."
+    },
+    {
+      "heading": "How your total super balance affects you > Division 296 tax",
+      "page": null,
+      "text": "From 1 July 2026, if your TSB is over the large super balance threshold, which is set at $3 million for the 2026–27 income year and subject to indexation, you may be liable for Division 296 tax. For Division 296 tax purposes, we exclude limited recourse borrowing arrangement amounts from your TSB."
+    }
+  ]
+}

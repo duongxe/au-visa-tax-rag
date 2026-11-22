@@ -1,0 +1,45 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-relationship-breakdown-and-capital-gains-tax-calculating-cgt-on-a--356ea392",
+  "title": "Calculating CGT on a rollover asset",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/relationship-breakdown-and-capital-gains-tax/calculating-cgt-on-a-rollover-asset",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "How to calculate CGT on a rollover asset",
+      "page": null,
+      "text": "If an asset is transferred to you under a relationship breakdown rollover, you don't pay capital gains tax (CGT) until you sell or dispose of it.\n\nWhen you dispose of a rollover asset, you calculate your CGT as though you had owned it since your former spouse acquired it.\n\nTo calculate your capital gain or loss on the asset, take its capital proceeds (usually the amount you sold it for) and subtract:\n\n- the asset's cost base at the time of the transfer – this is the first element of your cost base (the acquisition cost)\n- any costs incurred in transferring the asset to you\n\n- this may include conveyancing costs and stamp duty\n- this doesn't include general legal costs relating to the relationship breakdown or property settlement\n- any capital costs (that are not deductible against income) you incurred on the asset while you owned it.\n\nIf the asset was acquired by your spouse before 20 September 1985, it isn't subject to CGT. Any subsequent major capital improvements to the asset are subject to CGT."
+    },
+    {
+      "heading": "How to calculate CGT on a rollover asset > Example: pre-CGT assets and main residence exemption",
+      "page": null,
+      "text": "After marrying, Sergio and Nina bought a home on 1 February 1985 for $175,000. They decided to convert their original home into a residential rental property and buy another home. They bought a larger home on 1 January 1996 for $325,000, that became their main residence.\n\nThis means they each owned 50% of the interest in the following assets.\n\n| Table: CGT assets purchase price and date | | |\n|---|---|---|\n| Asset | Purchase price | Purchase date |\n|---|---|---|\n| Rental property | $175,000 | 1 February 1985 |\n| Family home | $325,000 | 1 January 1996 |\n\nSergio and Nina's marriage broke down and, on 1 April 2026, a court order was made:\n\n- Nina transferred her interest in the rental property to Sergio\n- Sergio transferred his interest in the family home to Nina.\n\nAfter the court order, Nina continued living in the family home and Sergio moved into the rental property.\n\nThe CGT implications are:\n\n**Rental property** – as the couple acquired the property before the introduction of CGT on 20 September 1985, Sergio is taken to have acquired Nina's interest in the property before that date. As the property is a pre-CGT asset, there are no capital gain or loss obligations for either party, unless major capital improvements were made to the property after 19 September 1985.\n\n**Family home** – Sergio and Nina lived here from the time of purchase until the court order. It remained Nina's main residence after Sergio transferred his interest to her.\n\nAs the property was transferred to Nina under a court order, Sergio is entitled to the relationship breakdown rollover and he doesn't have to record a capital gain or loss. Sergio will need to report a marriage or relationship rollover in his tax return.\n\nNina is taken to have acquired Sergio's interest in the family home. Nina's cost base includes Sergio's cost base at the time of transfer, as well as the cost base of her own original interest. This means, the full purchase price of the property ($325,000) forms part of the cost base for Nina.\n\nNina considers how she and Sergio used the property during their respective ownership periods to determine if a main residence exemption applies. The property was their main residence since purchase and they didn't use it to produce income at any time, so Nina is entitled to the main residence exemption.\n\nThe property isn't subject to any CGT on sale."
+    },
+    {
+      "heading": "How to calculate CGT on a rollover asset > Example: transferor is entitled to rollover",
+      "page": null,
+      "text": "Sam and Alex jointly bought a holiday home on 1 March 2013 for $400,000. The home was never used to produce assessable income, or as their main residence.\n\nSam and Alex's relationship broke down and on 1 March 2023, Sam's ownership interest in the property was transferred to Alex under the terms of a binding agreement.\n\nAlex moved into the property on 1 March 2023. He lived there until he sold it on 28 February 2026 for $800,000.\n\nDuring the ownership period, the property was used as below.\n\n| Table: Property ownership dates and interest percentage | | |\n|---|---|---|\n| Property classification | Dates | Ownership interest |\n|---|---|---|\n| Holiday home | 1/03/2013 to 28/02/2023 | 50% Sam + 50% Alex |\n| Alex's main residence | 1/03/2023 to 27/02/2026 | 100% Alex |\n\nSam is entitled to the relationship breakdown rollover and doesn't have to report a capital gain or loss, however he will need to report the roll over in his tax return.\n\nAlex must consider how he and Sam used the property during their respective ownership periods to determine if a partial main residence exemption applies.\n\nAlex calculates the capital gain on his original interest in the property separately to the interest Sam transferred to him.\n\nEnd of example"
+    },
+    {
+      "heading": "CGT discount on a rollover asset",
+      "page": null,
+      "text": "To be eligible for the 50% CGT discount on an asset, you must have owned it for 12 months or more. This includes the period your former spouse owned it."
+    },
+    {
+      "heading": "Superannuation assets",
+      "page": null,
+      "text": "A CGT asset of a small super fund (one with no more than 6 members) can be transferred to another complying super fund under the relationship breakdown rollover. The consequences of the rollover are the same as for other transfers between spouses.\n\nThis allows spouses in a small super fund to separate their super arrangements on the breakdown of their relationship without any CGT liability."
+    },
+    {
+      "heading": "Assets transferred by a company or trust",
+      "page": null,
+      "text": "If a company or trust transfers a CGT asset to a spouse, the cost base and reduced cost base of interests in the company or trust need to be adjusted. They are reduced in value by an amount that reflects the fall in their market value from the transfer of the CGT asset.\n\nIn some circumstances, the transfer of an asset from a company to a spouse who is a shareholder or an associate of a shareholder may be a dividend under Division 7A. In this case CGT doesn't apply.\n\nIf the transferor is a controlled foreign corporation or a foreign trust, there are special rules for working out the capital gain or loss for a subsequent CGT event."
+    },
+    {
+      "heading": "Newly created assets",
+      "page": null,
+      "text": "Your spouse (or a company or trustee) may create an asset in your favour.\n\n| Calculating the first element (acquisition cost) of your cost base or reduced cost base | |\n|---|---|\n| CGT event | First element (acquisition cost) of cost base and reduced cost base |\n|---|---|\n| Creating contractual or other rights (D1) | Incidental costs incurred by the transferor to create the right |\n| Granting an option (D2) | Expenditure incurred by the transferor to grant the option |\n| Granting a right to income from mining (D3) | Expenditure incurred by the transferor to grant the right |\n| Granting a lease (F1) | Expenditure incurred by the transferor on the grant renewal or extension of the lease |\n\nFor CGT purposes you acquire the asset at the time specified by the CGT event. For example, for CGT event D1, you acquire the asset at the time you enter into the contract or, if there is no contract, the time the right is created."
+    }
+  ]
+}

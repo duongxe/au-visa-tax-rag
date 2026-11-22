@@ -1,0 +1,30 @@
+{
+  "doc_id": "ato-paying-the-ato-how-much-you-owe-debts-on-hold-instructions-to-view-your-debt-on-hold",
+  "title": "Instructions to view your debt on hold",
+  "url": "https://www.ato.gov.au/individuals-and-families/paying-the-ato/how-much-you-owe/debts-on-hold/instructions-to-view-your-debt-on-hold",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Using these instructions",
+      "page": null,
+      "text": "If we've placed your debt on hold and it's **not** included in your account balance, you can follow these instructions to:\n\n- find out when your debt was placed on hold\n- check if you have a debt on hold that is not currently included in your account balance\n- see if your debt on hold has been taken off hold or if offsetting has occurred.\n\nWe have instructions for:\n\nIf you need further information about your debt on hold, contact us."
+    },
+    {
+      "heading": "Individuals and sole traders",
+      "page": null,
+      "text": "Follow these steps to view your debt on hold, see if a debt has been taken off hold, or if offsetting has occurred.\n\n1. Visit ATO online services.\n2. Select the **Tax** drop-down menu.\n3. Select **Accounts**.\n4. Select **Summary**.\n5. Choose the account you want to view.\n6. Select the **Filter** drop-down.\n7. Update the **from date** to be **'01/01/2000'** to show everything on your account.\n8. Select **Order date by** to sort from **Oldest** to **Newest**.\n9. Select **Filter** to sort and view transactions.\n10. Scroll through the account onscreen or download a CSV (Excel) file.\n11. To view the original debt on hold, search ‘non-pursuit’.\n12. To view when a debt has been included in your account balance or offset, search for\n\n- 're-raise of non-pursuit'\n- 'partial re-raise of non-pursuit'\n- 'Existing debt on hold included in account balance'.\n13. The balance of your debt on hold is the original debt on hold amount minus any re-raises or amounts that have been included in the account."
+    },
+    {
+      "heading": "Registered tax professionals",
+      "page": null,
+      "text": "Follow these steps to view a client's debt on hold, see if their debt has been taken off hold, or if offsetting has occurred.\n\n1. Visit Online services for agents.\n2. Select **View client list** (or **Favourite clients** if you have added the client to your favourite list).\n3. Select a client.\n4. Select the **Accounts and payments** drop-down menu.\n5. Select **Accounts Summary**.\n6. Choose the account you want to view.\n7. Select the **Filter** drop-down.\n8. Update the **from date** to **'01/01/2000'** to show everything on the account.\n9. Select **Order date by** to sort from **Oldest** to **Newest**.\n10. Select **Filter** to sort and view transactions.\n11. Scroll through the account onscreen or download a CSV (Excel) file.\n12. To view the original debt on hold, search ‘non-pursuit’.\n13. To view when a debt has been included in your account balance or offset, search for\n\n- 're-raise of non-pursuit'\n- 'partial re-raise of non-pursuit'\n- 'Existing debt on hold included in account balance'.\n14. The balance of your debt on hold is the original debt on hold amount minus any re-raises or amounts that have been included in the account."
+    },
+    {
+      "heading": "Businesses",
+      "page": null,
+      "text": "Follow these steps to view your debt on hold, see if a debt has been taken off hold, or if offsetting has occurred.\n\n1. Visit Businesses and organisations online services.\n2. Select the **Accounts and payments** drop-down menu.\n3. Select **Account Summary**.\n4. Choose the account you want to view.\n5. Select the **Filter** drop-down.\n6. Update the **from date** to **'01/01/2000'** to show everything on your account.\n7. Select **Order date by** to sort from **Oldest** to **Newest**.\n8. Select **Filter** to sort and view transactions.\n9. Scroll through the account onscreen or download a CSV (Excel) file.\n10. To view the original debt on hold, search ‘non-pursuit’.\n11. To view when a debt has been included in your account balance or offset, search for\n\n- 're-raise of non-pursuit'\n- 'partial re-raise of non-pursuit'\n- 'Existing debt on hold included in account balance'.\n12. The balance of your debt on hold is the original debt on hold amount minus any re-raises or amounts that have been included in the account."
+    }
+  ]
+}

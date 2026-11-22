@@ -1,0 +1,95 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-super-withdrawing-and-using-your-super-retirement-withdrawal-lump-sum-or-ebbb0ede",
+  "title": "Transfer balance cap – capped defined benefit income streams",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/retirement-withdrawal-lump-sum-or-income-stream/transfer-balance-cap-capped-defined-benefit-income-streams",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Modified transfer balance cap rules",
+      "page": null,
+      "text": "A capped defined benefit income stream, such as a lifetime pension, counts towards your transfer balance.\n\nHowever, the transfer balance cap rules apply differently to capped defined benefit income streams as any excess transfer balance is generally unable to be commuted from these income streams.\n\nIf you have a capped defined benefit income stream:\n\n- it will be included in your transfer balance account and\n\n- count towards your personal transfer balance cap\n- taken into account when we calculate if you're entitled to indexation of your personal transfer balance cap\n- your super fund will calculate the 'special value' your capped defined benefit income stream according to a legal formula and report it to us, with the amount then recorded as a credit in your transfer balance account\n- you may need to include income from these income streams in your assessable income and have a reduced entitlement to the super income stream tax offset if both\n\n- your income from your capped defined benefit income streams exceeds the defined benefit income cap\n- you're 60 years old or older – or under 60 years old (and receiving a death benefit income stream from a person who died at 60 years old or older).\n\nIf you exceed your personal transfer balance cap due to a combination of capped defined benefit income streams and account-based income streams:\n\n- tax consequences may apply to the income from your capped defined benefit income streams\n- you may need to commute your account-based pension and be liable for excess transfer balance tax."
+    },
+    {
+      "heading": "Capped defined benefit income streams",
+      "page": null,
+      "text": "Capped defined benefit income streams include:\n\n- lifetime pensions, regardless of when they start\n- lifetime annuities that existed before 1 July 2017\n- life expectancy pensions and annuities that existed before 1 July 2017\n- market-linked pensions and annuities that existed before 1 July 2017.\n\nIf you're receiving an income stream, ask your super fund if it's a capped defined benefit income stream."
+    },
+    {
+      "heading": "Calculating the 'special value'",
+      "page": null,
+      "text": "Your super fund will calculate the 'special value' of your capped defined benefit income stream and report it to us. You will receive a credit in your transfer balance account for this amount.\n\nThe following steps shows how they will calculate it."
+    },
+    {
+      "heading": "Calculating the 'special value' > Step 1 – annualise your entitlement",
+      "page": null,
+      "text": "Annualise the first payment you are entitled to receive from the income stream after the income stream started (or after 1 July 2017 if income stream existed before 1 July 2017).\n\nThis can be expressed in the following formula:\n\nFirst payment divided by the number of days in the period, multiplied by 365."
+    },
+    {
+      "heading": "Calculating the 'special value' > Step 1 – annualise your entitlement > Example: annualise your entitlement formula",
+      "page": null,
+      "text": "Jane retired and started a lifetime pension on 1 May 2016.\n\nTo work out the annual entitlement of her pension, Jane's superannuation fund needs to 'annualise' her first fortnightly payment after 1 July 2017, which is $5,753.42. To do this, they first calculate the daily rate by dividing her gross fortnightly payment by 14. They then multiply this amount by 365 days:\n\n$5,753.42 ÷ 14 × 365 = $150,000."
+    },
+    {
+      "heading": "Calculating the 'special value' > Step 2 – calculate your special value",
+      "page": null,
+      "text": "**For lifetime pension or annuity**, your special value is your annual entitlement multiplied by 16.\n\nFor **non-commutable life expectancy** or **market-linked products**, your special value is your annual entitlement multiplied by the number of years (rounded up to the nearest whole number) remaining in that product."
+    },
+    {
+      "heading": "Calculating the 'special value' > Step 2 – calculate your special value > Example: calculate your special value formula",
+      "page": null,
+      "text": "Malcolm retired on 1 January 2017. His superannuation fund needs to calculate the special value of his market-linked pension.\n\nThe special value of his market-linked pension at 1 July 2017 is his annual entitlement for 2017–18 multiplied by the remaining term. The pension's remaining term of 18 years and one month is rounded up to the nearest whole year, 19.\n\nTo calculate the annual entitlement of his pension, Malcolm's superannuation fund needs to 'annualise' his first weekly payment after 1 July 2017, which is $575.35. This is calculated by working out the daily rate by dividing the gross weekly payment by 7 and multiplying this amount by 365 days.\n\n$575.35 ÷ 7 × 365 = $30,000\n\nThe special value of his pension is:\n\n19 × $30,000 = $570,000.\n\nEnd of example"
+    },
+    {
+      "heading": "If your special value exceeds your personal transfer balance cap",
+      "page": null,
+      "text": "If you only have credits in your transfer balance account from capped defined benefit income streams, you won't have an excess transfer balance.\n\nHowever, you may need to include part of the excess amount in your assessable income if both:\n\n- you have credits in your transfer balance account from both a capped defined benefit income stream and an account-based income stream\n- the annual income you receive from your capped defined benefit income streams exceeds your defined benefit income cap.\n\nYour entitlement to the tax offset may also be affected.\n\nFor more information, see Capped defined benefit and account-based income streams."
+    },
+    {
+      "heading": "If your special value exceeds your personal transfer balance cap > Calculating the debit value for commutation",
+      "page": null,
+      "text": "From 7 December 2024 relaxed commutation rules for legacy retirement products apply for 5 years, if you meet certain conditions. A full commutation will result in a debit in your transfer balance account.\n\nFor lifetime annuities or pensions the debit value will be the amount of the transfer balance credit that arose in your transfer balance account in respect of the income stream, less the following:\n\n- the amount of any transfer balance debits (except from a payment split) that have arisen in your transfer balance account in respect of the income stream before that time.\n\nFor market linked and life expectancy pensions or annuities the debit value will be the amount of the transfer balance credit that arose in your transfer balance account in respect of the income stream, less the sum of the following:\n\n- the amount of any transfer balance debits (except from a payment split) that have arisen in your transfer balance account in respect of the income stream before that time\n- the total amount of superannuation income stream benefits the person was entitled to receive before the start of the financial year the commutation takes place, and\n- the greater of\n\n- the sum of the superannuation income stream benefits paid during the financial year the commutation takes place\n- the minimum amount required to be paid under regulations 1.07B and 1.07C of SISR or regulation 1.08 of the Retirement Savings Account Regulations 1997 during the financial year the commutation takes place.\n\nWhere lifetime annuities, market linked and life expectancy pensions or annuities have been commuted and restarted on or after 1 July 2017, the income streams will no longer be capped defined benefit income stream (CDBIS).\n\nAs such, the debit value will be the value of the superannuation interest that supported the superannuation income stream just before the income stream ceased. Different rules apply for APRA regulated funds when a market linked or similar income stream recommences as part of a successor fund transfer, see Updated guidance – market linked pensions."
+    },
+    {
+      "heading": "If your special value exceeds your personal transfer balance cap > Calculating the debit value for commutation > Example: Calculating debit value for commutation of a legacy retirement product",
+      "page": null,
+      "text": "On 25 January 2025, Arnold Perkins decides to commute his market linked income stream (a legacy retirement product). The original special value on 1 July 2017 was $1,600,000. There are no transfer balance account (TBA) debits. Arnold received a total of $600,000 in pension payments from 1 July 2017 to 30 June 2024.\n\nArnold's fund calculates that between 1 July 2024 and 25 January 2025, he should have received pension payments of $35,000 (pro-rata minimum pension) but has only received $30,500. He is aware that commuting the income stream when the minimum pension amount hasn't been paid may affect the fund's tax-exempt status in the same year.\n\nOriginal Special Value on 1 July 2017 - $1,600,000\n\nLess the sum of:\n\n- Total TBA debits - $0\n- Total payments from 1 July 2017 to 30 June 2024 - $600,000\n- Greater value of required payment and received payment - $35,000\n\nThe fund reports a commutation (TBA debit) of $965,000.\n\nThis will leave a balance of $635,000 on the transfer balance account. Arnold will need to consider this if he decides to start a new, account-based income stream.\n\nIf Arnold does decide to rollover the account balance of $1,000,000 he commuted, and commences a new account based pension, the fund paying the new account based pension would credit his transfer balance account with $1,000,000 (the value of the superannuation income stream). Arnold would exceed his personal transfer balance cap by $35,000. More information on Excess transfer balance.\n\n**Transactions in Arnold’s transfer balance account**\n\n| Date | Transaction | Debit | Credit | Transfer balance |\n|---|---|---|---|---|\n| 1 July 2017 | Transfer balance account starts | $0 | $1,600,000 | $1,600,000 |\n| 25 Jan 2025 | Commutation debit | $965,000 | $0 | $635,000 |\n| 25 Jan 2025 | Account based pension credit | $0 | $1,000,000 | $1,635,000 |\n\nEnd of example"
+    },
+    {
+      "heading": "Assessable income from your capped defined benefit income streams",
+      "page": null,
+      "text": "If you are 60 years old or over (or a death benefit dependant and the deceased died at 60 years old or over) and your capped defined benefit income exceeds your defined benefit income cap, you may have additional tax liabilities.\n\nThis depends on which of the following components are paid to you as part of your total annual capped defined benefit income stream:\n\n- Taxable component – taxed element and tax-free components\n- Taxable component – untaxed element\n- Multiple components."
+    },
+    {
+      "heading": "Assessable income from your capped defined benefit income streams > Taxable component – taxed element and tax-free components",
+      "page": null,
+      "text": "If your defined benefit income is comprised of a taxed element, a tax-free component, or both - 50% of your defined benefit income (excluding any amounts from an untaxed element) that exceeds your defined benefit income cap is included in your assessable income."
+    },
+    {
+      "heading": "Assessable income from your capped defined benefit income streams > Taxable component – untaxed element",
+      "page": null,
+      "text": "If your defined benefit income is comprised of an untaxed element, this entire amount is included in your assessable income. However, the 10% tax offset you would normally be entitled to will be reduced if the total amount of your defined benefit income (including any amounts of taxed element and tax-free components) exceeds your defined benefit income cap.\n\nThe tax offset entitlement is reduced by 10% of the excess (but can't be reduced below zero). In other words, the 10% offset applicable to the untaxed element-sourced income only applies to the amount of the untaxed element-sourced income up to your defined benefit income cap, and no tax offset applies to the excess."
+    },
+    {
+      "heading": "Assessable income from your capped defined benefit income streams > Multiple components",
+      "page": null,
+      "text": "Both of these treatments apply if your defined benefit income includes an untaxed element as well as a taxed element, a tax-free component, or both, and the total amount of defined benefit income exceeds your defined benefit income cap.\n\nNote your taxed element sourced income is counted first (‘stacked’) before your untaxed element sourced income when calculating your entitlement to tax offsets.\n\nIf you have an untaxed element in your income stream, your fund may not pre-populate your payment summary with your entitlement to the tax offset as they don't know if you have income from other capped defined benefit income streams that will affect your entitlement to the offset. You will need to determine your entitlement to the offset when preparing your income tax return."
+    },
+    {
+      "heading": "Capped defined benefit and account-based income streams",
+      "page": null,
+      "text": "If you receive both a capped defined benefit income stream and an account-based income stream, you will need to compare the balance of your transfer balance account (taking into account credits and debits from all your income streams) to both your:\n\n- personal transfer balance cap\n- capped defined benefit balance.\n\nYour capped defined benefit balance is the net sum of all the transfer balance credits and debits in your transfer balance account from capped defined benefit income streams.\n\nIf the balance of your transfer balance account exceeds your transfer balance cap, and also exceeds your capped defined benefit balance, you will have an excess transfer balance. Your excess transfer balance amount will include notional excess transfer balance earnings.\n\nYou will need to commute your account-based income streams to resolve the excess amount. You will also be liable for excess transfer balance tax.\n\nIncome tax consequences may also apply to the income you received from your capped defined benefit income streams."
+    },
+    {
+      "heading": "Capped defined benefit and account-based income streams > Example: capped defined benefit in excess of your transfer balance cap",
+      "page": null,
+      "text": "June is 65 years old and was receiving both:\n\n- a capped defined benefit income stream (estimated special value of $2 million)\n- an account-based income stream (estimated value of $500,000).\n\nBefore 1 July 2017, June transferred her account-based income stream back to an accumulation account.\n\nOn 1 July 2017, the special value of her capped defined benefit income stream ($2 million) will count towards her personal transfer balance cap of $1,600,000. The balance of her transfer balance account exceeds her personal transfer balance cap by $400,000. However, as this excess is solely from a capped defined benefit income stream, she doesn't have an excess transfer balance.\n\nAs June’s benefits in 2017–18 exceed her defined benefit income cap, she may need to include amounts in her assessable income. Her entitlement to a super income stream offset may also be affected.\n\nJune won't be entitled to indexation of her personal transfer balance cap as the highest ever balance of her transfer balance account was more than her cap of $1.6 million.\n\nEnd of example"
+    },
+    {
+      "heading": "Capped defined benefit and account-based income streams > Example: starting an account-based income stream on top of a capped defined benefit income stream",
+      "page": null,
+      "text": "Greg is receiving a capped defined benefit income stream with a special value of $1.8 million on 1 July 2017. He also has $300,000 in accumulation interests.\n\nGreg’s personal transfer balance cap is $1.6 million. His capped defined benefit balance is $1.8 million.\n\nGreg exceeds his personal transfer balance cap by $200,000 on 1 July 2017. He doesn't exceed his capped defined benefit balance, and doesn't have an excess transfer balance.\n\nAfter 1 July 2017, Greg starts an account-based income stream using his accumulation interests. The combined total that counts towards his personal transfer balance cap and capped defined benefit balance is $2.1 million ($1.8 million plus $300,000). Greg exceeds his personal transfer balance cap by $500,000, and his capped defined benefit balance by $300,000.\n\nGreg has an excess transfer balance of $300,000 (the lesser of these 2 amounts). He needs to commute the excess from his account-based income stream, along with notional earnings on the excess. He also needs to pay excess transfer balance tax.\n\nAdditionally, if Greg’s benefits in 2017–18 exceed his defined benefit income cap, he will need to include amounts in his assessable income from 1 July 2017. His entitlement to the super income stream tax offset may also be affected.\n\nGreg is also not entitled to indexation of his personal transfer balance cap as the highest ever balance of his transfer balance account was more than $1.6 million before 1 July 2021.\n\nEnd of example"
+    }
+  ]
+}

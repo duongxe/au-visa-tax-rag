@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-tax-file-number-update-your-tfn-registration-details-update-your-financial-institution-details",
+  "title": "Update your financial institution details",
+  "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/update-your-tfn-registration-details/update-your-financial-institution-details",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Your financial institution details",
+      "page": null,
+      "text": "We can only pay refunds into an Australian bank account. The quickest way to update your financial institution details is online. To do this, you need a myGov account linked to the ATO.\n\nThe account must be held by:\n\n- you under your legal or trading name, either solely or jointly\n- your registered tax or BAS agent\n- a legal practitioner acting as your trustee or executor.\n\nWhen providing your account details, we require the:\n\n- bank state branch (BSB) number – this number has 6 digits\n- account number – this number has no more than 9 digits\n- account name."
+    },
+    {
+      "heading": "Update your financial institution details online",
+      "page": null,
+      "text": "To update your financial institution details online, you need a myGov account linked to the ATO.\n\nWhen updating your financial institution details online, don't include spaces or hyphens in the BSB or account number.\n\nWhen entering the account name, include spaces between each word and initials where required – for example, JQ Citizen. If there are more than 32 characters in the account name, only enter the first 32. Don't include the account type, such as cheque, savings, or mortgage offset.\n\nFollow the steps below to find out:\n\n- how to update your financial institution details using ATO online services\n- how to update your financial institution details using the ATO app"
+    },
+    {
+      "heading": "Update your financial institution details online > How to update your financial institution details using ATO online services",
+      "page": null,
+      "text": "To update your financial institution details using ATO online services:\n\n1. sign in to your myGov account\n2. under **Linked services** select **Australian Taxation Office**\n3. select **My profile**, then **Financial institution details**\n4. select **Update** or **Delete** to the right of your account details\n5. enter the account name, BSB and account number\n6. tick the box to agree to sign the declaration\n7. select **Save**."
+    },
+    {
+      "heading": "Update your financial institution details online > How to update your financial institution details using the ATO app",
+      "page": null,
+      "text": "To update your financial institution details using the ATO app:\n\n1. log in to the ATO app\n2. select **More**, then select **My details**\n3. under **Financial institution details** select **Update**, which will open ATO online services\n4. follow the steps for how to update your financial institution details using ATO online services."
+    },
+    {
+      "heading": "Update your financial institution details by phone",
+      "page": null,
+      "text": "You or a nominated representative can update your financial institution details over the phone. Contact us to speak to a customer service representative.\n\nHave your personal tax file number (TFN) or Australian business number (ABN) ready when you contact us. We will then confirm your identity by asking a series of questions based on information from your tax records."
+    }
+  ]
+}

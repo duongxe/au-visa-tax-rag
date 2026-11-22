@@ -1,0 +1,35 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-transactions-acquiring-and-disposing-of-crypto-assets-crypt-896e6f09",
+  "title": "Crypto asset payments relating to employment or services",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-assets-payments-relating-to-employment-or-services",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Crypto asset payments from your employer",
+      "page": null,
+      "text": "If you receive crypto assets as payment directly from your employer for your employment or services, you must treat the payment as assessable income. When you receive the crypto asset, keep a record of the market value in Australian dollars (AUD). Add this amount to your assessable income when you complete your tax return.\n\nIf you receive a crypto asset payment from your employer, they must still meet PAYG withholding and superannuation obligations for these payments.\n\nIf you receive crypto assets from your employer under a salary sacrifice arrangement, see Crypto assets used in business."
+    },
+    {
+      "heading": "Crypto asset payments from a third party",
+      "page": null,
+      "text": "If you receive a crypto asset payment from a third party that relates to your employment or services, you must treat the payment as assessable income.\n\nA third party is an entity that is not your employer. For example:\n\n- a company you worked with in the course of your employment\n- an event sponsor\n- an individual fan or supporter.\n\nReceiving a crypto asset payment from a third party that relates directly to your employment or services is different to receiving a gift or donation of crypto assets. When the payment is clearly related to your employment, it isn't a gift or donation. You must treat it as assessable income.\n\nWhen you receive the crypto asset from the third party, keep a record of the market value in Australian dollars (AUD). Add this amount to your assessable income when you complete your tax return."
+    },
+    {
+      "heading": "Crypto asset payments from a third party > Example: payment from third party is assessable income and not a gift",
+      "page": null,
+      "text": "Olivia is employed as a professional basketball player. Her team advertises an address where fans can send Bitcoin (BTC) to Olivia in appreciation of her performances on the court.\n\nFiona is a fan who enjoys watching Olivia play and sends her 0.10 BTC in response to Olivia's performance on 20 January 2026.\n\nOlivia includes the market value of the 0.10 BTC (at 20 January 2026) as assessable income in her 2025–26 tax return as 'other income'. Olivia’s cost base for the 0.10 BTC will be the same amount as the income she declares.\n\nThe payment from Fiona isn't a gift as it directly relates to Olivia's employment of playing professional basketball.\n\nWhen Fiona disposes of the 0.10 BTC, she must calculate if she has a capital gain or capital loss. This is based on whether the price of the BTC is higher or lower than when she acquired it.\n\nEnd of example"
+    },
+    {
+      "heading": "Crypto asset payments from a third party > Example: crypto asset payment from a third party",
+      "page": null,
+      "text": "Dean works for a blockchain startup called BlocLync. He works on a joint project between BlocLync and another company called ABYZ Pty Ltd. Dean doesn’t work for ABYZ Pty Ltd directly so they are considered a third party.\n\nABYZ Pty Ltd is impressed with Dean's contribution and wants to reward him for his efforts. ABYZ Pty Ltd sends Dean 0.5 ETH directly to his personal wallet.\n\nDean keeps a record of the market value of the 0.5 ETH in AUD at the time he receives it. He adds this amount into his assessable income for the income year when he completes his tax return.\n\nEnd of example"
+    },
+    {
+      "heading": "Disposing of the crypto asset payment",
+      "page": null,
+      "text": "If you dispose of a crypto asset from your employer or the third party, you may trigger a capital gains tax (CGT) event and have a CGT obligation.\n\nYou calculate any capital gain or capital loss when you dispose of the crypto asset. You will need to work out the cost base of the asset. In circumstances where you have received the crypto asset without payment, the first element of the cost base will usually be the market value of the asset at the time you received it.\n\nFor more information, see Calculating your CGT."
+    }
+  ]
+}

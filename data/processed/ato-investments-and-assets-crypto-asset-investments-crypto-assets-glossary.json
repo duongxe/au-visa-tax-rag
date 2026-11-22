@@ -1,0 +1,115 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-crypto-assets-glossary",
+  "title": "Crypto assets glossary",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/crypto-assets-glossary",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "A–C > Airdrop",
+      "page": null,
+      "text": "An airdrop is a distribution of a crypto asset in a manner that requires no or minimal effort from the recipient and involves no exchange of consideration in the form of fiat currency or other crypto assets. The issuer of the crypto asset being airdropped will distribute it to recipients by depositing it into their wallets. There is often no or minimal engagement from recipients and a recipient may even be unaware that they have received an airdrop until it appears in their wallet."
+    },
+    {
+      "heading": "A–C > Block",
+      "page": null,
+      "text": "A block is a group of transaction records grouped together. At regular intervals a new block is added to the chain."
+    },
+    {
+      "heading": "A–C > Blockchain",
+      "page": null,
+      "text": "A blockchain is a record of all transactions, made up of blocks, of a particular crypto asset. A blockchain is a form of digital ledger."
+    },
+    {
+      "heading": "A–C > Chain split",
+      "page": null,
+      "text": "A chain split occurs where there are 2 or more competing versions of a crypto asset blockchain. The core rules of the new chain develop independently to those of the original chain."
+    },
+    {
+      "heading": "A–C > Chain swap",
+      "page": null,
+      "text": "A chain swap is a process that allows the movement of crypto assets from one blockchain to another."
+    },
+    {
+      "heading": "A–C > Crypto",
+      "page": null,
+      "text": "Crypto is shorthand for (or an abbreviation of) crypto asset."
+    },
+    {
+      "heading": "A–C > Crypto asset",
+      "page": null,
+      "text": "Crypto assets are a form of digital asset that use cryptography to secure transactions and don't rely on a financial intermediary. Crypto assets include cryptocurrencies, digital or virtual currencies, virtual assets and non-fungible tokens."
+    },
+    {
+      "heading": "A–C > Crypto mining",
+      "page": null,
+      "text": "Crypto mining is the process of validating transactions on the blockchain and creating new blocks. The users who create new blocks in this system are known as miners."
+    },
+    {
+      "heading": "D–L > Digital ledger",
+      "page": null,
+      "text": "A digital ledger is a digital system for recording the transaction of assets in which the transactions and their details are recorded in multiple places at the same time."
+    },
+    {
+      "heading": "D–L > Digital wallet",
+      "page": null,
+      "text": "A digital wallet is an online or software-based place to store your private keys."
+    },
+    {
+      "heading": "D–L > Forger",
+      "page": null,
+      "text": "A forger (similar to a miner) is someone who validates transactions and creates new blocks in a proof of stake system."
+    },
+    {
+      "heading": "D–L > Hardware wallet",
+      "page": null,
+      "text": "A hardware wallet is a secure physical device which stores the user's private keys."
+    },
+    {
+      "heading": "M–S > Non-fungible token",
+      "page": null,
+      "text": "A non-fungible token is a digital file or asset stored on a digital ledger where each token is unique and not interchangeable."
+    },
+    {
+      "heading": "M–S > Payment gateway",
+      "page": null,
+      "text": "A crypto payment gateway is a payment processor for digital assets."
+    },
+    {
+      "heading": "M–S > Private key",
+      "page": null,
+      "text": "A private key is similar to a password and allows you to transact with your crypto assets."
+    },
+    {
+      "heading": "M–S > Smart contract",
+      "page": null,
+      "text": "A smart contract is a computer program that facilitates, verifies, or enforces defined rules on the blockchain."
+    },
+    {
+      "heading": "M–S > Stablecoin",
+      "page": null,
+      "text": "A stablecoin is a cryptocurrency that pegs its value to some other asset, generally a non-digital currency or commodity."
+    },
+    {
+      "heading": "M–S > Staking",
+      "page": null,
+      "text": "Staking can involve locking your existing crypto assets to validate transactions on the blockchain and create new blocks.\n\nStaking may also refer to other activities that involve pledging your crypto assets to generate a passive return (or yield)."
+    },
+    {
+      "heading": "T–Z > Token",
+      "page": null,
+      "text": "A token is a unit of value on a blockchain that usually has some other value proposition besides just a transfer of value."
+    },
+    {
+      "heading": "T–Z > Wrapped tokens",
+      "page": null,
+      "text": "A wrapped token is a tokenised version of another crypto asset, which mirrors the value of the original crypto asset it represents."
+    },
+    {
+      "heading": "T–Z > Wrapping",
+      "page": null,
+      "text": "Wrapping is the process of creating a wrapped token."
+    }
+  ]
+}

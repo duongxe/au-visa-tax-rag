@@ -1,0 +1,70 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-foreign-residents-and-capital-gains-tax-foreign-resident-capital-g-2bb96f6e",
+  "title": "Vendor declarations",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/vendor-declarations",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "About vendor declarations",
+      "page": null,
+      "text": "When selling assets other than taxable Australian real property, the vendor may provide the purchaser with a vendor declaration to specify that foreign resident capital gains withholding (FRCGW) is not required.\n\nWhere the asset is taxable Australian real property, Australian residents for tax purposes will need to get a clearance certificate from us to avoid FRCGW applying.\n\nThere are 2 types of vendor declarations:"
+    },
+    {
+      "heading": "Vendors",
+      "page": null,
+      "text": "The vendor is the entity that is the legal owner of the asset, even where the asset is held on behalf of another entity. For example, the trustee or custodian who holds the legal title on behalf of beneficiaries."
+    },
+    {
+      "heading": "Residency declaration",
+      "page": null,
+      "text": "Where the vendor is an Australian resident, they can provide a declaration to the purchaser stating they're an Australian resident for tax purposes for a specific period."
+    },
+    {
+      "heading": "Residency declaration > Purchaser can rely on a residency declaration",
+      "page": null,
+      "text": "Where a vendor provides a valid residency declaration, the purchaser won’t be obliged to withhold, unless the:\n\n- asset is taxable Australian real property or a company title interest (in which case the vendor needs to provide a clearance certificate instead)\n- purchaser knows, or could reasonably be expected to know, that the residency declaration is false at any time from when they receive the declaration to immediately before they become the owner of the asset."
+    },
+    {
+      "heading": "Non-IARPI declaration",
+      "page": null,
+      "text": "A vendor may provide the purchaser with a non-indirect Australian real property interests (IARPI) declaration, confirming either:\n\n- the membership interests they're disposing of are not IARPI\n- membership interests that are the subject of a relevant option or right are not IARPI."
+    },
+    {
+      "heading": "Non-IARPI declaration > Purchaser can rely on a non-IARPI declaration",
+      "page": null,
+      "text": "Where a vendor provides a valid non-IARPI declaration, there won’t be an obligation for the purchaser to withhold. This is unless the purchaser knows, or could reasonably be expected to know, that the non-IARPI declaration is false at any time from when they receive the non-IARPI declaration to immediately before they become the owner of the asset.\n\nIf the transaction and related transactions are valued at **$50 million or more**, the vendor needs to notify us of the non-IARPI declaration and declare to the purchaser in writing they have done so. Refer to Notification of non-IARPI declaration: form and instructions for how to notify us using the approved form.\n\nIf the vendor doesn't notify us and notify the purchaser they have done so in writing, then the purchaser cannot rely on the non-IARPI declaration, and they may need to withhold.\n\nTypically, the vendor is required to notify us of a non-IARPI declaration at least 28 days before settlement."
+    },
+    {
+      "heading": "Knowing or suspecting a declaration is false",
+      "page": null,
+      "text": "As a purchaser who receives a residency or non-IARPI declaration, you're treated as knowing, or reasonably being expected to know, the declaration is false if any of the following apply. This is at any time from when you receive the declaration to just before you become the owner of the asset.\n\n- You have knowledge or information that the declaration is false.\n- You are a party to creating the false declaration.\n- You find or come across information that indicates the declaration could be false.\n\nIt's expected that a purchaser will complete the checks normally done as part of a sale. This will include verifying a declaration is correct if you come across information that indicates the declaration could be false."
+    },
+    {
+      "heading": "When to provide a declaration",
+      "page": null,
+      "text": "The vendor must provide the declaration to the purchaser before the settlement date. If the vendor does not provide the purchaser the declaration in time, the purchaser may need to withhold 15% from the purchase price."
+    },
+    {
+      "heading": "Valid declarations",
+      "page": null,
+      "text": "A vendor’s declaration is only valid:\n\n- for 6 months from the date it is signed by the vendor\n- for the listed vendor and specified period on the declaration\n- if the name of the vendor on the declaration matches the name of the owner of the asset (unless proof of name change is provided)\n- where the settlement date falls within the specified period that the declaration covers.\n\nIf the declaration doesn't meet these conditions, the declaration is not valid and the purchaser may be required to withhold 15% of the purchase price.\n\nThe specified period may start retrospectively but cannot exceed 6 months from the date the declaration is signed by the vendor.\n\nIt is the vendor’s responsibility to provide the purchaser with a declaration and ensure the settlement date is within the 6-month validity period of the declaration."
+    },
+    {
+      "heading": "How to make a declaration",
+      "page": null,
+      "text": "The declaration must be made in writing.\n\nThere is no specific format required for a vendor declaration. However, you may use the Foreign resident capital gains withholding – vendor declaration (PDF, 222KB)This link will download a file template."
+    },
+    {
+      "heading": "How to make a declaration > Penalties",
+      "page": null,
+      "text": "A vendor may be subject to a penalty if they make a false or misleading:\n\n- declaration to the purchaser\n- statement to us when they notify us of their non-IARPI declaration\n- statement to the purchaser that they've notified us of their non-IARPI declaration.\n\nThe amount of the penalty varies depending on the severity of the offence, and will be:\n\n- 120 penalty units where the vendor has knowingly made a false or misleading declaration\n- 80 penalty units where the vendor has recklessly made a false or misleading declaration\n- 40 penalty units where the declaration is false or misleading as a result of the vendor failing to take reasonable care.\n\nPurchasers who rely on a declaration that is not valid, or where the declaration cannot be relied on, may be subject to a failure to withhold penalty. The penalty is equal to the amount that should have been withheld (15% of the purchase price)."
+    },
+    {
+      "heading": "Multiple vendors",
+      "page": null,
+      "text": "A declaration is only valid for the vendor listed on the declaration.\n\nIf an asset is acquired from multiple vendors, each vendor needs to provide the purchaser with their own declaration to avoid the withholding obligation.\n\nWhere some of the vendors have not provided a declaration (or clearance certificate), withholding will apply to those vendors at the proportion of their ownership in the asset."
+    }
+  ]
+}

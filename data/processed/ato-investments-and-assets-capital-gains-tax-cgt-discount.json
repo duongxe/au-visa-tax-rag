@@ -1,0 +1,70 @@
+{
+  "doc_id": "ato-investments-and-assets-capital-gains-tax-cgt-discount",
+  "title": "CGT discount",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "How the CGT discount works",
+      "page": null,
+      "text": "When you sell or otherwise dispose of an asset, you can reduce your capital gain by 50%, if both of the following apply:\n\n- you owned the asset for at least 12 months\n- you are an Australian resident for tax purposes.\n\nThis is called the capital gains tax (CGT) discount."
+    },
+    {
+      "heading": "12-month ownership requirement",
+      "page": null,
+      "text": "For an asset to qualify for the CGT discount you must own it for at least 12 months before the 'CGT event' happens. The CGT event is the point at which you make a capital gain or loss. You exclude the day of acquisition and the day of the CGT event when working out if you owned the CGT asset for at least 12 months before the 'CGT event’ happens.\n\n- **If you sell the asset and there is no contract of sale**, the CGT event happens at the time of sale.\n- **If there is a contract to sell the asset**, the CGT event happens on the date of the contract, not when you settle. Property sales usually work this way.\n- **If the asset is lost or destroyed**, the CGT event happens when:\n- you first receive an insurance payment or other compensation\n- if there is no insurance payment or compensation, when the loss occurred or was discovered.\n\nYou can count an asset’s previous ownership towards your 12-month ownership period if you acquired it:\n\n- through a deceased estate if the asset was acquired by the deceased on or after 20 September 1985\n- through a relationship breakdown – you will satisfy the 12–month requirement if the combined period your spouse and you owned the asset was more than 12 months\n- as a rollover replacement for an asset that was lost, destroyed or compulsorily acquired if the period of ownership of the original asset and the replacement asset was at least 12 months."
+    },
+    {
+      "heading": "Exclusions from the CGT discount",
+      "page": null,
+      "text": "You can't use the CGT discount in the following circumstances."
+    },
+    {
+      "heading": "Exclusions from the CGT discount > Home first used for rental or business in last 12 months",
+      "page": null,
+      "text": "If the asset is your home and you first started using it for rental or business less than 12 months before disposing of it, you can't use the CGT discount."
+    },
+    {
+      "heading": "Exclusions from the CGT discount > You use the indexation method instead",
+      "page": null,
+      "text": "If you have owned the asset since before 21 September 1999, you can index the cost of the asset for inflation instead of using the CGT discount. But in most cases, you will get a better result (a smaller capital gain) by using the discount."
+    },
+    {
+      "heading": "Exclusions from the CGT discount > Foreign or temporary residents",
+      "page": null,
+      "text": "The full CGT discount can't be used for capital gains made by foreign or temporary residents after 8 May 2012. However, you may get an apportioned discount on capital gains if you had a period of Australian residency during your ownership of the asset."
+    },
+    {
+      "heading": "Exclusions from the CGT discount > Creation of new asset",
+      "page": null,
+      "text": "The CGT discount isn't available for a CGT event that creates a new asset and a capital gain. This might happen, for example, with a restrictive covenant, where you receive payment for agreeing not to do something or granting a lease.\n\nIn these cases the asset hasn't been acquired at least 12 months before the CGT event."
+    },
+    {
+      "heading": "Exclusions from the CGT discount > Disposal of interest in a non-widely held entity",
+      "page": null,
+      "text": "The CGT discount may be denied when you dispose of certain shares or trust interests in non-widely held companies and trusts. These are companies and trusts with fewer than 300 members."
+    },
+    {
+      "heading": "Exclusions from the CGT discount > Conversion of income asset",
+      "page": null,
+      "text": "If an income asset is converted into a capital asset for the purposes of claiming the CGT discount, the discount may be denied (under Part IVA of the *Income Tax Assessment Act 1936*)."
+    },
+    {
+      "heading": "Trusts and companies",
+      "page": null,
+      "text": "If an asset is owned for at least 12 months:\n\n- Australian trusts can discount a capital gain by 50%\n- complying super funds can discount a capital gain by 33.33%.\n\nCompanies can't use the CGT discount."
+    },
+    {
+      "heading": "How to use the CGT discount",
+      "page": null,
+      "text": "Calculating your CGT explains how to use the CGT discount to reduce your tax. Briefly, this is how it works:\n\n1. If you have any capital losses from other assets, you must subtract these from your capital gains before applying the discount.\n2. If you are entitled to the discount for an asset, you reduce the remaining capital gain on that asset by 50% and report this amount in your income tax return. Complying super funds reduce their capital gain by 33.33%."
+    },
+    {
+      "heading": "Extra discount for affordable rental housing",
+      "page": null,
+      "text": "There is an additional CGT discount of up to 10% for individuals who are Australian residents for tax purposes who provide affordable rental housing to people earning low to moderate income.\n\nThis increases the CGT discount to up to 60% for owners of these residential rental properties."
+    }
+  ]
+}

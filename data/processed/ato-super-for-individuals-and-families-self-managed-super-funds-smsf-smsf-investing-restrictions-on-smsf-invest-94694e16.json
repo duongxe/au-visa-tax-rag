@@ -1,0 +1,85 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-self-managed-super-funds-smsf-smsf-investing-restrictions-on-smsf-invest-94694e16",
+  "title": "Relationships with the LRBA lender",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/smsf-investing/restrictions-on-smsf-investments/smsf-borrowing-restrictions/limited-recourse-borrowing-arrangements/relationships-with-the-lrba-lender",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Genuine borrowing to acquire an asset",
+      "page": null,
+      "text": "You must keep appropriate documentation, such as a written loan agreement, that shows you have made a genuine borrowing to acquire an asset. This is especially the case where the lender is a related party.\n\nIf you don't keep this documentation, the amount provided by the related party might be considered to be a contribution received by the SMSF. This could lead to significant tax consequences if it results in a contributions cap being exceeded."
+    },
+    {
+      "heading": "Borrowing from a related party",
+      "page": null,
+      "text": "While you can borrow from a related party, you must ensure that the:\n\n- terms and ongoing operation of the loan are consistent with what you would get from a lender who's not a related party\n- lender doesn't charge the fund more than an arm's length rate of interest under the arrangement\n- SMSF trustee can demonstrate that the SMSF wasn't paying more than an arm's-length rate of interest to a related party.\n\nThe calculation of a rate that represents an arm's-length rate of interest needs to be based on reasonably objective and supportable data. For example, this could be the Reserve Bank of Australia's Indicator Lending Rates for a similar borrowing.\n\nPaying a member or relative of a member an excessive rate of interest also contravenes the prohibition on SMSF trustees giving financial assistance to members or their relatives using the resources of the SMSF.\n\nAdditionally, you must continue to comply with other legislative requirements such as:\n\n- meeting the sole purpose test\n- correctly declaring income from investments\n- complying with existing investment restrictions.\n\nFor more information on borrowing from a related party, see:\n\n- Self Managed Superannuation Funds Ruling SMSFR 2010/1 *Self-Managed Superannuation Funds: the application of subsection 66(1) of the Superannuation Industry (Supervision) Act 1993 to the acquisition of an asset by a self-managed superannuation fund from a related party*\n- Law Companion Ruling LCR 2021/2 *Non-arm's length income* – *expenditure incurred under a non-arm's length arrangement*\n- Self Managed Superannuation Funds Ruling SMSFR 2008/1 *Self-Managed Superannuation Funds: giving financial assistance using the resources of a self-managed superannuation fund to a member or relative of a member that is prohibited for the purposes of paragraph 65(1)(b) of the Superannuation Industry (Supervision) Act 1993*\n- Taxation Determination TD 2016/16 *Income tax: will the ordinary or statutory income of a self-managed superannuation fund be non-arm's length income under subsection 295-550(1) of the Income Tax Assessment Act 1997 (ITAA 1997) when the parties to a scheme have entered into a limited recourse borrowing arrangement on terms which are not at arm's length?*\n- Practical Compliance Guidelines PCG 2016/5 *Income tax* – *arm’s length terms for Limited Recourse Borrowing Arrangements established by self-managed superannuation funds*"
+    },
+    {
+      "heading": "Borrowing from a related party > Related parties on-lending money at a higher interest rate",
+      "page": null,
+      "text": "On-lending is where a lender has borrowed money from another lender for the purpose of providing you a loan.\n\nA related party can on-lend money to the SMSF under an LRBA at a higher rate of interest provided the:\n\n- LRBA to the SMSF by the related party is appropriately documented\n- SMSF isn't charged higher than an arm's-length rate of interest for borrowing\n- arrangement under which the SMSF borrows from meets the requirements of super law.\n\nIf you entered an LRBA from 7 July 2010, the related party lender must not use the asset your SMSF is acquiring through the LRBA as security for their borrowing."
+    },
+    {
+      "heading": "Loan repayments on behalf of the holding trust",
+      "page": null,
+      "text": "In most situations, an SMSF will enter an LRBA loan with the lender directly. However, in very specific circumstances, an SMSF may maintain the borrowing of another party, such as the holding trust, where the SMSF assumes all the obligations for the borrowing.\n\nThe arrangement complying with super laws will depend on whether the:\n\n- SMSF has properly assumed the borrowing obligations of the other party\n- rights of the lender (or any other person) against the SMSF trustee under the arrangement is limited to only the acquirable asset.\n\nThere is also a potential risk of consequential breaches of the in-house asset rule and acquisition from a related party rule if the arrangement isn't protected by the LRBA exception.\n\nSo if your fund has entered into or is considering entering into a borrowing arrangement where it hasn't directly borrowed the money, we strongly recommend you seek advice from an SMSF professional, or contact us for SMSF specific advice."
+    },
+    {
+      "heading": "Offset accounts",
+      "page": null,
+      "text": "A deposit facility offered by an Authorised Deposit-taking Institution (ADI) that is an offset account notionally reduces the loan balance of a mortgage, resulting in a reduction of interest calculated against the loan. Genuine offset accounts offered by an ADI are allowed as it's not considered a borrowing or charge over the fund’s assets.\n\nOffset accounts offered by non-ADI lenders are not considered bank deposits. So due diligence should be taken when considering this type of arrangement."
+    },
+    {
+      "heading": "Drawdowns",
+      "page": null,
+      "text": "A drawdown is where an amount of money under the LRBA is released to you, rather than the full amount.\n\nDrawdowns are allowed in certain circumstances. For example, it may be allowable where the:\n\n- additional borrowings are applied in maintaining or repairing the asset held under the LRBA\n- drawdowns are provided for under the terms of the original LRBA.\n\nHowever, they may result in a new borrowing arrangement.\n\nThe terms of an LRBA may allow multiple drawdowns. Each drawdown must be reviewed by the trustee to determine whether the borrowing meets the requirements of super law applying to the arrangement.\n\nA contravention occurs if a drawdown doesn't meet the requirements of super law."
+    },
+    {
+      "heading": "Drawdowns > Drawdowns from a credit facility",
+      "page": null,
+      "text": "If your LRBA is with a loan facility or similar arrangement, each drawdown you make will result in a separate borrowing. This is even if there are provisions for redraws arising from earlier repayments."
+    },
+    {
+      "heading": "Drawdowns > Drawdowns to make capital improvements",
+      "page": null,
+      "text": "For real property held by the holding trust in an LRBA, an SMSF trustee is allowed to drawdown to make capital improvements under the arrangement if it was entered between 24 September 2007 and 6 July 2010.\n\nDrawdowns for capital improvements are not allowed for LRBAs entered into on or after 7 July 2010.\n\nSMSF trustees must not attach an existing fund asset to the real property or otherwise subject an existing fund asset to a charge under the arrangement."
+    },
+    {
+      "heading": "Lender's recourse and charging the asset acquired",
+      "page": null,
+      "text": "An SMSF must grant the lender a right of recourse to the asset at the same time the SMSF acquires the beneficial interest in the asset.\n\nIn these circumstances, granting a right won't contravene the existing prohibition in the law against giving a charge over a fund asset. This is provided the arrangement complies with all the conditions of super law."
+    },
+    {
+      "heading": "Related party providing personal guarantees",
+      "page": null,
+      "text": "A related party of your SMSF can provide a personal guarantee to a lender, but certain rules of recourse available apply depending on when the LRBA was entered."
+    },
+    {
+      "heading": "Related party providing personal guarantees > Arrangements entered from 7 July 2010",
+      "page": null,
+      "text": "A related party can provide a personal guarantee to a lender in an LRBA. However, their recourse must be limited to the asset under the arrangement and not any other assets held by the SMSF."
+    },
+    {
+      "heading": "Related party providing personal guarantees > Arrangements entered between 24 September 2007 and 6 July 2010",
+      "page": null,
+      "text": "In the event of a default on the borrowing, the recourse of the lender against the SMSF trustees must be limited to the asset that is being acquired under the arrangement.\n\nTo provide additional security to the lender, a related party may put up their own assets as a guarantee.\n\nWhile a related party doesn't have to waive their general rights of recourse, they should carefully consider the risk to the assets of an SMSF that an unlimited guarantee might represent."
+    },
+    {
+      "heading": "Related party providing personal guarantees > Personal guarantees and contributions to the SMSF",
+      "page": null,
+      "text": "If a guarantor makes a payment to the lender, it will be considered a contribution to the SMSF if:\n\n- it satisfies a liability of the SMSF, and\n- the guarantor foregoes their right of indemnity against the SMSF or is prevented from enforcing that right.\n\nThis might happen if the guarantor paid the borrowing and the acquirable asset was transferred to the SMSF trustee under the arrangement.\n\nThere is no contribution if the:\n\n- SMSF trustee has exercised a right to walk away from the arrangement and has no further liability or right to the asset, and\n- lender still exercises a right to call on the guarantee for a shortfall after disposal of the original asset."
+    },
+    {
+      "heading": "Using asset under LRBA as security > Arrangements entered from 7 July 2010",
+      "page": null,
+      "text": "You can't use the acquired asset as security other than for the LRBA."
+    },
+    {
+      "heading": "Using asset under LRBA as security > Arrangements entered between 24 September 2007 and 6 July 2010",
+      "page": null,
+      "text": "There may be limited circumstances where the use of the asset under an LRBA can be used as security and doesn't contravene super law.\n\nSMSF trustees must consider general contravention rules, such as:\n\n- all the SMSF trustees' dealings in the arrangement must meet the arm's-length requirements\n- no member or relative of a member can be financially assisted by the SMSF trustee using the resources of the SMSF\n- the maintenance of the SMSF must meet the sole purpose test."
+    }
+  ]
+}

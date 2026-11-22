@@ -1,0 +1,55 @@
+{
+  "doc_id": "ato-super-for-individuals-and-families-super-growing-and-keeping-track-of-your-super-keeping-track-of-your-supe-d9186d99",
+  "title": "Keeping track of your super online",
+  "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/keeping-track-of-your-super/keeping-track-of-your-super-online",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Tracking your super",
+      "page": null,
+      "text": "Keep track of your super to invest in your retirement.\n\nYou can access detailed information about your super balance, where it's being held and your contributions, by logging in to ATO online services linked through myGov.\n\nYou can also access information on your super balance and contributions through your super fund(s) directly, either online or via paper statements.\n\n**Make sure you regularly check:**\n\n- how much super you're being paid\n- how many super accounts you have, and\n- if those accounts provide any insurance.\n\nHaving multiple super accounts can drain your savings with multiple account fees and duplicated insurance costs.\n\nComplete a Super Health Check at least once a year to keep track of your super."
+    },
+    {
+      "heading": "How ATO online services can help you manage your super",
+      "page": null,
+      "text": "Super is your money for retirement, and you should check it regularly. Keep track of your super using ATO online services.\n\n**Use ATO online services to**:\n\n- view your most recent 30 June balances reported by your super funds\n- check for lost member super accounts\n- track unclaimed super (displayed as ATO-held super) and transfer it to an eligible super fund or request a direct payment (if eligible)\n- consolidate multiple super accounts, we'll send a message to your super funds for you\n- see your employer's super contribution payments\n- complete your Superannuation standard choice form to provide to your employer, advising which super fund account you want your super contributions paid to. For more information, see how to access and complete employment forms and choose a super fund\n- check your total super balance, it affects which super rules apply to you\n- review your concessional and non-concessional contributions totals, including unused contribution cap amounts\n- release money from your super to pay for liabilities such as Division 293 and excess contributions tax\n- apply to access some of your super early (in limited circumstances)\n- apply for the First home super saver (FHSS) scheme (where eligible) or view the status of your FHSS application\n- access the YourSuper comparison tool to view and compare MySuper products."
+    },
+    {
+      "heading": "Log in to ATO online services",
+      "page": null,
+      "text": "Use ATO online services through myGov to view your fund details and manage your super.\n\nIf you don't already have one, create a new myGov account and link it to the ATO.\n\nYou can also access ATO online services via the ATO app. Use the app to check your balance, find lost or unclaimed super and consolidate your accounts."
+    },
+    {
+      "heading": "Check if you have lost or unclaimed super",
+      "page": null,
+      "text": "To check if you have lost or unclaimed super:\n\n1. log in to **ATO online services**\n2. select **Super**\n3. select **Fund details**.\n\nIf you have a lost member super account, the words **Contact fund** will appear next to the super fund name.\n\nSuper that has been transferred to the ATO will appear as ATO-held super.\n\n**If you think you have lost or unclaimed super and can't see it online,** it could mean that\n\n- we don't have all your information\n- your details don't match with the ones attached to the account, or\n- we may not be holding your super.\n\nVisit Searching for lost super for more guidance and information."
+    },
+    {
+      "heading": "View your super accounts and balances on ATO online",
+      "page": null,
+      "text": "To view your accounts in ATO online services, select:\n\n1. **Super**\n2. **Fund details**\n3. **check the ’as at’ date of the** balance – your fund may have issued a member statement with a more up-to-date balance.\n\nWe show annual balances reported to us by your super fund. Because they are only required to report once a year with a 30 June balance, your current super account balances may not be shown."
+    },
+    {
+      "heading": "View your super accounts and balances on ATO online > Members of a defined benefit super scheme",
+      "page": null,
+      "text": "The way your account balance is calculated and reported to us may vary from scheme to scheme. See your member statement for details.\n\nSome defined benefit schemes report zero balances. This is because the entitlement in a defined benefit fund doesn't usually rely on amounts held in an account but is instead a calculated amount with reference to employment factors.\n\nYour super fund can provide you with more information."
+    },
+    {
+      "heading": "View your super accounts and balances on ATO online > Two accounts in the same fund",
+      "page": null,
+      "text": "If you see 2 accounts displayed for your super fund, you may have 2 separate accounts with the fund. **We don't split your account information**. We display your super accounts as they are reported to us by your super fund.\n\nAn account is uniquely identified by a combination of the following 3 identifiers:\n\n- fund Australian business number (ABN)\n- superannuation product unique superannuation identifier (USI)\n- your member account number.\n\nThere may be 2 accounts for the same super fund displaying, if either:\n\n- you have 2 separate accounts in the fund\n- your fund has reported your account more than once with different identifiers.\n\nIf you believe you have too many accounts displaying, check with your super fund."
+    },
+    {
+      "heading": "View your super accounts and balances on ATO online > Accounts not shown",
+      "page": null,
+      "text": "Super fund accounts may not display online if:\n\n- member account details have not been reported to us by the super fund\n- we were unable to confidently verify and match the account details that have been provided by your super fund with your taxpayer record\n- your account was closed before the past 2 financial years.\n\nAfter confirming your personal details are up to date with the ATO, contact your super fund to request further information."
+    },
+    {
+      "heading": "View your super accounts and balances on ATO online > Self-managed super funds",
+      "page": null,
+      "text": "If you are a member of a self-managed super fund (SMSF), your SMSF account information will be displayed when the SMSF:\n\n- has a compliance status of ‘Complying' or ‘Registered’ (check this on Super Fund Lookup)\n- is up to date with the Self-managed superannuation fund annual return (SAR) lodgment\n- has reported a valid ABN and reported it correctly on the most recent SAR\n- has correctly added your association through the Australian Business Register (ABR).\n\nSMSFs don't report their super information as regularly as APRA-regulated funds. Individuals should check with their SMSF’s authorised contact if their account is not displayed or they want to view their up-to-date transactions and balance."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-jobs-and-employment-types-working-as-an-employee-leaving-your-job-how-etp-components-are-taxed",
+  "title": "How ETP components are taxed",
+  "url": "https://www.ato.gov.au/individuals-and-families/jobs-and-employment-types/working-as-an-employee/leaving-your-job/how-etp-components-are-taxed",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Tax treatment of an ETP",
+      "page": null,
+      "text": "ETPs are generally fully taxable although in some cases they may also contain a tax-free amount.\n\nAfter any tax-free amount is deducted from your payment, the balance is the taxable component. The taxable component of your ETP will be concessionally taxed up to certain limits, known as caps. The 'whole-of-income cap' or the 'ETP cap'.\n\nAny amount over the relevant cap will be taxed at the top marginal rate of 45% plus Medicare levy of 2%."
+    },
+    {
+      "heading": "Tax-free amount",
+      "page": null,
+      "text": "A tax-free amount relates to:\n\n- a pre-1983 component of employment\n- an invalidity component\n- the tax-free element of a genuine redundancy.\n\nThe tax-free component is **not**:\n\n- assessable or exempt income (it is tax free) in all cases\n- an amount you need to report in your return."
+    },
+    {
+      "heading": "Taxable component",
+      "page": null,
+      "text": "The type of termination payment will determine which cap applies to the taxable component and will fall into one of 2 payment categories:\n\n- excluded\n- non-excluded."
+    },
+    {
+      "heading": "Taxable component > Excluded payments",
+      "page": null,
+      "text": "The term 'excluded payments' refers to the following types of payments:\n\n- genuine redundancy or early retirement scheme payments that exceed the tax-free limit\n- invalidity\n- compensation for personal injury, unfair dismissal, harassment or discrimination\n- death benefit termination (see Death benefit employment termination payments).\n\nThe taxable component of these payments will be concessionally taxed up to the 'ETP cap'."
+    },
+    {
+      "heading": "Taxable component > Non-excluded payments",
+      "page": null,
+      "text": "The term 'non-excluded' may include the following payments:\n\n- a ‘golden handshake’\n- non-genuine redundancy payment\n- severance pay\n- a gratuity\n- payment in lieu of notice\n- unused sick leave\n- unused rostered days off.\n\nThese payments are concessionally taxed up to the smaller of the ETP cap or the whole-of-income cap after they are reduced by your other amounts.\n\nYour ETP is subject to the whole-of-income cap, if the code on your end of year statement is **O** or **P**."
+    },
+    {
+      "heading": "Concessional rates and caps",
+      "page": null,
+      "text": "The concessional tax rate is:\n\n- 17% if you reach your preservation age\n- 32% if you have not reached preservation age, up to the relevant cap.\n\nAmounts above the relevant cap are taxed at the top marginal rate of 45% plus Medicare levy of 2% – see Table A: Withholding rates for ETPs.\n\nThe ETP cap amount for the 2025–26 income year is $260,000. This amount is indexed annually.\n\nThe whole-of-income cap is $180,000, this amount is not indexed. This cap is reduced by any other taxable income payments you receive in the income year."
+    }
+  ]
+}

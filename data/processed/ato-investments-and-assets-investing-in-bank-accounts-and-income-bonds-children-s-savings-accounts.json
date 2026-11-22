@@ -1,0 +1,45 @@
+{
+  "doc_id": "ato-investments-and-assets-investing-in-bank-accounts-and-income-bonds-children-s-savings-accounts",
+  "title": "Children's savings accounts",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/investing-in-bank-accounts-and-income-bonds/children-s-savings-accounts",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Who declares interest",
+      "page": null,
+      "text": "Who declares the interest depends on who owns or uses the funds of that account. It doesn't matter what type of account it is or the name of the account holder.\n\nYou need to consider who:\n\n- provides the money, such as the initial and ongoing deposits into the account\n- decides how the money is spent, regardless of who it is spent on.\n\nIf you provide the money and spend it as you like, you must include the interest in your tax return.\n\nIf you hold a joint account, interest earned is divided equally among all account holders, who each declare their share of the income in their tax return.\n\nIf the amount deposited is considered excessive, you'll need to examine it carefully to decide where the money came from and whose money it really is.\n\nIncome from a savings account is treated differently to income from shares."
+    },
+    {
+      "heading": "Who declares interest > Example: interest earned belongs to parent",
+      "page": null,
+      "text": "Wayne opens an account for his son by depositing $5,000. Wayne is signatory to the account because Jack is 4 years old.\n\nWayne makes regular deposits and withdrawals to pay for Jack's pre-school expenses.\n\nInterest earned from that account is Wayne's."
+    },
+    {
+      "heading": "Who declares interest > Example: interest earned belongs to child",
+      "page": null,
+      "text": "Shauna is 8 years old and has a savings account in her name.\n\nShauna's mother Jill is signatory to the account.\n\nThe funds (totalling $90) are birthday and Christmas presents from Shauna's relatives.\n\nInterest earned from the account is Shauna's.\n\nEnd of example"
+    },
+    {
+      "heading": "Quoting a TFN",
+      "page": null,
+      "text": "A child can apply for a tax file number (TFN) – there is no minimum age. Children are not exempt from quoting a TFN.\n\nWhen deciding whether to quote a TFN and whose TFN you should quote, you need to consider:\n\n- who owns or uses the funds\n- your child's age and the amount of interest they receive.\n\nIf the person who owns or uses the funds is the parent, as trustee for the child and\n\n- no formal trust exists, quote the parent's TFN\n- there is a formal trust, quote the trust's TFN."
+    },
+    {
+      "heading": "Quoting a TFN > Your child's age",
+      "page": null,
+      "text": "If your child is less than 16 years old, special rules apply to their income from a savings account. When we work out their age, we treat them as being under 16 years old until the end of the **calendar** year in which they turn 16.\n\nIf your child is:\n\n- any age and they earn less than $120 per year (or $10 per month) from savings accounts, their financial institution will not withhold tax\n- less than 16 years old and earns between $120 and $420 from savings accounts per year and\n\n- provides either their date of birth or a TFN, the financial institution won't withhold tax and they don't need to lodge a tax return\n- doesn't provide either their date of birth or TFN, the financial institution will withhold pay as you go (PAYG) tax at 47% and they need to lodge a tax return if they want a refund\n- less than 16 years old and earns $420 or more per year (or $35 or more per month) from savings accounts and\n\n- provides their TFN, the financial institution won't withhold tax\n- doesn't provide their TFN, the financial institution will withhold PAYG tax at 47% and they need to lodge a tax return if they want a refund\n- 16 or 17 years old, earns $120 or more from their savings account per year and\n\n- provides their TFN, the financial institution won't withhold tax\n- doesn't provide their TFN, the financial institution will withhold PAYG tax at 47% and they need to lodge a tax return if they want a refund.\n\nIf you have a joint account between an adult and a child aged under 16 years, the same rules apply as those for a 16 or 17 year old."
+    },
+    {
+      "heading": "Quoting a TFN > Amount of interest earned",
+      "page": null,
+      "text": "The withholding tax is calculated on the total interest earned – not just the amount above the threshold ($420 or $120, depending on their circumstances).\n\nWhere a deposit has a term of less than one year, or where interest is paid more than once per year, we apply a daily pro-rata calculation of the threshold ($420 or $120 depending on their circumstances)."
+    },
+    {
+      "heading": "Lodging a tax return",
+      "page": null,
+      "text": "If your child has had PAYG tax deducted, you'll need to lodge a tax return on their behalf to claim any refund owed.\n\nIf your child doesn't have a TFN, you'll need to get one before you can lodge a tax return on their behalf."
+    }
+  ]
+}

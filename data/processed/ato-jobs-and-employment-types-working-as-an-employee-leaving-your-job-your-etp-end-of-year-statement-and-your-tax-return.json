@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-jobs-and-employment-types-working-as-an-employee-leaving-your-job-your-etp-end-of-year-statement-and-your-tax-return",
+  "title": "Your ETP end of year statement and your tax return",
+  "url": "https://www.ato.gov.au/individuals-and-families/jobs-and-employment-types/working-as-an-employee/leaving-your-job/your-etp-end-of-year-statement-and-your-tax-return",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "What you will receive",
+      "page": null,
+      "text": "Your employer will give you one or more income statements or payment summaries that shows the amounts you receive and the tax withheld.\n\nWe use the code on your income statement or payment summary to work out which cap to apply and the correct rate of tax for your situation. ETPs are concessionally taxed up to the cap.\n\nIf the code is **O** or **P**, your ETP is subject to the whole-of-income cap. This means if you earn more income after you leave work, you may pay more tax on your ETP when you lodge your tax return.\n\nYour income statement or payment summary may also show a tax-free component. This is not assessable income. You do not need to include this amount in your tax return."
+    },
+    {
+      "heading": "What you need to do",
+      "page": null,
+      "text": "At the end of the income year, you will receive an income statement if your employer reports electronically. Otherwise, you will receive a PAYG payment summary.\n\nUse the information in your income statement or payment summary to prepare your tax return."
+    },
+    {
+      "heading": "Income statement",
+      "page": null,
+      "text": "Once your employer finalises your tax and super information in Single touch payroll (STP), we will pre-fill your tax return and display the information as **Tax ready** in ATO online services.\n\nYour income statement will include all lump sum amounts, taxable components, tax withheld and tax codes.\n\nYou can access your income statement in ATO online services. Make sure you review the pre-fill information before you submit your tax return."
+    },
+    {
+      "heading": "PAYG payment summary",
+      "page": null,
+      "text": "If your employer is not using STP, you will receive one or both of\n\n- PAYG payment summary – individual non-business\n- PAYG payment summary – employment termination payment"
+    },
+    {
+      "heading": "PAYG payment summary > PAYG payment summary – individual non-business",
+      "page": null,
+      "text": "If you receive a *PAYG payment summary – individual non-business* (also known as a group certificate) you will need to declare the following amounts in your tax return:\n\n- Lump sum A or B – unused annual leave and long service leave.\nThese amounts are not part of your ETP, but you may pay tax on them at a concessional rate.\n- Lump sum E – payments that relate to earlier income years and return-to-work payments.\n\nYou don't need to declare in your tax return amounts on your payment summary at:\n\n- Lump sum D – tax-free component of a genuine redundancy or early retirement scheme payment.\n\nThis tax-free component is not part of your ETP and is not assessable income."
+    },
+    {
+      "heading": "PAYG payment summary > PAYG payment summary – employment termination payment",
+      "page": null,
+      "text": "If your employer gives you a *PAYG payment summary – employment termination payment* it must be within 14 days of the payment date.\n\nYour payment summary will show:\n\n- the taxable component of your ETP\n- the tax withheld\n- a code for the type of ETP.\n\nYou will need to enter each of these amounts at Employment termination payments (ETP) in your tax return."
+    }
+  ]
+}

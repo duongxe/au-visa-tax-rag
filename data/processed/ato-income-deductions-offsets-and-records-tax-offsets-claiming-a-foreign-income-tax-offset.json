@@ -1,0 +1,25 @@
+{
+  "doc_id": "ato-income-deductions-offsets-and-records-tax-offsets-claiming-a-foreign-income-tax-offset",
+  "title": "Claiming a foreign income tax offset",
+  "url": "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/claiming-a-foreign-income-tax-offset",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Eligibility for the foreign income tax offset",
+      "page": null,
+      "text": "You may be able to claim a foreign income tax offset (FITO) for foreign tax paid in another country. The offset provides relief from paying double tax on your foreign and worldwide income.\n\nTo claim a foreign income tax offset, you must:\n\n- have actually paid or deemed to have paid an amount of foreign income tax\n- include the foreign income or gain on which you paid the tax on in either your\n\n- Australian assessable income\n- non-assessable non-exempt income under section 23AI or 23AK of the *Income Tax Assessment Act 1936*.\n\nYour foreign income tax offset reduces your tax payable for an income year. It applies in the income year in which your foreign income or gain forms part of your income in Australia.\n\nTo find out which foreign taxes count towards the tax offset, see when a FITO applies."
+    },
+    {
+      "heading": "Calculate the foreign income tax offset",
+      "page": null,
+      "text": "You may pay foreign income tax in a different income year. This is because of the difference between the Australian and foreign tax systems.\n\nYou can only claim the offset after you have paid the foreign tax.\n\nBefore you calculate your net income, you must convert all foreign income into Australian dollars. This includes your foreign income, deductions and tax paid.\n\nFor more details, see Calculate your FITO or offset limit."
+    },
+    {
+      "heading": "Applying FITO against Medicare levy and surcharge",
+      "page": null,
+      "text": "Your foreign income tax offset (FITO) reduces your tax payable for an income year. If any offset remains, you can use it to reduce your liability to pay Medicare levy. Then any further offset reduces any liability to pay the Medicare levy surcharge.\n\nOur systems apply the offset against the Medicare levy and Medicare levy surcharge when you lodge your tax return.\n\nFor more information, see Guide to foreign income tax offset rules."
+    }
+  ]
+}

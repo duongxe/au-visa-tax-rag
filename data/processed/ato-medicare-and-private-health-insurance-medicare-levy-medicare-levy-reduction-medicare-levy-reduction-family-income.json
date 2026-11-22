@@ -1,0 +1,40 @@
+{
+  "doc_id": "ato-medicare-and-private-health-insurance-medicare-levy-medicare-levy-reduction-medicare-levy-reduction-family-income",
+  "title": "Medicare levy reduction – family income",
+  "url": "https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy/medicare-levy-reduction/medicare-levy-reduction-family-income",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Eligibility for Medicare levy reduction – family taxable income",
+      "page": null,
+      "text": "You may qualify for a Medicare levy reduction on your family taxable income if you meet both of the following in 2025-26:\n\n1. Your individual taxable income was more than $35,013 ($55,335 for seniors and pensioners entitled to the seniors and pensioners tax offset \\[SAPTO\\]).\n2. You\n\n- have a spouse (married or de facto)\n- have a spouse that died during the year, and you didn't have another spouse before the end of the year\n- are entitled to an invalid or invalid carer tax offset in respect of your child\n- have sole care of one or more dependent children.\n\nIf you have a spouse, you may not get SAPTO even if you meet all the eligibility conditions. This is because we base the amount of the tax offset on your individual rebate income, not your combined rebate income. Even if you're eligible for SAPTO but don't get the tax offset, it doesn't entitle you to a Medicare levy reduction.\n\nYou can use the Medicare levy calculator to work out your Medicare levy payable."
+    },
+    {
+      "heading": "Family taxable income thresholds",
+      "page": null,
+      "text": "Your Medicare levy is reduced if your family income is below a certain amount. In some cases, you may not have to pay this levy at all.\n\nIn 2025–26, you don't have to pay the Medicare levy if your family income is equal to or less than the family income threshold.\n\nAny Medicare levy you have to pay will be reduced if your family income is above the lower family income threshold and at or below an upper threshold. We work out any reduction for you when you lodge your tax return.\n\nThe lower family income threshold is either:\n\n- $47,238\n- $61,623 if you're entitled to the SAPTO.\n\nThe lower family income threshold increases by $4,338 for each dependent child.\n\nThe upper family income threshold is either:\n\n- $59,047\n- $77,028 if you're entitled to SAPTO (if your entitlement to the SAPTO reduces to zero before you reach the upper limit you must use the non SAPTO thresholds).\n\nThe upper income threshold increases by $5,423 for each dependent child."
+    },
+    {
+      "heading": "Calculate your family taxable income",
+      "page": null,
+      "text": "Family taxable income is either:\n\n- the combined taxable income of you and your spouse (including a spouse who died during the year)\n- your taxable income if you were a sole parent."
+    },
+    {
+      "heading": "Calculate your family taxable income > Example: Medicare levy reduction based on family taxable income",
+      "page": null,
+      "text": "Ashton is 68 years old and his taxable income is $49,700 in 2025–26. Ashton and his spouse live apart due to illness and have no dependent children. Ashton's spouse's taxable income was $21,700 in 2025–26. Ashton uses the SAPTO calculator to check whether he and his spouse are entitled to SAPTO. The calculator confirms they are entitled to SAPTO. Ashton isn't eligible for a Medicare levy exemption.\n\nAshton and his spouse's family taxable income is $71,400 ($49,700 + $21,700).\n\nAshton is entitled to a Medicare levy reduction based on his family taxable income. Ashton completes his tax return and we work out his Medicare levy reduction for him.\n\nAshton uses the Medicare levy calculator to find out how much Medicare levy he will pay. He enters his and his spouse's details and finds out his Medicare levy will be reduced to $92.90.\n\nEnd of example"
+    },
+    {
+      "heading": "Dependent children for Medicare levy reduction purposes",
+      "page": null,
+      "text": "For Medicare levy reduction purposes, a dependent child is any child:\n\n- you maintained who was an Australian resident, and\n- whose adjusted taxable income was less than the amounts in the table below.\n\n| Dependent children – Adjusted taxable income (ATI) thresholds | | |\n|---|---|---|\n| Category of dependent child | ATI if not maintained for the whole year | ATI if maintained for the whole year |\n|---|---|---|\n| Any child under 21 years old you maintained who was **not** a full-time student | For the first child: $282 plus $28.92 for each week you maintained them For each additional child: $282 plus $21.70 for each week you maintained them | For the first child: $1,786 For each additional child: $1,410 |\n| Any full-time student aged under 25 years old at a school, college or university | $282 plus $28.92 for each week you maintained them | $1,786 |"
+    },
+    {
+      "heading": "Sole care definition",
+      "page": null,
+      "text": "Sole care means you alone had full responsibility for the upbringing, welfare and maintenance of a child or student.\n\nYou aren't considered to have sole care if you are living with a spouse (married or de facto) unless there are special circumstances. For example, if a spouse is medically incapable of assisting you with the care."
+    }
+  ]
+}

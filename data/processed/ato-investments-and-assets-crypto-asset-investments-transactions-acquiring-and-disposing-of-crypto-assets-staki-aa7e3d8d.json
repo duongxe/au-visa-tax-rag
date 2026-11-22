@@ -1,0 +1,70 @@
+{
+  "doc_id": "ato-investments-and-assets-crypto-asset-investments-transactions-acquiring-and-disposing-of-crypto-assets-staki-aa7e3d8d",
+  "title": "Staking rewards and airdrops",
+  "url": "https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/staking-rewards-and-airdrops",
+  "site": "ato.gov.au",
+  "doc_type": "html",
+  "downloaded_at": "2026-11-22",
+  "sections": [
+    {
+      "heading": "Staking and the role of forgers",
+      "page": null,
+      "text": "Staking involves locking your existing crypto asset tokens to validate transactions on the blockchain and create new blocks. The users who create new blocks in this system are known as forgers.\n\nProof of stake is a consensus mechanism, where forgers hold units of a crypto asset to validate transactions (like a miner on a proof of work blockchain) and create new blocks. When a transaction is verified on the network as valid there is a consensus."
+    },
+    {
+      "heading": "Staking and the role of forgers > Example 1: staking existing crypto assets",
+      "page": null,
+      "text": "Anastasia holds 50,000 Coin A tokens, which she stakes to a Coin A pool as a premium staker.\n\nAnastasia receives additional Coin A tokens when her pool participates in consensus. Anastasia also receives a small payment of Coin A tokens from the node leader for supporting their node.\n\nThe money value of the additional Coin A tokens that Anastasia receives is included in her ordinary assessable income at the time she receives the tokens.\n\nThe cost base of Anastasia’s additional Coin A tokens is their market value at the time she receives them.\n\nEnd of example"
+    },
+    {
+      "heading": "Staking rewards and income tax treatment",
+      "page": null,
+      "text": "As a forger who creates a new block, you'll usually receive a reward in the form of additional tokens from holding the original tokens. The money value of additional tokens is **ordinary income** at the time you receive the tokens. You need to declare the income in your tax return as other income.\n\nOther consensus mechanisms that reward existing token holders for their role in maintaining the network have the same tax outcome. This includes rewards you receive through:\n\n- proof of authority and proof of credit mechanisms by validators\n- agent nodes and guardian nodes\n- premium stakers and other entities performing comparable roles.\n\nYou also receive **ordinary income** equal to the money value of the tokens if you receive as a reward for either:\n\n- participating in 'proxy staking'\n- voting your tokens in a consensus mechanism.\n\nYou also need to declare this income in your tax return as other income.\n\nWhen you dispose of crypto assets you earn through staking, you will need to work out if you make a capital gain or loss."
+    },
+    {
+      "heading": "Airdrops and income tax treatment",
+      "page": null,
+      "text": "An airdrop of a crypto asset may be made to you because you hold a certain digital asset in your crypto wallet and are being rewarded for holding that asset over a given period. For example, an early investor in a crypto project may be provided with some airdropped crypto assets for marketing purposes to encourage them to participate in a new project.\n\nWhen you receive an airdrop, you may be required to perform actions like using the platform or service, signing up for newsletters and mailing lists or holding crypto assets for a specified period. For other airdrops, you may simply have the crypto asset ‘dropped’ into your crypto wallet with no further action required.\n\nYou may also receive an airdrop of a crypto asset:\n\n- in return for goods or services\n- from participating in a hobby or entertainment activity\n- as a gift or windfall gain\n- as a result of a scam."
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Ordinary income – crypto asset received as reward for goods and services",
+      "page": null,
+      "text": "If you receive airdropped crypto assets in return for the provision of goods or services, you will include the market value of the airdropped crypto assets in your assessable income as ordinary income.\n\nIf you include the market value of airdropped crypto assets in your assessable income as ordinary income, those crypto assets will have a cost base equal to the market value of the crypto assets on the day they were received."
+    },
+    {
+      "heading": "Airdrops and income tax treatment > CGT consequences",
+      "page": null,
+      "text": "A crypto asset you receive from an airdrop is a separate CGT asset from any underlying crypto asset that may have entitled you to the airdrop.\n\nIf you are not carrying on a business of crypto asset trading and you do not receive the crypto asset as a reward for goods or services or as part of another income-producing activity, you do not include its market value in your assessable income.\n\nA CGT event may occur when you later deal with the crypto asset received from an airdrop.\n\nFor more information, see Crypto asset transactions and Decentralised finance and wrapping crypto."
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Hobby versus business",
+      "page": null,
+      "text": "If you receive an airdropped crypto asset as a result of engaging in a hobby or entertainment, you do not need to include the market value of the crypto asset you receive in your assessable income. No deduction is available for any of the costs you incur that are associated with participating in the hobby or entertainment."
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Valuing crypto assets received from an airdrop",
+      "page": null,
+      "text": "Where a crypto asset is airdropped to you, the first element of the crypto asset’s cost base is the market value of the crypto asset when it is received. If the asset has no or negligible value at that time, the first element of the cost base will generally be nil."
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Valuing crypto assets received from an airdrop > Example 2: airdrop of new crypto assets received as a reward for services",
+      "page": null,
+      "text": "Bobbi is a well-known social media personality and influencer and generates income from promoting and reviewing services and products. Bobbi has over 500,000 social media followers.\n\nBobbi spends most of her day receiving, reviewing, posting and re-posting reviews of the products and services she receives as well as keeping her social media followers engaged with photos and updates.\n\nBobbi’s income includes cash payments she receives for the direct promotion and ‘liking’ of goods and services on social media platforms as well as the market value of rewards she receives from entities as a result of her activities.\n\nAs part of the launch of a new crypto asset platform, Bobbi receives 100,000 ‘cooler coins’ as a reward for her actively promoting the coins to her social media followers. At the time Bobbi receives the ‘cooler coins’ they have a market value of AUD $0.001 each.\n\nBobbi should include the market value of the ‘cooler coins’ of $100.00 (100,000 x $0.001) in her assessable income in the income year in which they are received.\n\nBobbi’s ‘cooler coins’ will have a cost base of AUD $0.001 each.\n\nEnd of example"
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Valuing crypto assets received from an airdrop > Example 3: airdrop of established crypto assets received from a hobby or entertainment",
+      "page": null,
+      "text": "Carlos is a full-time university student who likes to spend a lot of his spare time gaming online.\n\nCarlos has been enjoying a new game that rewards players with both in-game rewards and ‘game coin’. Players can purchase further ‘game coin’ using other crypto assets or fiat currency. Players can use the ‘game coin’ to purchase weapons and improve their character’s skills and success in the game to earn more ‘game coin’.\n\nCarlos has spent over $1,000 purchasing ‘game coin’ during the income year.\n\nCarlos has received rewards of 50,000 ‘game coin’ which he has used to improve his character’s standing in the game.\n\nThe average market value of ‘game coin’ during the income year is AUD $0.0002.\n\nCarlos’s playing of the game and the generation of the ‘game coin’ is as a result of a hobby or entertainment. Carlos is not carrying on a business.\n\nCarlos does not need to include the market value of the ‘game coin’ he receives in his assessable income.\n\nCarlos cannot claim a deduction for the game coin he has purchased during the income year as the expenditure was not incurred in gaining or producing his assessable income.\n\nEnd of example"
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Valuing crypto assets received from an airdrop > Example 4: offer of airdropped crypto assets from a phishing scam",
+      "page": null,
+      "text": "Divina holds crypto assets on multiple crypto platforms.\n\nDivina doesn’t regularly trade her crypto assets but enjoys picking what she considers to be undervalued crypto assets and then watching their value increase.\n\nDivina holds her crypto assets on capital account.\n\nDivina receives an email telling her she has won 2,000,000 ‘dodgy coin’ but she needs to ‘click the link’ to go to the issuer’s website to claim them. While ‘dodgy coin’ does exist, Divina suspects the email is a phishing scam.\n\nDivina does not click the link to receive the allocation of ‘dodgy coin’ and deletes the email. The ‘dodgy coin’ never appears in Divina’s wallet.\n\nDivina does not need to include the market value of ‘dodgy coin’ in her assessable income for the income year, nor has she acquired any ‘dodgy coin’ as a CGT asset.\n\nEnd of example"
+    },
+    {
+      "heading": "Airdrops and income tax treatment > Valuing crypto assets received from an airdrop > Example 5: airdrop of new crypto asset received without recipient’s knowledge",
+      "page": null,
+      "text": "Eloise holds crypto assets on multiple crypto platforms. Eloise is not carrying on a business of crypto asset trading. She holds the crypto assets on capital account.\n\nEloise checked her wallet on one of the platforms and discovered that she had received 10,000 ‘freebie coins’.\n\nThe 'freebie coins' were issued to Eloise’s wallet as the issuer decided to issue them to randomly selected wallet holders on the platform as a promotional exercise. Eloise did not do anything in order to acquire the ‘freebie coins’.\n\nAt the time Eloise received the ‘freebie coins’ in her wallet they were valued at AUD $0.05 each.\n\nWhen Eloise disposes of the ‘freebie coins’, she will need to include any net capital gain in calculating her assessable income for the income year. The cost of her ‘freebie coins’ will be their market value on the date she received them. If Eloise does not want the ‘freebie coins’ and incurs expenses in rectifying her wallet, these will be included in the cost base of the ‘freebie coins’. When she disposes of the ‘freebie coins’, the costs she incurred in rectifying her wallet will be included in calculating whether she made a capital gain or capital loss.\n\nEnd of example\nFor more information, see Draft Taxation Ruling TR 2026/D1 *Income tax: receipt and disposal of crypto assets by an airdrop*."
+    }
+  ]
+}
