@@ -13,8 +13,7 @@ faiss-cpu
 rank-bm25
 
 # Generation
-anthropic
-openai
+google-genai
 python-dotenv
 
 # API + UI

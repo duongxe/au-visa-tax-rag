@@ -13,7 +13,7 @@ Trợ lý hỏi đáp (RAG) về **visa, thuế và quyền lợi lao động t�
 | 0 | Repo, cấu trúc, nguồn tài liệu | ✅ |
 | 1 | Thu thập + làm sạch dữ liệu | ✅ |
 | 2 | Chunking, embedding (bge-m3), FAISS | ✅ |
-| 3 | Sinh câu trả lời có trích nguồn (baseline) | ⬜ |
+| 3 | Sinh câu trả lời có trích nguồn (baseline) | ✅ |
 | 4 | Bộ 50 câu hỏi + RAGAS | ⬜ |
 | 5 | Hybrid BM25 + RRF + reranker | ⬜ |
 | 6 | FastAPI + Streamlit + Docker | ⬜ |
@@ -28,7 +28,7 @@ data/processed/    # JSON đã làm sạch + metadata
 src/ingest/        # tải và làm sạch tài liệu
 src/retrieval/     # chunking, embedding, FAISS, BM25, rerank
 data/index/        # chunks.jsonl + faiss.index (build lại được, không commit)
-src/generation/    # prompt + gọi LLM
+src/generation/    # prompt + gọi Gemini, trích nguồn [n]
 src/api/           # FastAPI (/ask)
 app/               # Streamlit UI
 eval/              # câu hỏi test + script RAGAS, results.md
@@ -101,6 +101,33 @@ Thử nhanh (top 1):
 | Can I claim my laptop as a work deduction? | Computers, laptops and software › Eligibility |
 
 Điểm yếu thấy được: câu ngắn chứa mã visa ("Visa 482 cần bao nhiêu năm kinh nghiệm?") bị kéo sang visa khác vì tìm theo vector không bám chặt con số. Hỏi đầy đủ hơn ("Skills in Demand 482 diện Core Skills…") thì đúng. Giai đoạn 5 (BM25 + reranker) nhắm vào lỗi này.
+
+## Trả lời có trích nguồn (Giai đoạn 3)
+
+LLM: **Google Gemini** (`google-genai`). Lấy key tại https://aistudio.google.com/apikey rồi điền `GEMINI_API_KEY` vào `.env`.
+
+```bash
+python -X utf8 -m src.generation.answer "Du học sinh visa 500 được đi làm bao nhiêu giờ một tuần?"
+python -X utf8 -m src.generation.answer --show-context "Do I need a TFN to start working?"
+```
+
+- Tìm top 5 chunk → đưa vào prompt dạng `[n] tiêu đề > heading` + URL + nội dung → Gemini trả lời.
+- Prompt ([prompt.py](src/generation/prompt.py)): chỉ dùng nguồn được đưa, ghi `[n]` sau mỗi ý, trả lời bằng ngôn ngữ của câu hỏi (tiếng Việt thì giữ tên chính thức tiếng Anh như "visa Student (subclass 500)"). Không có trong nguồn thì trả lời đúng một câu "Tôi không tìm thấy thông tin này trong tài liệu hiện có." / "I don't know…".
+- Kết quả trả về: `answer`, `found` (false khi không có trích dẫn nào = câu "không biết"), `sources` (chỉ những nguồn được trích), `contexts` (cả 5 chunk, dùng cho RAGAS ở giai đoạn 4), `model`.
+- Model mặc định `gemini-3.5-flash`. Khi model quá tải (503) hoặc hết lượt (429) sẽ tự chuyển sang `LLM_FALLBACK_MODELS` và tạm bỏ qua model lỗi 5 phút.
+- API: `POST /ask {"question": "...", "top_k": 5}`.
+
+Thử nhanh:
+
+| Câu hỏi | Kết quả |
+|---|---|
+| Du học sinh visa 500 được đi làm bao nhiêu giờ một tuần? | 48 giờ / 2 tuần khi khoá học đang diễn ra, không giới hạn khi nghỉ, không giới hạn với thạc sĩ nghiên cứu / tiến sĩ [1–4] |
+| Lương tối thiểu ở Úc là bao nhiêu? | $26.44/giờ, $1004.90/tuần từ 1/7/2026; casual $33.05 [1–3] |
+| Khi rời Úc tôi có rút được tiền super không? | DASP cho visa tạm trú, điều kiện, ngoại lệ NZ và PR [1][2][4] |
+| Do I need a TFN to start working in Australia? | Không bắt buộc nhưng bị khấu trừ thuế cao nhất nếu sau 28 ngày chưa nộp [1][2][4] |
+| Giá vé máy bay từ Hà Nội sang Sydney là bao nhiêu? | "Tôi không tìm thấy thông tin này…" ✅ |
+| What is the capital gains tax rate in New Zealand? | "I don't know…" ✅ |
+| Bố mẹ tôi muốn sang Úc thăm tôi thì xin visa gì? | "Không tìm thấy" ❌: top 5 chỉ là danh sách giấy tờ của visa 600, thiếu đoạn mô tả visa → lỗi retrieval, xử lý ở giai đoạn 5 |
 
 ## Chạy thử
 
