@@ -23,6 +23,7 @@ app = FastAPI(title="au-visa-tax-rag", lifespan=lifespan)
 class AskRequest(BaseModel):
     question: str = Field(min_length=3, max_length=1000)
     top_k: int = Field(5, ge=1, le=20)
+    rewrite: bool = True
 
 
 class Source(BaseModel):
@@ -38,6 +39,7 @@ class AskResponse(BaseModel):
     answer: str
     found: bool
     sources: list[Source]
+    queries: list[str]
     model: str
 
 
@@ -51,8 +53,9 @@ def ask(req: AskRequest) -> AskResponse:
     from ..generation.answer import answer
 
     try:
-        res = answer(req.question, req.top_k)
+        res = answer(req.question, req.top_k, use_rewrite=req.rewrite)
     except RuntimeError as e:  # e.g. missing API key
         raise HTTPException(status_code=503, detail=str(e))
     return AskResponse(answer=res["answer"], found=res["found"],
-                       sources=[Source(**s) for s in res["sources"]], model=res["model"])
+                       sources=[Source(**s) for s in res["sources"]],
+                       queries=res["queries"], model=res["model"])

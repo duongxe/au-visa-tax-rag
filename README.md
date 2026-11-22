@@ -104,18 +104,34 @@ Thử nhanh (top 1):
 
 ## Trả lời có trích nguồn (Giai đoạn 3)
 
-LLM: **Google Gemini** (`google-genai`). Lấy key tại https://aistudio.google.com/apikey rồi điền `GEMINI_API_KEY` vào `.env`.
-
 ```bash
-python -X utf8 -m src.generation.answer "Du học sinh visa 500 được đi làm bao nhiêu giờ một tuần?"
+python -X utf8 -m src.generation.answer "Bố mẹ tôi muốn sang Úc thăm tôi thì xin visa gì?"
 python -X utf8 -m src.generation.answer --show-context "Do I need a TFN to start working?"
+python -X utf8 -m src.generation.answer --no-rewrite "..."     # không viết lại câu hỏi
 ```
 
-- Tìm top 5 chunk → đưa vào prompt dạng `[n] tiêu đề > heading` + URL + nội dung → Gemini trả lời.
-- Prompt ([prompt.py](src/generation/prompt.py)): chỉ dùng nguồn được đưa, ghi `[n]` sau mỗi ý, trả lời bằng ngôn ngữ của câu hỏi (tiếng Việt thì giữ tên chính thức tiếng Anh như "visa Student (subclass 500)"). Không có trong nguồn thì trả lời đúng một câu "Tôi không tìm thấy thông tin này trong tài liệu hiện có." / "I don't know…".
-- Kết quả trả về: `answer`, `found` (false khi không có trích dẫn nào = câu "không biết"), `sources` (chỉ những nguồn được trích), `contexts` (cả 5 chunk, dùng cho RAGAS ở giai đoạn 4), `model`.
-- Model mặc định `gemini-3.5-flash`. Khi model quá tải (503) hoặc hết lượt (429) sẽ tự chuyển sang `LLM_FALLBACK_MODELS` và tạm bỏ qua model lỗi 5 phút.
-- API: `POST /ask {"question": "...", "top_k": 5}`.
+Luồng xử lý: **viết lại câu hỏi → tìm kiếm nhiều truy vấn (RRF) → prompt → LLM (có dự phòng) → trả lời kèm `[n]`**.
+
+**1. Viết lại câu hỏi** ([query.py](src/retrieval/query.py)). Một LLM nhanh đổi câu hỏi thành 1–3 truy vấn tiếng Anh dùng thuật ngữ chính thức. Câu gốc và từng câu viết lại được tìm riêng (top 20), rồi gộp bằng Reciprocal Rank Fusion. Bước này chỉ để tìm đúng tài liệu; câu trả lời vẫn chỉ dựa trên tài liệu. Nếu mọi LLM lỗi thì tìm bằng câu gốc như cũ.
+
+> Ví dụ lỗi đã sửa: "Bố mẹ tôi muốn sang Úc thăm tôi thì xin visa gì?". Chỉ tìm theo vector thì chữ "bố mẹ" kéo kết quả về các trang **Parent visa** (103, 143, 804: visa định cư), còn trang đúng là **Visitor visa (600) – Sponsored Family stream** nằm ở hạng 14. Reranker bge-reranker-v2-m3 cũng không cứu được, vì trang đúng không có trong top 30 để xếp lại. Sau khi viết lại thành "Visitor visa subclass 600 Tourist stream" / "Sponsored Family visitor visa 600", trang đúng lên hạng 1 và câu trả lời đúng.
+
+**2. Prompt** ([prompt.py](src/generation/prompt.py)). Chỉ dùng nguồn được đưa vào, ghi `[n]` sau mỗi ý, trả lời bằng ngôn ngữ của câu hỏi (tiếng Việt thì giữ tên chính thức tiếng Anh như "visa Student (subclass 500)"). Không có trong nguồn thì trả lời đúng một câu "Tôi không tìm thấy thông tin này trong tài liệu hiện có." / "I don't know…".
+
+**3. Nhiều nhà cung cấp AI, tự chuyển khi lỗi** ([llm.py](src/generation/llm.py)). `LLM_CHAIN` là danh sách `provider:model`, thử lần lượt:
+
+```
+gemini:gemini-3.5-flash → gemini:gemini-3.5-flash-lite → gemini:gemini-3.8-flash
+→ groq:openai/gpt-oss-120b → openrouter:openai/gpt-oss-120b → deepseek:deepseek-chat
+→ openai:gpt-5-mini → anthropic:claude-haiku-5-5
+```
+
+- Nhà cung cấp nào chưa có key trong `.env` thì bỏ qua. Hỗ trợ: Gemini, Groq, OpenRouter, DeepSeek, OpenAI, Anthropic.
+- Gặp bất kỳ lỗi nào (503 quá tải, 429 hết lượt, hết credit, sai key, timeout 45 giây) thì chuyển ngay sang bước sau. Bước lỗi bị đẩy xuống cuối hàng: 5 phút nếu quá tải, 1 giờ nếu lỗi tài khoản (401/402/403, quota, credit, billing).
+- `LLM_FAST_CHAIN` là chuỗi riêng cho việc viết lại câu hỏi, ưu tiên model rẻ và nhanh.
+- Kết quả có trường `model`, cho biết nhà cung cấp nào đã trả lời.
+
+Kết quả trả về: `answer`, `found` (false khi không có trích dẫn = câu "không biết"), `sources` (chỉ những nguồn được trích), `contexts` (cả 5 chunk, dùng cho RAGAS ở giai đoạn 4), `queries`, `model`. API: `POST /ask {"question": "...", "top_k": 5, "rewrite": true}`.
 
 Thử nhanh:
 
@@ -127,7 +143,7 @@ Thử nhanh:
 | Do I need a TFN to start working in Australia? | Không bắt buộc nhưng bị khấu trừ thuế cao nhất nếu sau 28 ngày chưa nộp [1][2][4] |
 | Giá vé máy bay từ Hà Nội sang Sydney là bao nhiêu? | "Tôi không tìm thấy thông tin này…" ✅ |
 | What is the capital gains tax rate in New Zealand? | "I don't know…" ✅ |
-| Bố mẹ tôi muốn sang Úc thăm tôi thì xin visa gì? | "Không tìm thấy" ❌: top 5 chỉ là danh sách giấy tờ của visa 600, thiếu đoạn mô tả visa → lỗi retrieval, xử lý ở giai đoạn 5 |
+| Bố mẹ tôi muốn sang Úc thăm tôi thì xin visa gì? | Trước: "không tìm thấy" ❌. Sau khi thêm bước viết lại câu hỏi: Visitor visa (600) Sponsored Family stream (cần người bảo lãnh, Form 1149) hoặc Tourist stream ✅ |
 
 ## Chạy thử
 
@@ -154,5 +170,7 @@ _(Sẽ điền ở giai đoạn 4–5: vector-only vs hybrid vs hybrid + rerank.
 ## Hạn chế đã biết
 
 - Các trang visa lặp lại nhiều đoạn chung (nộp giấy tờ, dịch thuật, người đại diện…): 43% số mục của Home Affairs trùng y hệt mục ở trang khác (ATO: 5%). Cần lọc trùng ở bước chunking để không làm loãng kết quả tìm kiếm.
+- Câu ngắn có mã visa ("Visa 482 cần bao nhiêu năm kinh nghiệm?") vẫn tìm sai, kể cả khi viết lại câu hỏi: tìm theo vector không bám con số → cần BM25 (giai đoạn 5).
+- Các model Gemini Flash hay bị quá tải (503/504) vào giờ cao điểm; nên thêm ít nhất một key dự phòng (Groq/OpenRouter có gói miễn phí).
 - Bảng trong PDF (ví dụ bảng tóm tắt quyền lợi casual) bị tách thành nhiều mục nhỏ.
 - Phí visa trên trang Home Affairs được tính bằng JavaScript nên không có trong dữ liệu.

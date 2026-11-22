@@ -12,8 +12,10 @@ sentence-transformers
 faiss-cpu
 rank-bm25
 
-# Generation
+# Generation (Gemini chính, các nhà cung cấp khác làm dự phòng)
 google-genai
+openai
+anthropic
 python-dotenv
 
 # API + UI
