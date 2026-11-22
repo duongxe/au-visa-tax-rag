@@ -15,6 +15,9 @@ venv/
 data/raw/*
 !data/raw/.gitkeep
 
+# Built index (rebuild with: python -m src.retrieval.build_index)
+data/index/
+
 # Model caches
 .cache/
 models/

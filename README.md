@@ -12,7 +12,7 @@ Trợ lý hỏi đáp (RAG) về **visa, thuế và quyền lợi lao động t�
 |---|---|---|
 | 0 | Repo, cấu trúc, nguồn tài liệu | ✅ |
 | 1 | Thu thập + làm sạch dữ liệu | ✅ |
-| 2 | Chunking, embedding (bge-m3), FAISS | ⬜ |
+| 2 | Chunking, embedding (bge-m3), FAISS | ✅ |
 | 3 | Sinh câu trả lời có trích nguồn (baseline) | ⬜ |
 | 4 | Bộ 50 câu hỏi + RAGAS | ⬜ |
 | 5 | Hybrid BM25 + RRF + reranker | ⬜ |
@@ -27,6 +27,7 @@ data/raw/          # HTML/PDF tải về (không commit)
 data/processed/    # JSON đã làm sạch + metadata
 src/ingest/        # tải và làm sạch tài liệu
 src/retrieval/     # chunking, embedding, FAISS, BM25, rerank
+data/index/        # chunks.jsonl + faiss.index (build lại được, không commit)
 src/generation/    # prompt + gọi LLM
 src/api/           # FastAPI (/ask)
 app/               # Streamlit UI
@@ -75,6 +76,31 @@ python -m src.ingest.clean           # làm sạch -> data/processed/, in thốn
 Ghi chú kỹ thuật:
 - Trang visa của Home Affairs là ứng dụng Angular: nội dung không nằm trong HTML mà trong JSON ẩn (`PageSchemaHiddenField`) hoặc trong `div` `RichHtmlField`. `clean.py` đọc thẳng các nguồn này.
 - ATO và Fair Work dùng `trafilatura` (chế độ `favor_recall` để giữ heading). PDF dùng `pymupdf`, tách mục theo cỡ chữ và giữ số trang.
+
+## Tìm kiếm (Giai đoạn 2)
+
+```bash
+python -m src.retrieval.build_index      # chunk + embed bằng bge-m3 -> data/index/ (~5 phút trên RTX 3050 4 GB)
+python -X utf8 -m src.retrieval.search "Du học sinh visa 500 được đi làm bao nhiêu giờ một tuần?"
+```
+
+- **Chunking** (`chunk.py`): theo từng mục của tài liệu. Mục nhỏ được gộp đến ≥ 400 token, mục dài bị cắt theo đoạn/câu, tối đa 550 token, overlap 80 token. Đếm token bằng tokenizer của bge-m3. Không gộp qua trang PDF khác để số trang trích dẫn luôn đúng. Mỗi chunk giữ `doc_id, title, url, site, headings, page`.
+- **Lọc trùng**: mục có nội dung y hệt mục đã gặp ở tài liệu trước bị bỏ, chỉ giữ 1 bản (Fair Work → ATO → Home Affairs). Đã bỏ 5.213 / 18.852 mục, phần lớn là đoạn chung trên các trang visa.
+- **Kết quả**: 5.564 chunk (ATO 3.761, Home Affairs 1.737, Fair Work 66), trung vị 419 token, p90 525, max 561.
+- **Embedding**: `BAAI/bge-m3` (đa ngôn ngữ, 1024 chiều, fp16 trên GPU). Vector được chuẩn hoá, FAISS `IndexFlatIP` (= cosine). Văn bản đem embed = `tiêu đề > heading` + nội dung chunk.
+
+Thử nhanh (top 1):
+
+| Câu hỏi | Top 1 |
+|---|---|
+| Du học sinh visa 500 được đi làm bao nhiêu giờ một tuần? | Student visa (500) › When you have this visa › In Australia |
+| Người có visa working holiday phải đóng thuế bao nhiêu? | Tax rates – working holiday maker |
+| Làm sao để xin mã số thuế TFN? | What is a tax file number? |
+| Khi rời Úc tôi có rút được tiền super không? | Returning to your home country › Claiming your super (top 2) |
+| Lương tối thiểu ở Úc là bao nhiêu? | Fair Work: Minimum rates of pay |
+| Can I claim my laptop as a work deduction? | Computers, laptops and software › Eligibility |
+
+Điểm yếu thấy được: câu ngắn chứa mã visa ("Visa 482 cần bao nhiêu năm kinh nghiệm?") bị kéo sang visa khác vì tìm theo vector không bám chặt con số. Hỏi đầy đủ hơn ("Skills in Demand 482 diện Core Skills…") thì đúng. Giai đoạn 5 (BM25 + reranker) nhắm vào lỗi này.
 
 ## Chạy thử
 
