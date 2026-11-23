@@ -41,7 +41,13 @@ RERANK_CANDIDATES = 30
 # hybrid_rerank  hybrid top 30 scored by bge-reranker-v2-m3, reranked order and hybrid
 #                order fused again with RRF (default)
 MODES = ("vector", "hybrid", "hybrid_rerank")
+# RERANK_ENABLED=0 (small cloud instances, image built without the reranker):
+# hybrid_rerank requests fall back to hybrid instead of loading the model.
+RERANK_ENABLED = os.getenv("RERANK_ENABLED", "1").lower() not in ("0", "false", "no")
+ENABLED_MODES = MODES if RERANK_ENABLED else tuple(m for m in MODES if m != "hybrid_rerank")
 DEFAULT_MODE = os.getenv("RETRIEVAL_MODE", "hybrid_rerank")
+if DEFAULT_MODE not in ENABLED_MODES:
+    DEFAULT_MODE = "hybrid"
 
 
 @lru_cache(maxsize=512)
@@ -94,6 +100,8 @@ def retrieve(question: str, k: int = 5, use_rewrite: bool = True, mode: str | No
     mode = mode or DEFAULT_MODE
     if mode not in MODES:
         raise ValueError(f"unknown retrieval mode {mode!r}, expected one of {MODES}")
+    if mode not in ENABLED_MODES:
+        mode = "hybrid"
     if queries is None:
         queries = [question] + (list(rewrite(question)) if use_rewrite else [])
     if mode == "hybrid_rerank":

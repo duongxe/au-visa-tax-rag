@@ -12,6 +12,8 @@ import requests
 import streamlit as st
 
 API_URL = os.getenv("API_URL", "http://localhost:8000").rstrip("/")
+if "://" not in API_URL:  # a bare host name (e.g. the AWS endpoint output)
+    API_URL = "https://" + API_URL
 TIMEOUT_S = 180  # the API can try several LLM providers in a row
 
 EXAMPLES = [
@@ -93,8 +95,9 @@ with st.sidebar:
     else:
         st.error(f"Không kết nối được API: {API_URL}")
     default_mode = (info or {}).get("retrieval_mode", "hybrid_rerank")
-    mode = st.selectbox("Cách tìm kiếm", list(MODES), format_func=MODES.get,
-                        index=list(MODES).index(default_mode) if default_mode in MODES else 0)
+    modes = [m for m in MODES if m in (info or {}).get("modes", MODES)]  # the cloud API may not rerank
+    mode = st.selectbox("Cách tìm kiếm", modes, format_func=MODES.get,
+                        index=modes.index(default_mode) if default_mode in modes else 0)
     top_k = st.slider("Số đoạn tài liệu đưa cho AI", 3, 10, 5)
     rewrite = st.toggle("Viết lại câu hỏi để tìm tốt hơn", value=True)
     show_queries = st.toggle("Hiện các câu tìm kiếm", value=False)

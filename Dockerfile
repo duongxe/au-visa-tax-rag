@@ -20,12 +20,16 @@ RUN pip install -r requirements-api.txt
 
 # Models are downloaded at build time so the container starts without internet
 # access to Hugging Face. Only the safetensors weights (no .bin / ONNX copies).
+# WITH_RERANKER=0 leaves the reranker out (-2.2 GB image, ~-2.5 GB RAM); the
+# hybrid_rerank mode then falls back to hybrid (used for the small AWS task).
 ARG EMBEDDING_MODEL=BAAI/bge-m3
 ARG RERANKER_MODEL=BAAI/bge-reranker-v2-m3
+ARG WITH_RERANKER=1
 RUN HF_HUB_OFFLINE=0 python -c "from huggingface_hub import snapshot_download as d; \
 pats=['*.json','*.safetensors','sentencepiece.bpe.model','1_Pooling/*']; \
-d('${EMBEDDING_MODEL}', allow_patterns=pats); d('${RERANKER_MODEL}', allow_patterns=pats)"
-ENV EMBEDDING_MODEL=${EMBEDDING_MODEL} RERANKER_MODEL=${RERANKER_MODEL}
+d('${EMBEDDING_MODEL}', allow_patterns=pats); \
+'${WITH_RERANKER}' == '1' and d('${RERANKER_MODEL}', allow_patterns=pats)"
+ENV EMBEDDING_MODEL=${EMBEDDING_MODEL} RERANKER_MODEL=${RERANKER_MODEL} RERANK_ENABLED=${WITH_RERANKER}
 
 COPY src/ src/
 COPY data/index/ data/index/

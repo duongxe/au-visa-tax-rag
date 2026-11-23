@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import threading
 import time
 from contextlib import asynccontextmanager
@@ -23,6 +24,26 @@ log = logging.getLogger("uvicorn.error")
 # forward passes would fight for the 4 GB of GPU memory. The LLM call is outside
 # the lock, so requests still overlap while waiting for the provider.
 _models_lock = threading.Lock()
+
+# Public deployments: cap /ask calls so a crawler cannot burn the free LLM quotas
+# (or the cloud bill). 0 = unlimited (local default).
+MAX_ASKS_PER_DAY = int(os.getenv("MAX_ASKS_PER_DAY", "0"))
+MAX_ASKS_PER_MINUTE = int(os.getenv("MAX_ASKS_PER_MINUTE", "0"))
+_calls: list[float] = []
+_calls_lock = threading.Lock()
+
+
+def _take_slot() -> bool:
+    """True if this call is within both caps (and records it)."""
+    now = time.time()
+    with _calls_lock:
+        _calls[:] = [t for t in _calls if now - t < 86400]
+        if MAX_ASKS_PER_DAY and len(_calls) >= MAX_ASKS_PER_DAY:
+            return False
+        if MAX_ASKS_PER_MINUTE and sum(now - t < 60 for t in _calls) >= MAX_ASKS_PER_MINUTE:
+            return False
+        _calls.append(now)
+        return True
 
 
 @asynccontextmanager
@@ -77,7 +98,7 @@ class AskResponse(BaseModel):
 def health() -> dict:
     from ..generation.llm import available, chain
     from ..retrieval.build_index import META_FILE
-    from ..retrieval.query import DEFAULT_MODE
+    from ..retrieval.query import DEFAULT_MODE, ENABLED_MODES
 
     meta = json.loads(META_FILE.read_text(encoding="utf-8")) if META_FILE.exists() else {}
     fmt = lambda steps: [f"{p}:{m}" for p, m in steps]
@@ -86,6 +107,7 @@ def health() -> dict:
         "index": {"chunks": meta.get("chunks"), "built_at": meta.get("built_at"),
                   "embedding_model": meta.get("embedding_model")},
         "retrieval_mode": DEFAULT_MODE,
+        "modes": list(ENABLED_MODES),
         # Only steps whose provider has a key; never the keys themselves.
         "llm_chain": fmt(available(chain())),
         "llm_fast_chain": fmt(available(chain(fast=True))),
@@ -96,6 +118,10 @@ def health() -> dict:
 def ask(req: AskRequest) -> AskResponse:
     from ..generation.answer import answer
 
+    if not _take_slot():
+        raise HTTPException(status_code=429,
+                            detail="Bản demo đã hết lượt hỏi cho hôm nay/phút này, vui lòng thử lại sau. "
+                                   "/ The demo has reached its request limit, please try again later.")
     t0 = time.time()
     try:
         res = answer(req.question.strip(), req.top_k, use_rewrite=req.rewrite, mode=req.mode,

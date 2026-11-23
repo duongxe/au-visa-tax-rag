@@ -97,6 +97,30 @@ Kết quả đánh giá chi tiết: [eval/results.md](eval/results.md).
 - **Hiện tượng**: thử API lúc Gemini hết lượt, câu hỏi về giờ làm thêm visa 500 mất 51 giây (trả lời bằng Groq). Khi Groq cũng hết lượt, API trả 503 sau khoảng 20–30 giây. Giao diện chờ tối đa 180 giây.
 - **Cách sửa**: ghi log thời gian của từng bước trong chuỗi dự phòng để xem bị chậm ở đâu; khi gặp lỗi hết lượt (429 quota) thì tạm bỏ qua cả nhà cung cấp đó (mọi model Gemini) thay vì thử từng model.
 
+## Deploy AWS (Giai đoạn 7)
+
+### 10. Template và workflow chưa chạy thật trên AWS
+- **Hiện tượng**: `deploy/bootstrap.yml` và `deploy/service.yml` đã qua `cfn-lint` 1.61 (đúng schema `AWS::ECS::ExpressGatewayService`), workflow là YAML hợp lệ. Nhưng chưa tạo stack nào, nên chưa biết chắc về quyền IAM và hành vi của Express Mode.
+- **Cần kiểm tra khi deploy lần đầu**:
+  - Role hạ tầng dùng trust `ecs.amazonaws.com`. Tài liệu AWS không ghi rõ principal, đây là phỏng đoán.
+  - Role `ServiceStackRole` có đủ quyền để CloudFormation tạo service hay không.
+  - `Fn::GetAtt Endpoint` trả về tên miền hay đã có sẵn `https://`. Giao diện tự thêm `https://` khi giá trị không có.
+  - Task 4 GB có đủ RAM cho bge-m3 trên CPU không.
+- **Cách sửa**: chạy workflow `deploy` rồi xem tab Events của stack. Hướng dẫn xử lý lỗi nằm trong [deploy/README.md](deploy/README.md#khi-deploy-lỗi).
+
+### 10b. Bản cloud không dùng reranker
+- **Hiện tượng**: để vừa ngân sách $100, image cloud bỏ reranker và chạy chế độ `hybrid`, có MRR@10 là 0,848 so với 0,880 của `hybrid_rerank` (Giai đoạn 5). Ô chọn "Hybrid + rerank" bị ẩn trên giao diện cloud.
+- **Cách bật lại**: build image với `WITH_RERANKER=1` và đặt `ApiCpu=2048`, `ApiMemory=8192`. Tiền Fargate tăng gấp đôi và mỗi câu chậm thêm khoảng 20–40 giây trên CPU (xem 3d).
+
+### 10c. Load balancer cắt request sau 60 giây
+- **Hiện tượng**: ALB do Express Mode tạo có idle timeout mặc định 60 giây, và Express Mode không cho đổi cấu hình load balancer. Khi chuỗi LLM dự phòng chạy lâu (xem 9d), người dùng nhận lỗi 504 thay vì câu trả lời.
+- **Đã giảm thiểu**: trên cloud đặt `LLM_TIMEOUT_S=20` và `LLM_DEADLINE_S=25`, vì vậy mỗi bước viết lại câu hỏi hoặc trả lời dừng sau tối đa khoảng 45 giây. Tuy vậy, cả hai bước cộng lại vẫn có thể vượt 60 giây.
+- **Cách sửa triệt để**: trả lời dạng stream (SSE), hoặc đặt một hạn chót chung cho cả request.
+
+### 10d. Giới hạn số câu hỏi tính chung cho mọi người
+- **Hiện tượng**: `MAX_ASKS_PER_DAY` và `MAX_ASKS_PER_MINUTE` đếm theo toàn bộ API, nằm trong bộ nhớ, và đặt lại mỗi khi task khởi động lại. Giao diện gọi API từ server của nó, nên API không phân biệt được từng người dùng.
+- **Cách sửa**: chuyển giới hạn về phía giao diện (theo phiên), hoặc thêm token riêng cho mỗi người.
+
 ## Đánh giá
 
 ### 9b. Điểm RAGAS Giai đoạn 5 chưa đủ (hết lượt miễn phí)

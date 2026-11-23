@@ -1,0 +1,74 @@
+# The running app: two Amazon ECS Express Mode services (API + Streamlit UI) that
+# share one HTTPS load balancer. Created and updated by .github/workflows/deploy-aws.yml
+# ("deploy"), deleted by the same workflow ("destroy") to stop all hourly costs.
+# Needs the au-visa-tax-rag-bootstrap stack (deploy/bootstrap.yml) first.
+AWSTemplateFormatVersion: "2010-09-09"
+Description: au-visa-tax-rag - API and UI on ECS Express Mode (Fargate + ALB, billed hourly)
+
+Parameters:
+  ApiImage:
+    Type: String
+    Description: full ECR image URI of the API (set by the workflow)
+  UiImage:
+    Type: String
+  ApiCpu:
+    Type: String
+    Default: "1024"
+    Description: 1024 = 1 vCPU
+  ApiMemory:
+    Type: String
+    Default: "4096"
+    Description: MiB. bge-m3 on CPU needs ~3 GB; 8192+ if the image includes the reranker
+  RetrievalMode:
+    Type: String
+    AllowedValues: [vector, hybrid, hybrid_rerank]
+    Default: hybrid
+  MaxAsksPerDay:
+    Type: Number
+    Default: 200
+
+Resources:
+  ApiService:
+    Type: AWS::ECS::ExpressGatewayService
+    Properties:
+      ServiceName: au-visa-tax-rag-api
+      Cpu: !Ref ApiCpu
+      Memory: !Ref ApiMemory
+      ExecutionRoleArn: !ImportValue au-visa-tax-rag-TaskExecutionRoleArn
+      InfrastructureRoleArn: !ImportValue au-visa-tax-rag-InfrastructureRoleArn
+      HealthCheckPath: /health
+      ScalingTarget: {MinTaskCount: 1, MaxTaskCount: 1}  # one task: bounded cost
+      PrimaryContainer:
+        Image: !Ref ApiImage
+        ContainerPort: 8000
+        Environment:
+          - {Name: RETRIEVAL_MODE, Value: !Ref RetrievalMode}
+          - {Name: MAX_ASKS_PER_DAY, Value: !Ref MaxAsksPerDay}
+          - {Name: MAX_ASKS_PER_MINUTE, Value: "6"}
+          # The load balancer closes a request after 60 s without a response.
+          - {Name: LLM_TIMEOUT_S, Value: "20"}
+          - {Name: LLM_DEADLINE_S, Value: "25"}
+        Secrets:
+          - {Name: APP_SECRETS, ValueFrom: !ImportValue au-visa-tax-rag-AppSecretArn}
+
+  UiService:
+    Type: AWS::ECS::ExpressGatewayService
+    Properties:
+      ServiceName: au-visa-tax-rag-ui
+      Cpu: "256"
+      Memory: "512"
+      ExecutionRoleArn: !ImportValue au-visa-tax-rag-TaskExecutionRoleArn
+      InfrastructureRoleArn: !ImportValue au-visa-tax-rag-InfrastructureRoleArn
+      HealthCheckPath: /_stcore/health
+      ScalingTarget: {MinTaskCount: 1, MaxTaskCount: 1}
+      PrimaryContainer:
+        Image: !Ref UiImage
+        ContainerPort: 8501
+        Environment:
+          - {Name: API_URL, Value: !GetAtt ApiService.Endpoint}
+
+Outputs:
+  ApiUrl:
+    Value: !GetAtt ApiService.Endpoint
+  UiUrl:
+    Value: !GetAtt UiService.Endpoint

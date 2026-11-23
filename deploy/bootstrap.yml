@@ -1,0 +1,235 @@
+# One-time setup for deploying au-visa-tax-rag to Amazon ECS Express Mode.
+# Create it once in the CloudFormation console (Create stack > Upload a template file),
+# stack name: au-visa-tax-rag-bootstrap, tick "I acknowledge that AWS CloudFormation
+# might create IAM resources". Everything that costs money per hour (Fargate tasks,
+# load balancer) lives in deploy/service.yml instead, which the GitHub workflow
+# creates and deletes.
+#
+# Creates:
+#   - ECR repository for the api/ui images (keeps the last 6)
+#   - S3 bucket for data/index (the index is not in git)
+#   - Secrets Manager secret "au-visa-tax-rag/app" for the LLM API keys (JSON)
+#   - IAM: task execution role, Express infrastructure role, CloudFormation
+#     role for the service stack, GitHub Actions OIDC role (no long-lived keys)
+#   - Monthly cost budget with e-mail alerts (credits excluded, so it warns
+#     while the promotional credit is being spent)
+AWSTemplateFormatVersion: "2010-09-09"
+Description: au-visa-tax-rag - ECR, S3, secret, IAM roles and budget (no hourly cost)
+
+Parameters:
+  GitHubRepo:
+    Type: String
+    Default: duongxe/au-visa-tax-rag
+    Description: owner/name of the GitHub repository allowed to deploy
+  GitHubBranch:
+    Type: String
+    Default: main
+  CreateGitHubOidcProvider:
+    Type: String
+    AllowedValues: ["true", "false"]
+    Default: "true"
+    Description: false if this account already has the token.actions.githubusercontent.com identity provider
+  BudgetEmail:
+    Type: String
+    Description: e-mail address for the cost alerts
+  MonthlyBudgetUsd:
+    Type: Number
+    Default: 30
+
+Conditions:
+  CreateOidc: !Equals [!Ref CreateGitHubOidcProvider, "true"]
+
+Resources:
+  Repository:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: au-visa-tax-rag
+      ImageScanningConfiguration: {ScanOnPush: true}
+      EmptyOnDelete: true
+      LifecyclePolicy:
+        LifecyclePolicyText: |
+          {"rules": [{"rulePriority": 1, "description": "keep the last 6 images",
+            "selection": {"tagStatus": "any", "countType": "imageCountMoreThan", "countNumber": 6},
+            "action": {"type": "expire"}}]}
+
+  IndexBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: {SSEAlgorithm: AES256}
+
+  AppSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Name: au-visa-tax-rag/app
+      Description: LLM API keys as JSON, e.g. {"GEMINI_API_KEY":"...","GROQ_API_KEY":"..."}. Edit the value in the console.
+      SecretString: "{}"
+
+  # Pulls the image, writes logs, reads the secret at task start.
+  TaskExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: {Service: ecs-tasks.amazonaws.com}
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+      Policies:
+        - PolicyName: read-app-secret
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: secretsmanager:GetSecretValue
+                Resource: !Ref AppSecret
+
+  # Lets ECS create the load balancer, security groups, certificate and scaling.
+  InfrastructureRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: {Service: ecs.amazonaws.com}
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSInfrastructureRoleforExpressGatewayServices
+
+  # CloudFormation uses this role (not the GitHub role) to create the service stack.
+  ServiceStackRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: {Service: cloudformation.amazonaws.com}
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: express-service
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: ["ecs:*", "ec2:Describe*", "elasticloadbalancing:Describe*",
+                         "logs:CreateLogGroup", "logs:DescribeLogGroups", "logs:PutRetentionPolicy",
+                         "application-autoscaling:Describe*"]
+                Resource: "*"
+              - Effect: Allow
+                Action: iam:PassRole
+                Resource: [!GetAtt TaskExecutionRole.Arn, !GetAtt InfrastructureRole.Arn]
+              - Effect: Allow
+                Action: iam:CreateServiceLinkedRole
+                Resource: "*"
+                Condition:
+                  StringEquals:
+                    iam:AWSServiceName: [ecs.amazonaws.com, elasticloadbalancing.amazonaws.com,
+                                         ecs.application-autoscaling.amazonaws.com]
+
+  GitHubOidcProvider:
+    Type: AWS::IAM::OIDCProvider
+    Condition: CreateOidc
+    Properties:
+      Url: https://token.actions.githubusercontent.com
+      ClientIdList: [sts.amazonaws.com]
+      ThumbprintList: [6938fd4d98bab03faadb97b34396831e3780aea1, 1c58a3a8518e8759bf075b76b750d4f2df264fcd]
+
+  # Assumed by the GitHub workflow through OIDC; only the given branch of the repo.
+  GitHubDeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !If
+                - CreateOidc
+                - !Ref GitHubOidcProvider
+                - !Sub arn:aws:iam::${AWS::AccountId}:oidc-provider/token.actions.githubusercontent.com
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+                token.actions.githubusercontent.com:sub: !Sub repo:${GitHubRepo}:ref:refs/heads/${GitHubBranch}
+      Policies:
+        - PolicyName: deploy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: ecr:GetAuthorizationToken
+                Resource: "*"
+              - Effect: Allow
+                Action: [ecr:BatchCheckLayerAvailability, ecr:InitiateLayerUpload, ecr:UploadLayerPart,
+                         ecr:CompleteLayerUpload, ecr:PutImage, ecr:BatchGetImage,
+                         ecr:GetDownloadUrlForLayer, ecr:DescribeImages]
+                Resource: !GetAtt Repository.Arn
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt IndexBucket.Arn
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: !Sub ${IndexBucket.Arn}/*
+              - Effect: Allow
+                Action: [cloudformation:ValidateTemplate, cloudformation:GetTemplateSummary,
+                         cloudformation:DescribeStacks]
+                Resource: "*"
+              - Effect: Allow
+                Action: cloudformation:*
+                Resource:
+                  - !Sub arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/au-visa-tax-rag-service/*
+                  - !Sub arn:aws:cloudformation:${AWS::Region}:aws:transform/*
+              - Effect: Allow
+                Action: iam:PassRole
+                Resource: !GetAtt ServiceStackRole.Arn
+
+  CostBudget:
+    Type: AWS::Budgets::Budget
+    Properties:
+      Budget:
+        BudgetName: au-visa-tax-rag-monthly
+        BudgetType: COST
+        TimeUnit: MONTHLY
+        BudgetLimit: {Amount: !Ref MonthlyBudgetUsd, Unit: USD}
+        CostTypes: {IncludeCredit: false, IncludeRefund: false}
+      NotificationsWithSubscribers:
+        - Notification: {NotificationType: ACTUAL, ComparisonOperator: GREATER_THAN, Threshold: 50}
+          Subscribers: [{SubscriptionType: EMAIL, Address: !Ref BudgetEmail}]
+        - Notification: {NotificationType: ACTUAL, ComparisonOperator: GREATER_THAN, Threshold: 100}
+          Subscribers: [{SubscriptionType: EMAIL, Address: !Ref BudgetEmail}]
+        - Notification: {NotificationType: FORECASTED, ComparisonOperator: GREATER_THAN, Threshold: 100}
+          Subscribers: [{SubscriptionType: EMAIL, Address: !Ref BudgetEmail}]
+
+Outputs:
+  GitHubDeployRoleArn:
+    Description: put this in the GitHub repository variable AWS_DEPLOY_ROLE_ARN
+    Value: !GetAtt GitHubDeployRole.Arn
+  RepositoryUri:
+    Value: !GetAtt Repository.RepositoryUri
+  IndexBucket:
+    Description: upload data/index/* to s3://<this bucket>/index/
+    Value: !Ref IndexBucket
+  ServiceStackRoleArn:
+    Value: !GetAtt ServiceStackRole.Arn
+  TaskExecutionRoleArn:
+    Value: !GetAtt TaskExecutionRole.Arn
+    Export: {Name: au-visa-tax-rag-TaskExecutionRoleArn}
+  InfrastructureRoleArn:
+    Value: !GetAtt InfrastructureRole.Arn
+    Export: {Name: au-visa-tax-rag-InfrastructureRoleArn}
+  AppSecretArn:
+    Value: !Ref AppSecret
+    Export: {Name: au-visa-tax-rag-AppSecretArn}

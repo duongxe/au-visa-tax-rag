@@ -17,7 +17,7 @@ Trợ lý hỏi đáp (RAG) về **visa, thuế và quyền lợi lao động t�
 | 4 | Bộ 50 câu hỏi + RAGAS | ✅ |
 | 5 | Hybrid BM25 + RRF + reranker | ✅ |
 | 6 | FastAPI + Streamlit + Docker | ✅ (chưa build thử image) |
-| 7 | Deploy AWS App Runner | ⬜ |
+| 7 | Deploy AWS (ECS Express Mode, thay App Runner) | ✅ (template + workflow, chưa chạy trên AWS) |
 | 8 | Hoàn thiện README, demo | ⬜ |
 
 ## Cấu trúc
@@ -31,6 +31,8 @@ data/index/        # chunks.jsonl + faiss.index (build lại được, không co
 src/generation/    # prompt + gọi Gemini, trích nguồn [n]
 src/api/           # FastAPI (/ask)
 app/               # Streamlit UI
+deploy/            # CloudFormation (AWS ECS Express Mode) + hướng dẫn
+.github/workflows/ # build image + deploy lên AWS
 eval/              # câu hỏi test + script RAGAS, results.md
 sources.csv        # danh sách nguồn: url, tiêu đề, ngày tải
 ```
@@ -194,6 +196,18 @@ pip install -r requirements.txt
 uvicorn src.api.main:app --port 8000
 streamlit run app/streamlit_app.py                  # API_URL=http://localhost:8000 (mặc định)
 ```
+
+## Deploy lên AWS (Giai đoạn 7)
+
+Kế hoạch ban đầu là App Runner, nhưng dịch vụ này đã ngừng nhận khách hàng mới từ 30/4/2026, nên dự án chuyển sang **Amazon ECS Express Mode**, nền tảng AWS khuyên dùng thay thế. Hướng dẫn từng bước nằm trong [deploy/README.md](deploy/README.md).
+
+- **Cách chạy**: API và giao diện là 2 service Fargate, dùng chung 1 load balancer HTTPS. Express Mode tự tạo load balancer, chứng chỉ và tên miền.
+- **Build**: image được build trên GitHub Actions ([deploy-aws.yml](.github/workflows/deploy-aws.yml)), nên máy không cần Docker. Workflow lấy quyền AWS qua OIDC, không lưu access key. Chỉ mục được tải từ S3 khi build.
+- **Hạ tầng**: viết bằng CloudFormation, gồm [deploy/bootstrap.yml](deploy/bootstrap.yml) (tạo 1 lần: ECR, S3, secret, IAM, budget) và [deploy/service.yml](deploy/service.yml) (phần tính tiền theo giờ). Chạy `destroy` là xoá hẳn phần tính tiền.
+- **Key LLM**: cả nhóm key nằm trong 1 secret JSON trên Secrets Manager và được đưa vào container qua biến `APP_SECRETS`. Key không vào image, không vào GitHub.
+- **Cấu hình cho máy nhỏ**: bản cloud chạy trên 1 vCPU / 4 GB và không có reranker (`WITH_RERANKER=0`, chế độ `hybrid`). Bản này chỉ bằng nửa tiền và trả lời nhanh hơn nhiều so với rerank trên CPU, trong khi hit@5 vẫn đạt 42/42.
+- **Giữ chi phí trong tầm**: API giới hạn 200 câu/ngày và 6 câu/phút. Mỗi service chạy đúng 1 task. Budget gửi email cảnh báo khi vượt $30/tháng.
+- **Chi phí ước tính**: ~$0,12/giờ (~$85/tháng nếu chạy 24/7), nên chỉ bật khi demo.
 
 ## Kết quả đánh giá
 

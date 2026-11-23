@@ -20,6 +20,7 @@ openrouter, deepseek. The OpenRouter steps use free models (":free" suffix: abou
 """
 from __future__ import annotations
 
+import json
 import logging
 import os
 import time
@@ -31,6 +32,26 @@ from ..ingest.common import ROOT
 
 load_dotenv(ROOT / ".env")
 log = logging.getLogger(__name__)
+
+
+def _load_app_secrets() -> None:
+    """On AWS the keys arrive as one JSON secret in APP_SECRETS
+    ({"GEMINI_API_KEY": "...", ...}); copy the non-empty ones into the environment.
+    Variables already set (e.g. from .env) win."""
+    raw = os.getenv("APP_SECRETS")
+    if not raw:
+        return
+    try:
+        values = json.loads(raw)
+    except ValueError:
+        log.error("APP_SECRETS is not valid JSON; ignored")  # never log the value
+        return
+    for name, value in values.items():
+        if isinstance(value, str) and value.strip():
+            os.environ.setdefault(name, value.strip())
+
+
+_load_app_secrets()
 
 DEFAULT_CHAIN = (
     "gemini:gemini-3.5-flash,"
@@ -70,7 +91,11 @@ PROVIDERS: dict[str, tuple[tuple[str, ...], str | None]] = {
 
 TEMPERATURE = 0.1
 MAX_OUTPUT_TOKENS = 2048
-TIMEOUT_S = 45
+TIMEOUT_S = float(os.getenv("LLM_TIMEOUT_S", "45"))  # per provider call
+# Stop trying further steps once a generate() call has run this long (0 = no limit).
+# On AWS the load balancer drops a request after 60 s of silence, so a slow chain
+# must give up in time for the API to return its 503 message.
+DEADLINE_S = float(os.getenv("LLM_DEADLINE_S", "0"))
 COOLDOWN_BUSY_S = 300      # overloaded / timeout
 COOLDOWN_MINUTE_S = 60     # per-minute rate limit (e.g. Groq free tier tokens per minute)
 COOLDOWN_ACCOUNT_S = 3600  # out of credit, billing, invalid key
@@ -116,7 +141,7 @@ def _client(provider: str):
         from google.genai import types
 
         return genai.Client(api_key=key, http_options=types.HttpOptions(
-            timeout=TIMEOUT_S * 1000, retry_options=types.HttpRetryOptions(attempts=1)))
+            timeout=int(TIMEOUT_S * 1000), retry_options=types.HttpRetryOptions(attempts=1)))
     if provider == "anthropic":
         import anthropic
 
@@ -184,6 +209,9 @@ def generate(system: str, prompt: str, fast: bool = False,
     errors = []
     for provider, model in steps:
         name = f"{provider}:{model}"
+        if DEADLINE_S and time.time() - now > DEADLINE_S:
+            errors.append(f"{name}: skipped, LLM_DEADLINE_S={DEADLINE_S:g}s reached")
+            break
         try:
             text = _call(provider, model, system, prompt).strip()
         except Exception as e:  # any provider failure -> next step
