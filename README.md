@@ -122,13 +122,14 @@ Luồng xử lý: **viết lại câu hỏi → tìm kiếm nhiều truy vấn (
 
 ```
 gemini:gemini-3.5-flash → gemini:gemini-3.5-flash-lite → gemini:gemini-3.8-flash
-→ groq:openai/gpt-oss-120b → openrouter:openai/gpt-oss-120b → deepseek:deepseek-chat
-→ openai:gpt-5-mini → anthropic:claude-haiku-5-5
+→ groq:openai/gpt-oss-120b → mistral:mistral-medium-latest
+→ openrouter:google/gemma-4-31b-it:free → openrouter:nvidia/nemotron-3-ultra-550b-a55b:free
+→ mistral:mistral-small-latest → deepseek:deepseek-chat → openai:gpt-5-mini → anthropic:claude-haiku-5-5
 ```
 
-Chuỗi nhanh (viết lại câu hỏi): Gemini 3.5-flash-lite → 3.5-flash → `groq:qwen/qwen3.8-27b` → `groq:openai/gpt-oss-20b` → …
+Chuỗi nhanh (viết lại câu hỏi): Gemini 3.5-flash-lite → 3.5-flash → `groq:qwen/qwen3.8-27b` → `groq:openai/gpt-oss-20b` → `mistral:mistral-small-latest` → `openrouter:google/gemma-4-26b-a4b-it:free` → …
 
-- Nhà cung cấp nào chưa có key trong `.env` thì bỏ qua. Hỗ trợ: Gemini, Groq, OpenRouter, DeepSeek, OpenAI, Anthropic.
+- Nhà cung cấp nào chưa có key trong `.env` thì bỏ qua. Hỗ trợ: Gemini, Groq, Mistral, OpenRouter, DeepSeek, OpenAI, Anthropic. Bốn nhà cung cấp đầu đều có gói miễn phí; OpenRouter chỉ dùng model đuôi `:free` (khoảng 20 lượt/phút, 50 lượt/ngày nếu chưa nạp tiền).
 - Gặp bất kỳ lỗi nào (503 quá tải, 429 hết lượt, hết credit, sai key, timeout 45 giây) thì chuyển ngay sang bước sau. Bước lỗi bị đẩy xuống cuối hàng: 5 phút nếu quá tải, 1 giờ nếu lỗi tài khoản (401/402/403, quota, credit, billing).
 - `LLM_FAST_CHAIN` là chuỗi riêng cho việc viết lại câu hỏi, ưu tiên model rẻ và nhanh.
 - Kết quả có trường `model`, cho biết nhà cung cấp nào đã trả lời.
@@ -272,6 +273,6 @@ python -X utf8 -m src.retrieval.bm25 "subclass 482 work experience"   # thử BM
 
 - Các trang visa lặp lại nhiều đoạn chung (nộp giấy tờ, dịch thuật, người đại diện…): 43% số mục của Home Affairs trùng y hệt mục ở trang khác (ATO: 5%). Cần lọc trùng ở bước chunking để không làm loãng kết quả tìm kiếm.
 - Reranker làm thời gian trả lời tăng gấp đôi (trung vị 2,8 → 5,5 giây trên GPU 4 GB).
-- Các model Gemini Flash hay bị quá tải (503/504) vào giờ cao điểm; nên thêm ít nhất một key dự phòng (Groq/OpenRouter có gói miễn phí).
+- Các model Gemini Flash hay bị quá tải (503/504) vào giờ cao điểm; nên thêm ít nhất một key dự phòng (Groq, Mistral, OpenRouter đều có gói miễn phí).
 - Bảng trong PDF (ví dụ bảng tóm tắt quyền lợi casual) bị tách thành nhiều mục nhỏ.
 - Phí visa trên trang Home Affairs được tính bằng JavaScript nên không có trong dữ liệu.

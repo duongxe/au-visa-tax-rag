@@ -8,11 +8,15 @@ the failed one is put on cooldown so later requests skip it straight away.
 Settings (.env):
     LLM_CHAIN        chain for answers
     LLM_FAST_CHAIN   chain for small tasks (query rewriting); cheap/fast models first
-    GEMINI_API_KEY, GROQ_API_KEY, OPENROUTER_API_KEY, DEEPSEEK_API_KEY,
-    OPENAI_API_KEY, ANTHROPIC_API_KEY
+    GEMINI_API_KEY, GROQ_API_KEY, MISTRAL_API_KEY, OPENROUTER_API_KEY,
+    DEEPSEEK_API_KEY, OPENAI_API_KEY, ANTHROPIC_API_KEY
 
-Providers: gemini, openai, anthropic, and the OpenAI-compatible groq, openrouter,
-deepseek.
+Check which steps work:
+    python -X utf8 -m src.generation.llm
+
+Providers: gemini, openai, anthropic, and the OpenAI-compatible groq, mistral,
+openrouter, deepseek. The OpenRouter steps use free models (":free" suffix: about
+20 requests/minute and 50/day without credit, 1000/day after buying $10 of credit).
 """
 from __future__ import annotations
 
@@ -33,7 +37,10 @@ DEFAULT_CHAIN = (
     "gemini:gemini-3.5-flash-lite,"
     "gemini:gemini-3.8-flash,"
     "groq:openai/gpt-oss-120b,"
-    "openrouter:openai/gpt-oss-120b,"
+    "mistral:mistral-medium-latest,"
+    "openrouter:google/gemma-4-31b-it:free,"
+    "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free,"
+    "mistral:mistral-small-latest,"
     "deepseek:deepseek-chat,"
     "openai:gpt-5-mini,"
     "anthropic:claude-haiku-5-5"
@@ -43,7 +50,8 @@ DEFAULT_FAST_CHAIN = (
     "gemini:gemini-3.5-flash,"
     "groq:qwen/qwen3.8-27b,"
     "groq:openai/gpt-oss-20b,"
-    "openrouter:openai/gpt-oss-20b,"
+    "mistral:mistral-small-latest,"
+    "openrouter:google/gemma-4-26b-a4b-it:free,"
     "deepseek:deepseek-chat,"
     "openai:gpt-5-nano,"
     "anthropic:claude-haiku-5-5"
@@ -55,6 +63,7 @@ PROVIDERS: dict[str, tuple[tuple[str, ...], str | None]] = {
     "openai": (("OPENAI_API_KEY",), None),
     "anthropic": (("ANTHROPIC_API_KEY",), None),
     "groq": (("GROQ_API_KEY",), "https://api.groq.com/openai/v1"),
+    "mistral": (("MISTRAL_API_KEY",), "https://api.mistral.ai/v1"),
     "openrouter": (("OPENROUTER_API_KEY",), "https://openrouter.ai/api/v1"),
     "deepseek": (("DEEPSEEK_API_KEY",), "https://api.deepseek.com"),
 }
@@ -189,3 +198,28 @@ def generate(system: str, prompt: str, fast: bool = False,
         _cooldown_until.pop(name, None)
         return text, name
     raise RuntimeError("all LLM providers failed:\n  " + "\n  ".join(errors))
+
+
+def check() -> None:
+    """Ping every step of both chains once; prints which ones answer (never the keys)."""
+    import re
+
+    steps = list(dict.fromkeys(chain() + chain(fast=True)))
+    for provider, model in steps:
+        name = f"{provider}:{model}"
+        if not api_key(provider):
+            print(f"  --    {name:55} no key")
+            continue
+        t0 = time.time()
+        try:
+            text = _call(provider, model, "Reply with the single word OK.", "Say OK.").strip()
+            status = "ok" if text else "empty response"
+        except Exception as e:
+            # Account / organisation ids can appear in provider errors.
+            status = re.sub(r"\b(org|user|project)[_-]\w+", r"\1_…", " ".join(str(e).split()))[:150]
+        print(f"  {'OK' if status == 'ok' else 'FAIL':5} {name:55} {time.time() - t0:5.1f}s  "
+              f"{'' if status == 'ok' else status}")
+
+
+if __name__ == "__main__":
+    check()
