@@ -28,3 +28,6 @@ models/
 .idea/
 .DS_Store
 Thumbs.db
+
+# RAGAS judge cache
+eval/runs/.ragas_cache/

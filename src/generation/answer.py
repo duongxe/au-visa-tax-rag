@@ -24,7 +24,7 @@ def answer(question: str, k: int = 5, use_rewrite: bool = True) -> dict:
     hits, queries = retrieve(question, k, use_rewrite)
     if not hits:
         return {"answer": NOT_FOUND[detect_lang(question)], "found": False,
-                "sources": [], "contexts": [], "queries": queries, "model": ""}
+                "sources": [], "contexts": [], "context_urls": [], "queries": queries, "model": ""}
 
     text, model = generate(SYSTEM, build_prompt(question, hits))
     cited = [n for n in cited_numbers(text) if 1 <= n <= len(hits)]
@@ -44,6 +44,7 @@ def answer(question: str, k: int = 5, use_rewrite: bool = True) -> dict:
         "found": bool(cited),  # an answer without citations is the "I don't know" reply
         "sources": sources,
         "contexts": [h["text"] for h in hits],
+        "context_urls": [h["url"] for h in hits],
         "queries": queries,
         "model": model,
     }

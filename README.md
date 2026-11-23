@@ -14,7 +14,7 @@ Trợ lý hỏi đáp (RAG) về **visa, thuế và quyền lợi lao động t�
 | 1 | Thu thập + làm sạch dữ liệu | ✅ |
 | 2 | Chunking, embedding (bge-m3), FAISS | ✅ |
 | 3 | Sinh câu trả lời có trích nguồn (baseline) | ✅ |
-| 4 | Bộ 50 câu hỏi + RAGAS | ⬜ |
+| 4 | Bộ 50 câu hỏi + RAGAS | ✅ |
 | 5 | Hybrid BM25 + RRF + reranker | ⬜ |
 | 6 | FastAPI + Streamlit + Docker | ⬜ |
 | 7 | Deploy AWS App Runner | ⬜ |
@@ -173,7 +173,32 @@ streamlit run app/streamlit_app.py
 
 ## Kết quả đánh giá
 
-_(Sẽ điền ở giai đoạn 4–5: vector-only vs hybrid vs hybrid + rerank.)_
+Bộ test: 50 câu ([eval/questions.csv](eval/questions.csv)): 30 tiếng Việt, 20 tiếng Anh; 42 câu có đáp án trong tài liệu (kèm đáp án chuẩn và trang nguồn), 8 câu ngoài phạm vi (vé máy bay, tỷ giá, visa Mỹ/Canada…). Chi tiết từng câu: [eval/results.md](eval/results.md). Các lỗi tìm thấy: [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
+
+Baseline (Giai đoạn 3: tìm theo vector + viết lại câu hỏi, top 5):
+
+| Chỉ số | Kết quả |
+|---|---|
+| Trả lời được (câu có trong tài liệu) | 39/42 (93%) |
+| Nói "không biết" đúng (câu ngoài tài liệu) | 8/8 (100%) |
+| Retrieval hit@5 (trang nguồn đúng nằm trong 5 đoạn lấy về) | 41/42 (98%) |
+| Trích dẫn đúng trang nguồn | 38/42 (90%) |
+| Trả lời đúng ngôn ngữ câu hỏi | 36/50 (72%): lỗi, xem KNOWN_ISSUES mục A |
+| RAGAS faithfulness / answer relevancy | 0.96 / 0.84 |
+| RAGAS context precision / context recall | 0.86 / 0.93 |
+| Thời gian trả lời (trung vị) | 2.8 giây |
+
+Gemini Flash hết lượt miễn phí sau 4 câu nên 40/50 câu do `gemini-3.5-flash-lite` trả lời (5 câu Flash, 5 câu Groq). Model chấm RAGAS đi qua cùng chuỗi dự phòng (chủ yếu Flash-Lite, một phần Groq `gpt-oss-120b`), cùng họ với model trả lời nên điểm có thể hơi cao.
+
+Chạy lại:
+
+```bash
+python -X utf8 -m src.evaluation.run_answers --fresh   # trả lời 50 câu -> eval/runs/answers.jsonl
+python -X utf8 -m src.evaluation.ragas_eval            # chấm RAGAS -> eval/runs/ragas_scores.csv
+python -X utf8 -m src.evaluation.report                # -> eval/results.md
+```
+
+Giai đoạn 5 sẽ so sánh: vector vs hybrid (BM25 + RRF) vs hybrid + rerank trên cùng bộ câu hỏi.
 
 ## Hạn chế đã biết
 
