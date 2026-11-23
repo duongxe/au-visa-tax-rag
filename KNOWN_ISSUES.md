@@ -5,12 +5,13 @@ Kết quả đánh giá chi tiết: [eval/results.md](eval/results.md).
 
 ## Trả lời (ưu tiên sửa trước)
 
-### A. Hỏi tiếng Anh nhưng trả lời bằng tiếng Việt (14/20 câu tiếng Anh)
+### A. Hỏi tiếng Anh nhưng trả lời bằng tiếng Việt (14/20 câu tiếng Anh; Giai đoạn 5: 16/20)
 - **Hiện tượng**: trong lần đánh giá, `gemini-3.5-flash-lite` trả lời bằng tiếng Việt cho 14/20 câu hỏi tiếng Anh (ví dụ #5, #7, #38). Nội dung và trích dẫn vẫn đúng, chỉ sai ngôn ngữ.
 - **Nguyên nhân (dự đoán)**: `SYSTEM` trong `src/generation/prompt.py` có câu "(many are Vietnamese)" và quy tắc 4 nói nhiều về tiếng Việt; model nhỏ bám theo đó thay vì ngôn ngữ câu hỏi. Các câu do `gemini-3.5-flash` trả lời (4 câu đầu) không bị.
 - **Cách sửa**: trong `build_prompt`, dùng `detect_lang(question)` và ghi rõ ở cuối prompt: "Answer in English." / "Trả lời bằng tiếng Việt."; bỏ "(many are Vietnamese)". Chạy lại `python -X utf8 -m src.evaluation.run_answers --fresh` để kiểm tra.
 
 ### B. Trả lời đúng nhưng quên trích nguồn bị tính là "không biết"
+- **Giai đoạn 5**: #39 giờ có trích dẫn (nhờ lấy được trang casual tốt hơn), nhưng lỗi logic trong `answer.py` vẫn còn.
 - **Hiện tượng**: câu #39 ("Nhân viên casual có được nghỉ phép năm có lương không?") được trả lời đúng ("Không...") nhưng không có [n], nên `found=False`, API không trả nguồn nào.
 - **Nguyên nhân**: `answer.py` coi câu trả lời không có trích dẫn là câu "không biết".
 - **Cách sửa**: so sánh với câu `NOT_FOUND` thay vì chỉ đếm trích dẫn; nếu trả lời mà không trích dẫn thì gọi lại model một lần yêu cầu thêm [n], hoặc gắn tất cả nguồn đã lấy về.
@@ -18,10 +19,12 @@ Kết quả đánh giá chi tiết: [eval/results.md](eval/results.md).
 ### B2. Có đoạn đúng nhưng vẫn nói "không tìm thấy"
 - **Hiện tượng**: #19 ("Are New Zealand citizens automatically granted a Special Category visa 444?"): 2/5 đoạn lấy về là trang visa 444, nhưng model (Flash-Lite) trả lời "không có thông tin", lại bằng tiếng Việt.
 - **Cách sửa**: xem lại sau khi sửa mục A; thử model lớn hơn cho bước trả lời, hoặc tăng k.
+- **Giai đoạn 5**: đã hết. Reranker đưa trang 444 lên hạng 1–2 và câu trả lời đúng (vẫn bằng tiếng Việt, mục A).
 
 ### C. Bước viết lại câu hỏi đôi khi dùng tên cũ hoặc dịch sai
 - **Hiện tượng**: #10 (visa 482) được viết lại thành "Temporary Skill Shortage visa subclass 482" (tên cũ, trang hiện tại gọi là "Skills in Demand"), kéo kết quả sang visa 186/187. #39 có truy vấn tiếng Việt vô nghĩa "lãnh đạo làm việc casual...".
-- **Cách sửa**: thêm vào `REWRITE_SYSTEM` yêu cầu chỉ viết tiếng Anh và dùng tên hiện hành; quan trọng hơn là BM25 (mục 3) để không phụ thuộc vào cách viết lại.
+- **Cách sửa**: thêm vào `REWRITE_SYSTEM` yêu cầu chỉ viết tiếng Anh và dùng tên hiện hành.
+- **Giai đoạn 5**: BM25 + reranker bù được cho #10 (xem mục 3), nhưng bản thân bước viết lại vẫn chưa sửa.
 
 ## Dữ liệu
 
@@ -36,10 +39,22 @@ Kết quả đánh giá chi tiết: [eval/results.md](eval/results.md).
 
 ## Tìm kiếm (retrieval)
 
-### 3. Câu "Visa 482 cần bao nhiêu năm kinh nghiệm?" lấy sai đoạn
+### 3. ~~Câu "Visa 482 cần bao nhiêu năm kinh nghiệm?" lấy sai đoạn~~ (đã sửa ở Giai đoạn 5)
 - **Hiện tượng**: tìm kiếm bằng vector (bge-m3) không đưa đoạn "Have worked in your nominated occupation ... for at least 1 year" của visa 482 vào top 5.
 - **Nguyên nhân**: câu hỏi ngắn, tìm kiếm vector bỏ lỡ từ khoá cụ thể ("482", "1 year").
-- **Cách sửa**: Giai đoạn 5, thêm BM25 (tìm theo từ khoá) và gộp với RRF, sau đó rerank.
+- **Đã sửa**: BM25 + reranker đưa trang 482 Core Skills từ hạng 6 lên hạng 1; câu trả lời đúng "ít nhất 1 năm".
+
+### 3b. Reranker đẩy trang đúng của #31 xuống (Giai đoạn 5)
+- **Hiện tượng**: "Hạn chót nộp tờ khai thuế cá nhân là ngày nào?": trang nguồn đúng từ hạng 1 (vector) xuống hạng 7 (hybrid + rerank). Câu trả lời vẫn đúng (31/10) vì các trang ATO khác cũng ghi ngày này, nhưng trích dẫn không trúng trang chuẩn.
+- **Cách sửa**: xem đoạn nào reranker xếp lên trên; thử tăng trọng số thứ tự `hybrid` khi gộp, hoặc bỏ đoạn trùng lặp (Hạn chế trong README).
+
+### 3c. Reranker chấm câu tiếng Việt với đoạn tiếng Anh rất thấp
+- **Hiện tượng**: điểm bge-reranker-v2-m3 cho cặp (câu tiếng Việt, đoạn tiếng Anh) khoảng 0.0x, thứ tự gần như ngẫu nhiên; chỉ dùng điểm này thì #25, #27 tụt khỏi top 5.
+- **Đã làm**: lấy điểm cao nhất giữa câu gốc và các câu viết lại tiếng Anh, rồi gộp với thứ tự `hybrid` bằng RRF. Nếu bước viết lại lỗi (mọi LLM hết lượt), câu tiếng Việt chỉ còn điểm nhiễu này: nên thử.
+
+### 3d. Reranker làm câu trả lời chậm gấp đôi
+- **Hiện tượng**: thời gian trả lời trung vị từ 2,8 lên 5,5 giây. Mỗi câu chấm 30 đoạn × tối đa 4 truy vấn = 120 cặp trên GPU 4 GB (~3 giây); trên CPU (App Runner, Giai đoạn 7) sẽ chậm hơn nhiều.
+- **Cách sửa**: giảm `RERANK_CANDIDATES` xuống 20, chỉ chấm theo câu viết lại đầu tiên + câu gốc, hoặc dùng `RETRIEVAL_MODE=hybrid` khi deploy trên CPU.
 
 ### 4. Câu bố mẹ sang thăm trả lời visa 870 thay vì 600 khi chỉ chạy bằng Groq
 - **Hiện tượng**: khi Gemini không dùng được, bước viết lại câu hỏi bằng `groq:openai/gpt-oss-20b` chỉ sinh truy vấn về "Parent visa", nên câu trả lời là visa 870 (đúng nhưng thiếu visa 600).
@@ -74,6 +89,10 @@ Kết quả đánh giá chi tiết: [eval/results.md](eval/results.md).
 - **Cách sửa**: `pip freeze` khi đã chạy ổn, trước khi build Docker.
 
 ## Đánh giá
+
+### 9b. Điểm RAGAS Giai đoạn 5 chưa đủ (hết lượt miễn phí)
+- **Hiện tượng**: khi chấm lần chạy hybrid + rerank, Gemini (Flash, Flash-Lite) báo 429 "exceeded your current quota" và Groq `gpt-oss-120b` báo 429 rate limit. Mới có faithfulness 6/42, answer_relevancy 30/42, context_precision 12/42, context_recall 6/42 câu, nên chưa so được với Giai đoạn 4.
+- **Cách sửa**: hôm sau chạy `python -X utf8 -m src.evaluation.ragas_eval --workers 1` rồi `python -X utf8 -m src.evaluation.report` (cache giữ phần đã chấm); hoặc thêm key OpenRouter/DeepSeek vào `.env` để có model chấm dự phòng.
 
 ### 10. Model chấm điểm cùng họ với model trả lời
 - **Hiện tượng**: RAGAS dùng Gemini để chấm câu trả lời cũng do Gemini viết, có thể chấm dễ hơn thực tế.

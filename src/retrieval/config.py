@@ -11,3 +11,4 @@ load_dotenv(ROOT / ".env")
 
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "BAAI/bge-m3")
 INDEX_DIR = ROOT / os.getenv("INDEX_DIR", "data/index")
+RERANKER_MODEL = os.getenv("RERANKER_MODEL", "BAAI/bge-reranker-v2-m3")

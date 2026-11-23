@@ -15,7 +15,7 @@ Trợ lý hỏi đáp (RAG) về **visa, thuế và quyền lợi lao động t�
 | 2 | Chunking, embedding (bge-m3), FAISS | ✅ |
 | 3 | Sinh câu trả lời có trích nguồn (baseline) | ✅ |
 | 4 | Bộ 50 câu hỏi + RAGAS | ✅ |
-| 5 | Hybrid BM25 + RRF + reranker | ⬜ |
+| 5 | Hybrid BM25 + RRF + reranker | ✅ |
 | 6 | FastAPI + Streamlit + Docker | ⬜ |
 | 7 | Deploy AWS App Runner | ⬜ |
 | 8 | Hoàn thiện README, demo | ⬜ |
@@ -100,7 +100,7 @@ Thử nhanh (top 1):
 | Lương tối thiểu ở Úc là bao nhiêu? | Fair Work: Minimum rates of pay |
 | Can I claim my laptop as a work deduction? | Computers, laptops and software › Eligibility |
 
-Điểm yếu thấy được: câu ngắn chứa mã visa ("Visa 482 cần bao nhiêu năm kinh nghiệm?") bị kéo sang visa khác vì tìm theo vector không bám chặt con số. Hỏi đầy đủ hơn ("Skills in Demand 482 diện Core Skills…") thì đúng. Giai đoạn 5 (BM25 + reranker) nhắm vào lỗi này.
+Điểm yếu thấy được: câu ngắn chứa mã visa ("Visa 482 cần bao nhiêu năm kinh nghiệm?") bị kéo sang visa khác vì tìm theo vector không bám chặt con số. Hỏi đầy đủ hơn ("Skills in Demand 482 diện Core Skills…") thì đúng. Đã sửa ở Giai đoạn 5 (BM25 + reranker).
 
 ## Trả lời có trích nguồn (Giai đoạn 3)
 
@@ -110,7 +110,7 @@ python -X utf8 -m src.generation.answer --show-context "Do I need a TFN to start
 python -X utf8 -m src.generation.answer --no-rewrite "..."     # không viết lại câu hỏi
 ```
 
-Luồng xử lý: **viết lại câu hỏi → tìm kiếm nhiều truy vấn (RRF) → prompt → LLM (có dự phòng) → trả lời kèm `[n]`**.
+Luồng xử lý: **viết lại câu hỏi → tìm kiếm nhiều truy vấn (vector + BM25, RRF) → rerank → prompt → LLM (có dự phòng) → trả lời kèm `[n]`**.
 
 **1. Viết lại câu hỏi** ([query.py](src/retrieval/query.py)). Một LLM nhanh đổi câu hỏi thành 1–3 truy vấn tiếng Anh dùng thuật ngữ chính thức. Câu gốc và từng câu viết lại được tìm riêng (top 20), rồi gộp bằng Reciprocal Rank Fusion. Bước này chỉ để tìm đúng tài liệu; câu trả lời vẫn chỉ dựa trên tài liệu. Nếu mọi LLM lỗi thì tìm bằng câu gốc như cũ.
 
@@ -175,7 +175,7 @@ streamlit run app/streamlit_app.py
 
 Bộ test: 50 câu ([eval/questions.csv](eval/questions.csv)): 30 tiếng Việt, 20 tiếng Anh; 42 câu có đáp án trong tài liệu (kèm đáp án chuẩn và trang nguồn), 8 câu ngoài phạm vi (vé máy bay, tỷ giá, visa Mỹ/Canada…). Chi tiết từng câu: [eval/results.md](eval/results.md). Các lỗi tìm thấy: [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
-Baseline (Giai đoạn 3: tìm theo vector + viết lại câu hỏi, top 5):
+Giai đoạn 4 (tìm theo vector + viết lại câu hỏi, top 5; kết quả Giai đoạn 5 ở phần dưới):
 
 | Chỉ số | Kết quả |
 |---|---|
@@ -198,12 +198,57 @@ python -X utf8 -m src.evaluation.ragas_eval            # chấm RAGAS -> eval/ru
 python -X utf8 -m src.evaluation.report                # -> eval/results.md
 ```
 
-Giai đoạn 5 sẽ so sánh: vector vs hybrid (BM25 + RRF) vs hybrid + rerank trên cùng bộ câu hỏi.
+## Tìm kiếm lai + rerank (Giai đoạn 5)
+
+`RETRIEVAL_MODE` trong `.env` chọn một trong ba chế độ (mặc định `hybrid_rerank`), xem [query.py](src/retrieval/query.py):
+
+| Chế độ | Cách làm |
+|---|---|
+| `vector` | bge-m3 + FAISS cho câu gốc và từng câu viết lại (top 20 mỗi truy vấn), gộp bằng RRF |
+| `hybrid` | như trên + BM25 ([bm25.py](src/retrieval/bm25.py)) cho các truy vấn tiếng Anh, tất cả gộp bằng RRF |
+| `hybrid_rerank` | lấy 30 đoạn đầu của `hybrid`, chấm bằng cross-encoder bge-reranker-v2-m3 ([rerank.py](src/retrieval/rerank.py)), rồi gộp thứ tự rerank với thứ tự `hybrid` bằng RRF một lần nữa |
+
+Ba lựa chọn rút ra khi thử trên bộ câu hỏi:
+- **BM25 chỉ chạy trên truy vấn tiếng Anh.** Tài liệu là tiếng Anh, nên từ tiếng Việt chỉ khớp nhiễu; các câu viết lại tiếng Anh đã mang từ khoá (mã visa, "1 year").
+- **Reranker chấm theo điểm cao nhất giữa câu gốc và các câu viết lại.** Câu hỏi tiếng Việt đặt cạnh đoạn tiếng Anh chỉ được chấm khoảng 0.0x, thứ tự gần như ngẫu nhiên.
+- **Không dùng riêng điểm reranker.** Gộp hai thứ tự cho kết quả tốt hơn cả hai.
+
+So sánh chỉ phần tìm kiếm, không gọi LLM ([eval/runs/retrieval_compare.md](eval/runs/retrieval_compare.md)): 42 câu có trong tài liệu, tìm bằng cùng các câu viết lại đã lưu, đo hạng của trang nguồn đúng đầu tiên.
+
+| Chế độ | hit@1 | hit@5 | hit@10 | MRR@10 | giây/câu (GPU 4 GB) |
+|---|---|---|---|---|---|
+| vector | 34 | 41 | 42 | 0.877 | 0.4 |
+| hybrid | 31 | 42 | 42 | 0.848 | 0.1 |
+| **hybrid_rerank** | 33 | 41 | 42 | **0.880** | 3.0 |
+| *(đã thử)* chỉ dùng điểm reranker | 30 | 41 | 41 | 0.822 | 3.0 |
+
+Trên chỉ số tổng, hybrid + rerank chỉ ngang vector. Lý do là phần lớn câu đã tìm đúng từ trước, và mỗi câu chỉ có 1–2 trang được tính là đúng. Khác biệt nằm ở các câu khó:
+- **Lên hạng:** #10 "Visa 482 cần bao nhiêu năm kinh nghiệm?" từ hạng 6 lên 1; #19 (visa 444), #33 (Medicare levy), #36 (thuế khi bán nhà) cũng lên.
+- **Tụt hạng:** #31 (hạn nộp tờ khai) từ hạng 1 xuống 7, xem [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
+
+Chạy lại toàn bộ 50 câu với `hybrid_rerank` ([eval/results.md](eval/results.md); lần chạy Giai đoạn 4 giữ ở [eval/runs/phase4_vector/](eval/runs/phase4_vector/results.md)):
+
+| Chỉ số | Giai đoạn 4 (vector) | Giai đoạn 5 (hybrid + rerank) |
+|---|---|---|
+| Trả lời được (câu có trong tài liệu) | 39/42 | **42/42** |
+| Nói "không biết" đúng (câu ngoài tài liệu) | 8/8 | 8/8 |
+| Trích dẫn đúng trang nguồn | 38/42 | **40/42** |
+| Trả lời đúng ngôn ngữ câu hỏi | 36/50 | 34/50 (chưa sửa, KNOWN_ISSUES mục A) |
+| Thời gian trả lời (trung vị) | 2.8 giây | 5.5 giây |
+
+Ba câu trước đây không trả lời được (#10 visa 482, #19 visa 444, #39 nghỉ phép casual) giờ trả lời đúng và có trích nguồn.
+
+**Điểm RAGAS chưa so được:** Gemini và Groq hết lượt miễn phí trong ngày khi đang chấm, nên mới có điểm faithfulness cho 6/42 câu và context recall cho 6/42 câu. `eval/results.md` ghi số câu đã chấm cạnh mỗi điểm. Chạy lại `python -X utf8 -m src.evaluation.ragas_eval --workers 1` khi có lượt mới; cache sẽ giữ lại các điểm đã chấm.
+
+```bash
+python -X utf8 -m src.evaluation.retrieval_eval      # so sánh 3 chế độ tìm kiếm, không tốn lượt LLM
+python -X utf8 -m src.retrieval.bm25 "subclass 482 work experience"   # thử BM25 riêng
+```
 
 ## Hạn chế đã biết
 
 - Các trang visa lặp lại nhiều đoạn chung (nộp giấy tờ, dịch thuật, người đại diện…): 43% số mục của Home Affairs trùng y hệt mục ở trang khác (ATO: 5%). Cần lọc trùng ở bước chunking để không làm loãng kết quả tìm kiếm.
-- Câu ngắn có mã visa ("Visa 482 cần bao nhiêu năm kinh nghiệm?") vẫn tìm sai, kể cả khi viết lại câu hỏi: tìm theo vector không bám con số → cần BM25 (giai đoạn 5).
+- Reranker làm thời gian trả lời tăng gấp đôi (trung vị 2,8 → 5,5 giây trên GPU 4 GB).
 - Các model Gemini Flash hay bị quá tải (503/504) vào giờ cao điểm; nên thêm ít nhất một key dự phòng (Groq/OpenRouter có gói miễn phí).
 - Bảng trong PDF (ví dụ bảng tóm tắt quyền lợi casual) bị tách thành nhiều mục nhỏ.
 - Phí visa trên trang Home Affairs được tính bằng JavaScript nên không có trong dữ liệu.

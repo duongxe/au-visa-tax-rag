@@ -20,9 +20,10 @@ from datetime import date
 from ..generation.prompt import detect_lang
 from ..ingest.common import ROOT
 from .ragas_eval import METRICS, SCORES
-from .run_answers import load_answers, load_questions
+from .run_answers import ANSWERS, RUNS, load_answers, load_questions
 
 RESULTS = ROOT / "eval" / "results.md"
+BASELINE = RUNS / "phase4_vector"  # frozen copy of the phase 4 run (dense retrieval only)
 
 
 def pct(n: int, d: int) -> str:
@@ -34,18 +35,15 @@ def mean(xs: list[float]) -> str:
     return f"{statistics.mean(xs):.2f}" if xs else "-"
 
 
-def load_scores() -> dict[int, dict[str, float]]:
-    if not SCORES.exists():
+def load_scores(path=SCORES) -> dict[int, dict[str, float]]:
+    if not path.exists():
         return {}
-    with SCORES.open(encoding="utf-8", newline="") as f:
+    with path.open(encoding="utf-8", newline="") as f:
         return {int(r["id"]): {m: float(r[m]) if r.get(m) not in (None, "") else float("nan")
                                for m in METRICS} for r in csv.DictReader(f)}
 
 
-def main() -> None:
-    qs = {q["id"]: q for q in load_questions()}
-    ans = load_answers()
-    scores = load_scores()
+def build_rows(qs: dict, ans: dict, scores: dict) -> list[dict]:
     rows = []
     for i, q in sorted(qs.items()):
         a = ans.get(i)
@@ -60,6 +58,32 @@ def main() -> None:
             "lang_ok": (not a["answer"]) or detect_lang(a["answer"]) == q["lang"],
             "s": scores.get(i, {}),
         })
+    return rows
+
+
+def headline(rows: list[dict]) -> dict[str, str]:
+    """The numbers compared between runs."""
+    inc = [r for r in rows if r["in_corpus"]]
+    ooc = [r for r in rows if not r["in_corpus"]]
+    scored = [r for r in inc if r["s"]]
+    out = {
+        "Trả lời được (trong tài liệu)": pct(sum(r["a"]["found"] for r in inc), len(inc)),
+        "Nói \"không biết\" đúng (ngoài tài liệu)": pct(sum(not r["a"]["found"] for r in ooc), len(ooc)),
+        "Retrieval hit@5": pct(sum(r["hit"] for r in inc), len(inc)),
+        "Trích dẫn đúng trang nguồn": pct(sum(r["cite_hit"] for r in inc), len(inc)),
+        "Đúng ngôn ngữ": pct(sum(r["lang_ok"] for r in rows), len(rows)),
+    }
+    for m in METRICS:
+        xs = [r["s"][m] for r in scored if r["s"][m] == r["s"][m]]
+        out[m] = mean(xs) + (f" (chấm {len(xs)}/{len(inc)})" if len(xs) < len(inc) else "")
+    out["Thời gian trung vị"] = f"{statistics.median(r['a']['seconds'] for r in rows):.1f}s"
+    return out
+
+
+def main() -> None:
+    qs = {q["id"]: q for q in load_questions()}
+    scores = load_scores()
+    rows = build_rows(qs, load_answers(), scores)
     inc = [r for r in rows if r["in_corpus"]]
     ooc = [r for r in rows if not r["in_corpus"]]
     secs = [r["a"]["seconds"] for r in rows]
@@ -101,6 +125,17 @@ def main() -> None:
                 "- **answer_relevancy**: câu trả lời có đúng trọng tâm câu hỏi không.",
                 "- **context_precision**: đoạn liên quan có được xếp lên đầu không (so với đáp án chuẩn).",
                 "- **context_recall**: tỷ lệ ý của đáp án chuẩn tìm thấy trong các đoạn lấy về."]
+
+    base_answers = BASELINE / ANSWERS.name
+    if base_answers.exists():
+        base = headline(build_rows(qs, load_answers(base_answers), load_scores(BASELINE / SCORES.name)))
+        now = headline(rows)
+        out += ["", "## So với Giai đoạn 4 (chỉ tìm theo vector)", "",
+                f"Lần chạy Giai đoạn 4 được giữ nguyên ở [runs/{BASELINE.name}/](runs/{BASELINE.name}/results.md). "
+                "Model trả lời và model chấm có thể khác giữa hai lần chạy (xem bảng model bên dưới), "
+                "nên chênh lệch nhỏ ở điểm RAGAS chưa chắc do retrieval.", "",
+                "| Chỉ số | Giai đoạn 4 | Lần này |", "|---|---|---|"]
+        out += [f"| {k} | {base.get(k, '-')} | {v} |" for k, v in now.items()]
 
     models = Counter(r["a"]["model"] or "(none)" for r in rows)
     out += ["", "## Model đã trả lời", "", "| Model | Số câu |", "|---|---|"]

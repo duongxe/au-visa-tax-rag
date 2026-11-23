@@ -33,10 +33,10 @@ def load_questions() -> list[dict]:
     return rows
 
 
-def load_answers() -> dict[int, dict]:
-    if not ANSWERS.exists():
+def load_answers(path=ANSWERS) -> dict[int, dict]:
+    if not path.exists():
         return {}
-    with ANSWERS.open(encoding="utf-8") as f:
+    with path.open(encoding="utf-8") as f:
         return {(d := json.loads(line))["id"]: d for line in f if line.strip()}
 
 
