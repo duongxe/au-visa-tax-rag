@@ -41,7 +41,7 @@ DEFAULT_EVAL_CHAIN = (
     "gemini:gemini-3.5-flash-lite,"
     "gemini:gemini-3.5-flash,"
     "groq:openai/gpt-oss-120b,"
-    "mistral:mistral-medium-latest,"
+    "mistral:ministral-14b-latest,"
     "openrouter:google/gemma-4-31b-it:free,"
     "deepseek:deepseek-chat,"
     "openai:gpt-5-mini,"

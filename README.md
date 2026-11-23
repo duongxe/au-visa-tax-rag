@@ -124,12 +124,12 @@ Luồng xử lý: **viết lại câu hỏi → tìm kiếm nhiều truy vấn (
 
 ```
 gemini:gemini-3.5-flash → gemini:gemini-3.5-flash-lite → gemini:gemini-3.8-flash
-→ groq:openai/gpt-oss-120b → mistral:mistral-medium-latest
+→ groq:openai/gpt-oss-120b → mistral:ministral-14b-latest
 → openrouter:google/gemma-4-31b-it:free → openrouter:nvidia/nemotron-3-ultra-550b-a55b:free
-→ mistral:mistral-small-latest → deepseek:deepseek-chat → openai:gpt-5-mini → anthropic:claude-haiku-5-5
+→ mistral:ministral-8b-latest → deepseek:deepseek-chat → openai:gpt-5-mini → anthropic:claude-haiku-5-5
 ```
 
-Chuỗi nhanh (viết lại câu hỏi): Gemini 3.5-flash-lite → 3.5-flash → `groq:qwen/qwen3.8-27b` → `groq:openai/gpt-oss-20b` → `mistral:mistral-small-latest` → `openrouter:google/gemma-4-26b-a4b-it:free` → …
+Chuỗi nhanh (viết lại câu hỏi): Gemini 3.5-flash-lite → 3.5-flash → `groq:qwen/qwen3.8-27b` → `groq:openai/gpt-oss-20b` → `mistral:ministral-14b-latest` → `openrouter:google/gemma-4-26b-a4b-it:free` → …
 
 - Nhà cung cấp nào chưa có key trong `.env` thì bỏ qua. Hỗ trợ: Gemini, Groq, Mistral, OpenRouter, DeepSeek, OpenAI, Anthropic. Bốn nhà cung cấp đầu đều có gói miễn phí; OpenRouter chỉ dùng model đuôi `:free` (khoảng 20 lượt/phút, 50 lượt/ngày nếu chưa nạp tiền).
 - Gặp bất kỳ lỗi nào (503 quá tải, 429 hết lượt, hết credit, sai key, timeout 45 giây) thì chuyển ngay sang bước sau. Bước lỗi bị đẩy xuống cuối hàng: 5 phút nếu quá tải, 1 giờ nếu lỗi tài khoản (401/402/403, quota, credit, billing).
