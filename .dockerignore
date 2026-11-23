@@ -1,0 +1,16 @@
+# Keep secrets and bulky folders out of the build context.
+.env
+.env.*
+!.env.example
+.git/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+data/raw/
+data/processed/
+eval/
+.cache/
+models/
+*.md
+!README.md

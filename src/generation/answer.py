@@ -8,20 +8,26 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import textwrap
 
-from ..retrieval.query import retrieve
+from ..retrieval.query import retrieve, rewrite
 from .llm import generate
 from .prompt import NOT_FOUND, SYSTEM, build_prompt, cited_numbers, detect_lang
 
 
-def answer(question: str, k: int = 5, use_rewrite: bool = True) -> dict:
+def answer(question: str, k: int = 5, use_rewrite: bool = True, mode: str | None = None,
+           lock=None) -> dict:
     """Returns {answer, found, sources, contexts, queries, model}.
 
     sources  = the retrieved chunks the answer cites, keeping their [n] number
     contexts = all k retrieved chunks (used by the evaluation in phase 4)
+    mode     = retrieval mode (vector / hybrid / hybrid_rerank), default RETRIEVAL_MODE
+    lock     = held only around the local models (the API serialises GPU work with it)
     """
-    hits, queries = retrieve(question, k, use_rewrite)
+    queries = [question] + (list(rewrite(question)) if use_rewrite else [])  # LLM call, no lock
+    with lock or contextlib.nullcontext():
+        hits, queries = retrieve(question, k, mode=mode, queries=queries)
     if not hits:
         return {"answer": NOT_FOUND[detect_lang(question)], "found": False,
                 "sources": [], "contexts": [], "context_urls": [], "queries": queries, "model": ""}

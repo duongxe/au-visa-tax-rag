@@ -1,30 +1,15 @@
-# Ingest
-requests
-beautifulsoup4
-trafilatura
-pymupdf
-
-# Retrieval
+# Everything for local development: API + UI + data collection + evaluation.
 # GPU (NVIDIA): pip install torch --index-url https://download.pytorch.org/whl/cu126 trước
 torch
-transformers
-sentence-transformers
-faiss-cpu
-rank-bm25
+-r requirements-api.txt
+-r requirements-ui.txt
 
-# Generation (Gemini chính, các nhà cung cấp khác làm dự phòng)
-google-genai
-openai
-anthropic
-python-dotenv
+# Ingest (Giai đoạn 1)
+beautifulsoup4==4.15.0
+trafilatura==2.3.1
+pymupdf==2.1
 
-# API + UI
-fastapi
-uvicorn[standard]
-streamlit
-
-# Eval
-ragas
-pandas
-
-# Ghi chú: pin phiên bản (pip freeze) khi đã chạy ổn, trước khi deploy.
+# Eval (Giai đoạn 4). Lưu ý: ragas kéo theo langchain-openai, yêu cầu openai<2
+# (vì vậy openai được ghim 1.109.1 ở requirements-api.txt).
+ragas==0.4.4
+pandas==3.1.1

@@ -16,7 +16,7 @@ Trợ lý hỏi đáp (RAG) về **visa, thuế và quyền lợi lao động t�
 | 3 | Sinh câu trả lời có trích nguồn (baseline) | ✅ |
 | 4 | Bộ 50 câu hỏi + RAGAS | ✅ |
 | 5 | Hybrid BM25 + RRF + reranker | ✅ |
-| 6 | FastAPI + Streamlit + Docker | ⬜ |
+| 6 | FastAPI + Streamlit + Docker | ✅ (chưa build thử image) |
 | 7 | Deploy AWS App Runner | ⬜ |
 | 8 | Hoàn thiện README, demo | ⬜ |
 
@@ -153,22 +153,45 @@ Thử nhanh:
 | What is the capital gains tax rate in New Zealand? | "I don't know…" ✅ |
 | Bố mẹ tôi muốn sang Úc thăm tôi thì xin visa gì? | Trước: "không tìm thấy" ❌. Sau khi thêm bước viết lại câu hỏi: Visitor visa (600) Sponsored Family stream (cần người bảo lãnh, Form 1149) hoặc Tourist stream ✅ |
 
-## Chạy thử
+## Chạy thử (Giai đoạn 6)
+
+Gồm hai phần: **API** FastAPI ([src/api/main.py](src/api/main.py)) giữ model và chỉ mục, và **giao diện** Streamlit ([app/streamlit_app.py](app/streamlit_app.py)) chỉ gọi API.
+
+| Endpoint | Mô tả |
+|---|---|
+| `GET /health` | Số đoạn tài liệu, ngày tải, chế độ tìm kiếm, các model AI đang có key (không trả về key) |
+| `POST /ask` | `{"question": "...", "top_k": 5, "rewrite": true, "mode": "hybrid_rerank"}` → câu trả lời, `found`, nguồn `[n]`, các câu tìm kiếm, model đã trả lời, thời gian |
+
+Hành vi của API:
+- Câu hỏi được kiểm tra trước khi xử lý: dài 3–1000 ký tự, `top_k` từ 1 đến 10.
+- Khi mọi model AI đều lỗi, API trả 503 kèm một thông báo chung. Chi tiết lỗi của nhà cung cấp, có thể chứa mã tài khoản, chỉ ghi vào log.
+- Model và chỉ mục được nạp lúc khởi động. Bước dùng GPU/CPU chạy lần lượt từng yêu cầu, còn lúc chờ LLM thì các yêu cầu chạy song song.
+
+Giao diện là dạng chat:
+- Lưu lịch sử hội thoại và có các câu hỏi mẫu.
+- Các số `[n]` trong câu trả lời bấm được để mở trang nguồn; mỗi nguồn có đoạn trích.
+- Thanh bên cho chọn cách tìm kiếm, số đoạn tài liệu, và bật/tắt bước viết lại câu hỏi.
+
+**Docker** (cần `data/index/` đã build):
 
 ```bash
-cp .env.example .env        # rồi điền API key
+cp .env.example .env        # rồi điền API key (không bị đóng vào image)
 docker compose up --build
 # API:  http://localhost:8000/docs
 # UI:   http://localhost:8501
 ```
 
-Hoặc chạy local:
+- [Dockerfile](Dockerfile) (API) dùng torch bản CPU. bge-m3 và bge-reranker-v2-m3 được tải sẵn lúc build (chỉ file safetensors), nên khi chạy không cần mạng tới Hugging Face. Chỉ mục `data/index/` được đóng vào image; container chạy bằng user thường và có healthcheck. Image khoảng 6 GB, chủ yếu là model.
+- [Dockerfile.ui](Dockerfile.ui) chỉ có Streamlit + requests.
+- Thư viện tách ra: [requirements-api.txt](requirements-api.txt) và [requirements-ui.txt](requirements-ui.txt) đã ghim phiên bản; [requirements.txt](requirements.txt) gồm cả hai cộng thêm phần tải dữ liệu và đánh giá.
+
+**Chạy local (không Docker):**
 
 ```bash
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scriptsctivate
 pip install -r requirements.txt
-uvicorn src.api.main:app --reload
-streamlit run app/streamlit_app.py
+uvicorn src.api.main:app --port 8000
+streamlit run app/streamlit_app.py                  # API_URL=http://localhost:8000 (mặc định)
 ```
 
 ## Kết quả đánh giá

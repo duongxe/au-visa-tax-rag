@@ -1,0 +1,3 @@
+# Runtime of the Streamlit UI (Dockerfile.ui): no models, it only calls the API.
+streamlit==1.67.0
+requests==2.34.2

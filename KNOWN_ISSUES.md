@@ -85,8 +85,17 @@ Kết quả đánh giá chi tiết: [eval/results.md](eval/results.md).
 - **Ảnh hưởng**: code gọi Groq/OpenRouter/DeepSeek/OpenAI dùng `chat.completions.create`, vẫn chạy được ở bản 1.x; chưa thử lại với key OpenAI thật.
 - **Cách sửa**: tách môi trường đánh giá (requirements-eval.txt) khỏi môi trường chạy app, hoặc ghim phiên bản (`pip freeze`) trước khi deploy (Giai đoạn 6-7).
 
-### 9. `requirements.txt` chưa ghim phiên bản
-- **Cách sửa**: `pip freeze` khi đã chạy ổn, trước khi build Docker.
+### 9. ~~`requirements.txt` chưa ghim phiên bản~~ (Giai đoạn 6: đã ghim trong `requirements-api.txt`, `requirements-ui.txt`)
+- `torch` vẫn không ghim trong `requirements.txt` vì bản GPU/CPU cài khác nhau; Dockerfile ghim `torch==2.14.1` bản CPU.
+
+### 9c. Docker image chưa được build thử (Giai đoạn 6)
+- **Hiện tượng**: máy phát triển chưa cài Docker, nên `Dockerfile`, `Dockerfile.ui`, `docker-compose.yml` mới được viết, chưa chạy. API và giao diện đã chạy thử trực tiếp bằng `uvicorn` và `streamlit`.
+- **Cần kiểm tra**: có wheel `torch==2.14.1` CPU cho Python 3.13; bước tải model trong lúc build (khoảng 4,4 GB); container khởi động với `HF_HUB_OFFLINE=1`; thời gian trả lời trên CPU (reranker, mục 3d).
+- **Cách làm**: cài Docker Desktop rồi `docker compose up --build`.
+
+### 9d. Câu trả lời rất chậm khi Gemini hết lượt
+- **Hiện tượng**: thử API lúc Gemini hết lượt, câu hỏi về giờ làm thêm visa 500 mất 51 giây (trả lời bằng Groq). Khi Groq cũng hết lượt, API trả 503 sau khoảng 20–30 giây. Giao diện chờ tối đa 180 giây.
+- **Cách sửa**: ghi log thời gian của từng bước trong chuỗi dự phòng để xem bị chậm ở đâu; khi gặp lỗi hết lượt (429 quota) thì tạm bỏ qua cả nhà cung cấp đó (mọi model Gemini) thay vì thử từng model.
 
 ## Đánh giá
 
