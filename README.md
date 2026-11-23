@@ -188,7 +188,7 @@ docker compose up --build
 **Chạy local (không Docker):**
 
 ```bash
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scriptsctivate
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn src.api.main:app --port 8000
 streamlit run app/streamlit_app.py                  # API_URL=http://localhost:8000 (mặc định)
